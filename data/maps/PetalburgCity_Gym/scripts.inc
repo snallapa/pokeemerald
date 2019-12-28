@@ -1235,12 +1235,12 @@ PetalburgCity_Gym_Text_DadYoureHereWithYourPokemon: @ 82057A2
 	.string "So you're all finished moving in?\p"
 	.string "I'm surprised that you managed to\n"
 	.string "get here by yourself.\p"
-	.string "Oh, I see.\n"
-	.string "You're with your POKéMON.\p"
-	.string "Hm… Then I guess you're going to\n"
-	.string "become a TRAINER like me, {PLAYER}.\p"
-	.string "That's great news!\n"
-	.string "I'll be looking forward to it!$"
+	.string "I thought you were a fucking idiot\n"
+	.string "That's why I left your ass.\p"
+	.string "Fuck your mom too.\n"
+	.string "Don't become a TRAINER like me, {PLAYER}.\p"
+	.string "Please don't.\n"
+	.string "Fuck off now.$"
 
 PetalburgCity_Gym_Text_WallyIdLikeAPokemon: @ 82058B1
 	.string "Um… I…\n"
@@ -1248,15 +1248,15 @@ PetalburgCity_Gym_Text_WallyIdLikeAPokemon: @ 82058B1
 
 PetalburgCity_Gym_Text_DadOhYoureWallyRight: @ 82058DB
 	.string "DAD: Hm? You're… Uh… Oh, right.\n"
-	.string "You're WALLY, right?$"
+	.string "You're that asshole WALLY, right?$"
 
 PetalburgCity_Gym_Text_WallyIveNeverCaughtAPokemon: @ 8205910
-	.string "WALLY: I'm going to go stay with my\n"
+	.string "WALLY: Uh, Um. I'm going to go stay with my\n"
 	.string "relatives in VERDANTURF TOWN.\p"
 	.string "I thought I would be lonely by myself,\n"
-	.string "so I wanted to take a POKéMON along.\p"
-	.string "But I've never caught a POKéMON before.\n"
-	.string "I don't know how…$"
+	.string "I have no friends.\p"
+	.string "I wanted a pokemon.\n"
+	.string "I don't know how to get one.$"
 
 PetalburgCity_Gym_Text_DadHmISee: @ 82059D8
 	.string "DAD: Hm. I see.$"
@@ -1264,17 +1264,17 @@ PetalburgCity_Gym_Text_DadHmISee: @ 82059D8
 PetalburgCity_Gym_Text_DadPlayerGoWithWally: @ 82059E8
 	.string "DAD: {PLAYER}, you heard that,\n"
 	.string "right?\p"
-	.string "Go with WALLY and make sure that he\n"
+	.string "Go with this fucking kid and make sure that he\n"
 	.string "safely catches a POKéMON.$"
 
 PetalburgCity_Gym_Text_IllLoanYouMyZigzagoon: @ 8205A46
-	.string "WALLY, here, I'll loan you my POKéMON.\p"
-	.string "WALLY received a ZIGZAGOON!$"
+	.string "WALLY, here, I'll give you my shittiest POKéMON.\p"
+	.string "WALLY received a piece of shit!$"
 
 PetalburgCity_Gym_Text_WallyThankYouAndDadGivesPokeBall: @ 8205A89
 	.string "WALLY: Oh, wow!\n"
 	.string "A POKéMON!\p"
-	.string "DAD: Hm. I'll give you a POKé BALL, too.\n"
+	.string "DAD: Hm. I'll give you one POKé BALL, too.\n"
 	.string "Go for it!\p"
 	.string "WALLY received a POKé BALL!$"
 
@@ -1287,7 +1287,7 @@ PetalburgCity_Gym_Text_WouldYouReallyComeWithMe: @ 8205B0F
 	.string "with me?$"
 
 PetalburgCity_Gym_Text_DadSoDidItWorkOut: @ 8205B32
-	.string "DAD: So, did it work out?$"
+	.string "DAD: Oh you dumbasses are back already?$"
 
 PetalburgCity_Gym_Text_WallyThankYouBye: @ 8205B4C
 	.string "WALLY: Thank you, yes, it did.\n"
@@ -1350,8 +1350,8 @@ PetalburgCity_Gym_Text_NormanIntro: @ 8205FE5
 	.string "Fine, as I promised, we will have\n"
 	.string "a POKéMON battle.\p"
 	.string "{PLAYER}…\p"
-	.string "I'm so happy that I can have\n"
-	.string "a real battle with my own child.\p"
+	.string "I'm so fucking pissed that I have to have\n"
+	.string "a real battle with my own degenerate child.\p"
 	.string "But, a battle is a battle!\p"
 	.string "I will do everything in my power as\n"
 	.string "a GYM LEADER to win.\p"
@@ -1363,8 +1363,8 @@ PetalburgCity_Gym_Text_NormanDefeat: @ 8206107
 	.string "I… I can't…\p"
 	.string "I can't believe it. {PLAYER}…\p"
 	.string "I lost to {PLAYER}?\p"
-	.string "But, rules are rules!\n"
-	.string "Here, take this.$"
+	.string "what the FUCK!\n"
+	.string "take this and get the fuck out.$"
 
 PetalburgCity_Gym_Text_ReceivedBalanceBadge: @ 8206162
 	.string "{PLAYER} received the BALANCE BADGE\n"

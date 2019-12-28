@@ -336,7 +336,7 @@ LavaridgeTown_Gym_1F_Text_FlanneryDefeat: @ 81FF233
 	.string "For that, you deserve this.$"
 
 LavaridgeTown_Gym_1F_Text_ReceivedHeatBadge: @ 81FF32F
-	.string "{PLAYER} received the HEAT BADGE\n"
+	.string "{PLAYER} received 3 dollars\n"
 	.string "from FLANNERY.$"
 
 LavaridgeTown_Gym_1F_Text_ExplainHeatBadgeTakeThis: @ 81FF359
