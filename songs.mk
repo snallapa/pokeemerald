@@ -255,9 +255,6 @@ $(MID_SUBDIR)/bop.s: %.s: %.mid
 $(MID_SUBDIR)/falls_down.s: %.s: %.mid
 	$(MID) $< $@ -E -R$(STD_REVERB) -G019 -V080
 
-$(MID_SUBDIR)/carti.s: %.s: %.mid
-	$(MID) $< $@ -E -R$(STD_REVERB) -G019 -V080
-
 $(MID_SUBDIR)/mus_machupi.s: %.s: %.mid
 	$(MID) $< $@ -E -R$(STD_REVERB) -G080 -V080
 
