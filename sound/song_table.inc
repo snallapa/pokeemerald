@@ -361,8 +361,6 @@ gSongTable:: @ 86B49F0
 	song mus_nibi, 0, 0             @ Unused - Viridian City
 	song mus_suikun, 0, 0           @ Unused - Battle! (Entei/Raikou/Suicune)
 	song hitr, 0, 0                 @ Route 101
-	song bop, 0, 0                  @ Route 103
-	song hitr, 0, 0                 @ Route 102
 	song mus_dooro_x1, 0, 0         @ Route 110
 	song mus_dooro_x3, 0, 0         @ Route 120
 	song mus_machi_s2, 0, 0         @ Petalburg City
