@@ -528,7 +528,12 @@ bool8 StandardWildEncounter(u16 currMetaTileBehavior, u16 previousMetaTileBehavi
 {
     u16 headerId;
     struct Roamer *roamer;
-    bool8 isChampion = GetGameStat(GAME_STAT_ENTERED_HOF) >= 0
+    bool8 isChampion;
+    if (GetGameStat(GAME_STAT_ENTERED_HOF) >= 0) {
+        isChampion = TRUE;
+    } else {
+        isChampion = FALSE;
+    }
 
     if (sWildEncountersDisabled == TRUE)
         return FALSE;
