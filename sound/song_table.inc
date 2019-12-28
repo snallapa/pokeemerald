@@ -360,7 +360,7 @@ gSongTable:: @ 86B49F0
 	song mus_pcc, 0, 0              @ Unused - Pokémon Center (2)
 	song mus_nibi, 0, 0             @ Unused - Viridian City
 	song mus_suikun, 0, 0           @ Unused - Battle! (Entei/Raikou/Suicune)
-	song hitr, 0, 0                 @ Route 101
+	song mus_dooro1, 0, 0           @ Route 101
 	song mus_dooro_x1, 0, 0         @ Route 110
 	song mus_dooro_x3, 0, 0         @ Route 120
 	song mus_machi_s2, 0, 0         @ Petalburg City
@@ -406,7 +406,7 @@ gSongTable:: @ 86B49F0
 	song mus_granroad, 0, 0         @ Route 119
 	song mus_cycling, 0, 0          @ Cycling
 	song mus_friendly, 0, 0         @ Poké Mart
-	song bop, 0, 0                  @ Littleroot Town
+	song mus_mishiro, 0, 0          @ Littleroot Town
 	song mus_tozan, 0, 0            @ Mt. Chimney
 	song mus_girleye, 0, 0          @ Trainers' Eyes Meet (Lass)
 	song mus_minamo, 0, 0           @ Lilycove City
@@ -611,6 +611,10 @@ gSongTable:: @ 86B49F0
 	song ph_nurse_blend, 2, 2
 	song ph_nurse_held, 2, 2
 	song ph_nurse_solo, 2, 2
+	song pissy, 0, 0
+	song falls_down, 0, 0
+	song bop, 0, 0
+	song hitr, 0, 0
 
 	.align 2
 dummy_song_header: @ 86B5D00
