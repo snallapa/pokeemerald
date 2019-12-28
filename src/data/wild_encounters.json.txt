@@ -113,7 +113,7 @@ const struct WildPokemonHeader {{ wild_encounter_group.label }}[] =
         .fishingMonsInfo = {% if existsIn(encounter, "fishing_mons") %}&{{ encounter.base_label }}_FishingMonsInfo{% else %}NULL{% endif %},
         .championLandMonsInfo = {% if existsIn(encounter, "champion_land_mons") %}&{{ encounter.base_label }}_ChampionLandMonsInfo{% else %}NULL{% endif %},
         .championWaterMonsInfo = {% if existsIn(encounter, "champion_water_mons") %}&{{ encounter.base_label }}_ChampionWaterMonsInfo{% else %}NULL{% endif %},
-        .championFishingMonsInfo = = {% if existsIn(encounter, "champion_fishing_mons") %}&{{ encounter.base_label }}_ChampionFishingMonsInfo{% else %}NULL{% endif %},
+        .championFishingMonsInfo = {% if existsIn(encounter, "champion_fishing_mons") %}&{{ encounter.base_label }}_ChampionFishingMonsInfo{% else %}NULL{% endif %},
     },
 ## endfor
     {
