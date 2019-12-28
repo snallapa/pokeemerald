@@ -701,7 +701,12 @@ bool8 SweetScentWildEncounter(void)
 {
     s16 x, y;
     u16 headerId;
-    bool isChampion = GetGameStat(GAME_STAT_ENTERED_HOF) > 0
+    bool8 isChampion;
+    if (GetGameStat(GAME_STAT_ENTERED_HOF) > 0) {
+        isChampion = TRUE;
+    } else {
+        isChampion = FALSE;
+    }
     PlayerGetDestCoords(&x, &y);
     headerId = GetCurrentMapWildMonHeaderId();
     
@@ -798,7 +803,12 @@ bool8 DoesCurrentMapHaveFishingMons(void)
 void FishingWildEncounter(u8 rod)
 {
     u16 species;
-    bool isChampion = GetGameStat(GAME_STAT_ENTERED_HOF) > 0
+    bool8 isChampion;
+    if (GetGameStat(GAME_STAT_ENTERED_HOF) > 0) {
+        isChampion = TRUE;
+    } else {
+        isChampion = FALSE;
+    }
     if (CheckFeebas() == TRUE)
     {
         u8 level = ChooseWildMonLevel(&gWildFeebasRoute119Data);
