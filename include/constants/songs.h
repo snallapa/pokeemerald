@@ -287,7 +287,7 @@
 #define MUS_DOORO_X1 360        // Route 110
 #define MUS_DOORO_X3 361        // Route 120
 #define MUS_MACHI_S2 362        // Petalburg City
-#define MUS_MACHI_S4 363        // Oldale/Lavaridge Town
+#define CARTI 363        // Oldale/Lavaridge Town
 #define MUS_GIM 364             // Gym
 #define MUS_NAMINORI 365        // Surfing
 #define MUS_DAN01 366           // Caves and Darkness
