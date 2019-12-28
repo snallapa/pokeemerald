@@ -107,64 +107,64 @@
             "encounter_rate": 20,
             "mons": [
               {
-                "min_level": 100,
-                "max_level": 100,
-                "species": "SPECIES_DEOXYS"
+                "min_level": 2,
+                "max_level": 2,
+                "species": "SPECIES_MAGIKARP"
               },
               {
-                "min_level": 100,
-                "max_level": 100,
-                "species": "SPECIES_DEOXYS"
+                "min_level": 2,
+                "max_level": 2,
+                "species": "SPECIES_MAGIKARP"
               },
               {
-                "min_level": 100,
-                "max_level": 100,
-                "species": "SPECIES_DEOXYS"
+                "min_level": 2,
+                "max_level": 2,
+                "species": "SPECIES_MAGIKARP"
               },
               {
-                "min_level": 100,
-                "max_level": 100,
-                "species": "SPECIES_DEOXYS"
+                "min_level": 2,
+                "max_level": 2,
+                "species": "SPECIES_MAGIKARP"
               },
               {
-                "min_level": 100,
-                "max_level": 100,
-                "species": "SPECIES_DEOXYS"
+                "min_level": 2,
+                "max_level": 2,
+                "species": "SPECIES_MAGIKARP"
               },
               {
-                "min_level": 100,
-                "max_level": 100,
-                "species": "SPECIES_DEOXYS"
+                "min_level": 2,
+                "max_level": 2,
+                "species": "SPECIES_MAGIKARP"
               },
               {
-                "min_level": 100,
-                "max_level": 100,
-                "species": "SPECIES_DEOXYS"
+                "min_level": 2,
+                "max_level": 2,
+                "species": "SPECIES_MAGIKARP"
               },
               {
-                "min_level": 100,
-                "max_level": 100,
-                "species": "SPECIES_DEOXYS"
+                "min_level": 2,
+                "max_level": 2,
+                "species": "SPECIES_MAGIKARP"
               },
               {
-                "min_level": 100,
-                "max_level": 100,
-                "species": "SPECIES_DEOXYS"
+                "min_level": 2,
+                "max_level": 2,
+                "species": "SPECIES_MAGIKARP"
               },
               {
-                "min_level": 100,
-                "max_level": 100,
-                "species": "SPECIES_DEOXYS"
+                "min_level": 2,
+                "max_level": 2,
+                "species": "SPECIES_MAGIKARP"
               },
               {
-                "min_level": 100,
-                "max_level": 100,
-                "species": "SPECIES_DEOXYS"
+                "min_level": 2,
+                "max_level": 2,
+                "species": "SPECIES_MAGIKARP"
               },
               {
-                "min_level": 100,
-                "max_level": 100,
-                "species": "SPECIES_DEOXYS"
+                "min_level": 2,
+                "max_level": 2,
+                "species": "SPECIES_MAGIKARP"
               }
             ]
           }
