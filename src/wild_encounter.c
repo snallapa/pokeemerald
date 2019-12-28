@@ -803,12 +803,14 @@ bool8 DoesCurrentMapHaveFishingMons(void)
 void FishingWildEncounter(u8 rod)
 {
     u16 species;
+    u16 headerId;
     bool8 isChampion;
     if (GetGameStat(GAME_STAT_ENTERED_HOF) > 0) {
         isChampion = TRUE;
     } else {
         isChampion = FALSE;
     }
+    headerId = GetCurrentMapWildMonHeaderId();
     if (CheckFeebas() == TRUE)
     {
         u8 level = ChooseWildMonLevel(&gWildFeebasRoute119Data);
@@ -819,9 +821,9 @@ void FishingWildEncounter(u8 rod)
     else
     {
         if (isChampion && gWildMonHeaders[headerId].championFishingMonsInfo != NULL) {
-            species = GenerateFishingWildMon(gWildMonHeaders[GetCurrentMapWildMonHeaderId()].championFishingMonsInfo, rod);
+            species = GenerateFishingWildMon(gWildMonHeaders[headerId].championFishingMonsInfo, rod);
         } else {
-            species = GenerateFishingWildMon(gWildMonHeaders[GetCurrentMapWildMonHeaderId()].fishingMonsInfo, rod);
+            species = GenerateFishingWildMon(gWildMonHeaders[headerId].fishingMonsInfo, rod);
         }
         
     }
