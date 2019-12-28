@@ -310,26 +310,26 @@ DewfordTown_Gym_Text_GymGuideAdvice: @ 81FC9D6
 	.string "DEWFORD's GYM LEADER BRAWLY commands\n"
 	.string "FIGHTING-type POKéMON.\p"
 	.string "Going against him with NORMAL-type\n"
-	.string "POKéMON is asking for trouble.\p"
-	.string "FIGHTING POKéMON will lay a serious\n"
-	.string "smack down on NORMAL POKéMON,\l"
+	.string "POKéMON is asking for a beating.\p"
+	.string "FIGHTING POKéMON will fuck the shit\n"
+	.string "out of NORMAL POKéMON,\l"
 	.string "so be careful!\p"
-	.string "What's worse, the GYM is as dark as\n"
-	.string "the ocean floor.\p"
+	.string "What's worse, the GYM is dark as\n"
+	.string "SHIT!\p"
 	.string "But it will get brighter after defeating\n"
 	.string "the TRAINERS in your way.\p"
 	.string "Hey, okay, go for it!$"
 
 DewfordTown_Gym_Text_GymGuidePostVictory: @ 81FCB5C
 	.string "Whoah! It's turned too bright in here!\p"
-	.string "Your future is bright, too!$"
+	.string "Your future is bright, too man!$"
 
 DewfordTown_Gym_Text_TakaoPreBattle: @ 81FCB9F
 	.string "Might is right!\n"
-	.string "Come on!$"
+	.string "Let's get naked!$"
 
 DewfordTown_Gym_Text_TakaoDefeat: @ 81FCBB8
-	.string "Not enough power…$"
+	.string "DAMMIT$"
 
 DewfordTown_Gym_Text_TakaoPostBattle: @ 81FCBCA
 	.string "Your skill overcame my strength!\n"
@@ -338,11 +338,11 @@ DewfordTown_Gym_Text_TakaoPostBattle: @ 81FCBCA
 DewfordTown_Gym_Text_JocelynPreBattle: @ 81FCC0A
 	.string "There's no need for BRAWLY to be\n"
 	.string "involved!\p"
-	.string "I'll crush you!$"
+	.string "I'll fuck u up!$"
 
 DewfordTown_Gym_Text_JocelynDefeat: @ 81FCC45
 	.string "But… How?\n"
-	.string "How could I lose so easily?$"
+	.string "Let's get naked!$"
 
 DewfordTown_Gym_Text_JocelynPostBattle: @ 81FCC6B
 	.string "I'm not going to waste this loss.\n"
@@ -353,17 +353,17 @@ DewfordTown_Gym_Text_JocelynPostBattle: @ 81FCC6B
 
 DewfordTown_Gym_Text_LauraPreBattle: @ 81FCD01
 	.string "Don't you dare brush me off!\n"
-	.string "It's not my fault if you cry!$"
+	.string "It's not my fault if you fucking cry!$"
 
 DewfordTown_Gym_Text_LauraDefeat: @ 81FCD3C
 	.string "Waaaaaaah!\n"
-	.string "I lost!$"
+	.string "Let's get naked!$"
 
 DewfordTown_Gym_Text_LauraPostBattle: @ 81FCD4F
 	.string "I battle in the dark to make my heart\n"
 	.string "stronger.\p"
 	.string "But because it's so dark, I can never\n"
-	.string "see BRAWLY's face…$"
+	.string "see BRAWLY's beautiful face…$"
 
 DewfordTown_Gym_Text_LilithPreBattle: @ 81FCDB8
 	.string "Ufufu…\n"
@@ -371,7 +371,7 @@ DewfordTown_Gym_Text_LilithPreBattle: @ 81FCDB8
 
 DewfordTown_Gym_Text_LilithDefeat: @ 81FCDE5
 	.string "Oh, you…\n"
-	.string "I don't want to know you!$"
+	.string "Let's get naked!$"
 
 DewfordTown_Gym_Text_LilithPostBattle: @ 81FCE08
 	.string "You deserve to stay lost and end up\n"
@@ -383,7 +383,7 @@ DewfordTown_Gym_Text_BrendenPreBattle: @ 81FCE48
 
 DewfordTown_Gym_Text_BrendenDefeat: @ 81FCE75
 	.string "How'd this happen?\n"
-	.string "It's not like me to lose this way!$"
+	.string "Let's get naked!$"
 
 DewfordTown_Gym_Text_BrendenPostBattle: @ 81FCEAB
 	.string "Oh, aye! You're worthy of seeing\n"
@@ -391,7 +391,7 @@ DewfordTown_Gym_Text_BrendenPostBattle: @ 81FCEAB
 
 DewfordTown_Gym_Text_CristianPreBattle: @ 81FCEDC
 	.string "If you mean to pass, it has to be\n"
-	.string "through me!$"
+	.string "my ass!$"
 
 DewfordTown_Gym_Text_CristianDefeat: @ 81FCF0A
 	.string "Grrrrr!\n"
@@ -402,29 +402,29 @@ DewfordTown_Gym_Text_CristianPostBattle: @ 81FCF26
 	.string "Go after that BADGE!$"
 
 DewfordTown_Gym_Text_BrawlyPreBattle: @ 81FCF44
-	.string "I'm BRAWLY!\n"
-	.string "DEWFORD's GYM LEADER!\p"
-	.string "I've been churned in the rough waves\n"
-	.string "of these parts, and I've grown tough\l"
+	.string "AHHHHHHHHHHHHHHHHHH\n"
+	.string "ME DEWFORD's GYM LEADER!\p"
+	.string "AHHHHHHHHHHHHHHHHHHH\n"
+	.string "FUCKKKKKKKKKKK\l"
 	.string "in the pitch-black cave!\p"
 	.string "So you wanted to challenge me?\n"
-	.string "Let me see what you're made of!$"
+	.string "Let's GOOOOOOOOOO!$"
 
 DewfordTown_Gym_Text_BrawlyDefeat: @ 81FD008
-	.string "Whoah, wow! You made a much bigger\n"
-	.string "splash than I expected!\p"
+	.string "WHAT THE FUCK\n"
+	.string "YOU BEAT ME\p"
 	.string "You swamped me!\p"
 	.string "Okay, you've got me.\n"
-	.string "Take this GYM BADGE!$"
+	.string "Take this FUCKING GYM BADGE!$"
 
 DewfordTown_Gym_Text_ReceivedKnuckleBadge: @ 81FD07D
-	.string "{PLAYER} received the KNUCKLE BADGE\n"
+	.string "{PLAYER} received an ass whooping\n"
 	.string "from BRAWLY.$"
 
 DewfordTown_Gym_Text_KnuckleBadgeInfoTakeThis: @ 81FD0A8
 	.string "The KNUCKLE BADGE makes all POKéMON\n"
 	.string "up to Level 30, even those you get in\l"
-	.string "trades, obey without question.\p"
+	.string "trades, your bitch.\p"
 	.string "And, you'll be able to use the HM move\n"
 	.string "FLASH outside of battle.\p"
 	.string "If you'd like, use this TECHNICAL\n"
@@ -441,9 +441,9 @@ DewfordTown_Gym_Text_RegisteredBrawly: @ 81FD1E0
 	.string "in the POKéNAV.$"
 
 DewfordTown_Gym_Text_BrawlyPostBattle: @ 81FD20D
-	.string "I can see your talent becoming a giant\n"
-	.string "wave to cause a storm of astonishment\l"
-	.string "among TRAINERS one day!$"
+	.string "I can see your talent \n"
+	.string "I see the vibes\l"
+	.string "Aight im bout to smoke this bowl!$"
 
 DewfordTown_Gym_Text_GymStatue: @ 81FD272
 	.string "DEWFORD TOWN POKéMON GYM$"

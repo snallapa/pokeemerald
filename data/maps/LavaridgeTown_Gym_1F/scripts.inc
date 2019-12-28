@@ -312,12 +312,12 @@ LavaridgeTown_Gym_B1F_Text_EliPostBattle: @ 81FF09A
 	.string "Hehehehe.$"
 
 LavaridgeTown_Gym_1F_Text_FlanneryPreBattle: @ 81FF0DC
-	.string "Welcome… No, wait.\p"
+	.string "SLurp\p"
 	.string "Puny TRAINER, how good to see you've\n"
 	.string "made it here!\p"
 	.string "I have been entrusted with the…\n"
-	.string "No, wait.\p"
-	.string "I am FLANNERY, and I'm the GYM\n"
+	.string "HONOR. Of beating your ass.\p"
+	.string "I am GOTH GIRL, and I'm the GYM\n"
 	.string "LEADER here!\p"
 	.string "Uh…\n"
 	.string "Dare not underestimate me, though\l"
@@ -339,7 +339,7 @@ LavaridgeTown_Gym_1F_Text_FlanneryDefeat: @ 81FF233
 	.string "For that, you deserve this.$"
 
 LavaridgeTown_Gym_1F_Text_ReceivedHeatBadge: @ 81FF32F
-	.string "{PLAYER} received the HEAT BADGE\n"
+	.string "{PLAYER} received 3 dollars\n"
 	.string "from FLANNERY.$"
 
 LavaridgeTown_Gym_1F_Text_ExplainHeatBadgeTakeThis: @ 81FF359
