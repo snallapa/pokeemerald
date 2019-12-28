@@ -35,7 +35,6 @@ const struct WildPokemon {{ encounter.base_label }}_LandMons[] =
 const struct WildPokemonInfo {{ encounter.base_label }}_LandMonsInfo = { {{encounter.land_mons.encounter_rate}}, {{ encounter.base_label }}_LandMons };
 {% endif %}
 
-## for encounter in wild_encounter_group.encounters
 {% if existsIn(encounter, "champion_land_mons") %}
 const struct WildPokemon {{ encounter.base_label }}_ChampionLandMons[] =
 {
