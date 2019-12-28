@@ -537,6 +537,7 @@
 #define PH_NURSE_SOLO 609
 #define PISSY 610
 #define FALLS_DOWN 611
+#define BOP 612
 
 
 #define MUS_ROUTE_118 0x7FFF  // map is split into 2 music sections. controlled by GetCurrLocationDefaultMusic().
