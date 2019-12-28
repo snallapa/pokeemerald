@@ -184,24 +184,24 @@ RustboroCity_Gym_Text_RoxannePreBattle: @ 821362A
 	.string "I became a GYM LEADER so that I might\n"
 	.string "apply what I learned at the POKéMON\l"
 	.string "TRAINER'S SCHOOL in battle.\p"
-	.string "Would you kindly demonstrate how you\n"
-	.string "battle, and with which POKéMON?$"
+	.string "LET'S FIGHT\n"
+	.string "TO THE DEATH$"
 
 RustboroCity_Gym_Text_RoxanneDefeat: @ 821370B
 	.string "So…\n"
 	.string "I lost…\p"
 	.string "It seems that I still have much more\n"
 	.string "to learn…\p"
-	.string "I understand.\p"
+	.string "FUCK!\p"
 	.string "The POKéMON LEAGUE's rules state\n"
 	.string "that TRAINERS are to be given this\l"
 	.string "if they defeat a GYM LEADER.\p"
 	.string "Please accept the official POKéMON\n"
-	.string "LEAGUE STONE BADGE.$"
+	.string "LEAGUE STONE BADGE. YOU FUCKER$"
 
 RustboroCity_Gym_Text_ReceivedStoneBadge: @ 82137EC
 	.string "{PLAYER} received the STONE BADGE\n"
-	.string "from ROXANNE.$"
+	.string "from ROXANNE'S BITCH ASS.$"
 
 RustboroCity_Gym_Text_StoneBadgeInfoTakeThis: @ 8213816
 	.string "The STONE BADGE heightens the ATTACK\n"
@@ -221,8 +221,8 @@ RustboroCity_Gym_Text_ExplainRockTomb: @ 82138B1
 	.string "so think before you use it.$"
 
 RustboroCity_Gym_Text_RoxannePostBattle: @ 82139A7
-	.string "Since you are so strong, you should\n"
-	.string "challenge other GYM LEADERS.\p"
+	.string "LEAVE IMMEDIATLEY\n"
+	.string "HOE\p"
 	.string "By battling many TRAINERS, you should\n"
 	.string "learn many things.$"
 
