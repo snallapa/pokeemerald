@@ -962,12 +962,12 @@ LittlerootTown_EventScript_GiveRunningShoes:: @ 81E8693
 
 LittlerootTown_Text_OurNewHomeLetsGoInside: @ 81E86BC
 	.string "MOM: {PLAYER}, we're here, honey!\p"
-	.string "It must be tiring riding with our things\n"
+	.string "It must be tiring sitting back there with our shit\n"
 	.string "in the moving truck.\p"
-	.string "Well, this is LITTLEROOT TOWN.\p"
+	.string "Lmao I can't believe I actually made your dumbass do that.\p"
 	.string "How do you like it?\n"
-	.string "This is our new home!\p"
-	.string "It has a quaint feel, but it seems to be\n"
+	.string "This is our new shithole!\p"
+	.string "It has a southern Florida feel, but it seems to be\n"
 	.string "an easy place to live, don't you think?\p"
 	.string "And, you get your own room, {PLAYER}!\n"
 	.string "Let's go inside.$"
@@ -978,10 +978,10 @@ LittlerootTown_Text_WaitPlayer: @ 81E87E1
 LittlerootTown_Text_WearTheseRunningShoes: @ 81E87F0
 	.string "MOM: {PLAYER}! {PLAYER}! Did you\n"
 	.string "introduce yourself to PROF. BIRCH?\p"
-	.string "Oh! What an adorable POKéMON!\n"
+	.string "Oh! What a fucking ugly POKéMON!\n"
 	.string "You got it from PROF. BIRCH. How nice!\p"
 	.string "You're your father's child, all right.\n"
-	.string "You look good together with POKéMON!\p"
+	.string "Maybe. The mailman is another possibility.\p"
 	.string "Here, honey! If you're going out on an\n"
 	.string "adventure, wear these RUNNING SHOES.\p"
 	.string "They'll put a zip in your step!$"
@@ -1003,10 +1003,10 @@ LittlerootTown_Text_ComeHomeIfAnythingHappens: @ 81E8A03
 	.string "… … … … … … … …\p"
 	.string "To think that you have your very own\n"
 	.string "POKéMON now…\l"
-	.string "Your father will be overjoyed.\p"
+	.string "Your father will be pissed off.\p"
 	.string "…But please be careful.\n"
 	.string "If anything happens, you can come home.\p"
-	.string "Go on, go get them, honey!$"
+	.string "Go on, go get them, you asshole!$"
 
 LittlerootTown_Text_CanUsePCToStoreItems: @ 81E8ACF
 	.string "If you use a PC, you can store items\n"
@@ -1030,13 +1030,13 @@ LittlerootTown_Text_DangerousIfYouDontHavePokemon: @ 81E8C07
 	.string "your own POKéMON.$"
 
 LittlerootTown_Text_CanYouGoSeeWhatsHappening: @ 81E8C3A
-	.string "Um, hi!\p"
+	.string "Holy fucking shit\p"
 	.string "There are scary POKéMON outside!\n"
 	.string "I can hear their cries!\p"
 	.string "I want to go see what's going on,\n"
 	.string "but I don't have any POKéMON…\p"
 	.string "Can you go see what's happening\n"
-	.string "for me?$"
+	.string "for me? Even though you don't have one?$"
 
 LittlerootTown_Text_YouSavedBirch: @ 81E8CE3
 	.string "You saved PROF. BIRCH!\n"
