@@ -30,6 +30,7 @@
 #include "agb.h"
 #include "tables.h"
 
+
 enum class MidiEventCategory
 {
     Control,
@@ -283,7 +284,6 @@ bool ReadSeqEvent(Event& event)
     {
         // text event
         std::string text = ReadEventText();
-
         if (text == "[")
             MakeBlockEvent(event, EventType::LoopBegin);
         else if (text == "][")
@@ -304,6 +304,7 @@ bool ReadSeqEvent(Event& event)
             event.type = EventType::EndOfTrack;
             event.param1 = 0;
             event.param2 = 0;
+            event.time = 0;
             break;
         case 0x51: // tempo
             if (ReadVLQ() != 3)
@@ -328,7 +329,9 @@ bool ReadSeqEvent(Event& event)
 
             int clockTicks = 96 * numerator * g_clocksPerBeat;
             int denominator = 1 << denominatorExponent;
+            
             int timeSig = clockTicks / denominator;
+            
 
             if (timeSig <= 0 || timeSig >= 0x10000)
                 RaiseError("invalid time signature");
@@ -336,6 +339,7 @@ bool ReadSeqEvent(Event& event)
             event.type = EventType::TimeSignature;
             event.param1 = 0;
             event.param2 = timeSig;
+            
             break;
         }
         default:
@@ -559,6 +563,7 @@ void ReadTrackEvents()
             if (event.type == EventType::EndOfTrack)
                 return;
         }
+
     }
 }
 
@@ -628,10 +633,22 @@ std::unique_ptr<std::vector<Event>> MergeEvents()
     return events;
 }
 
+void fixLoop(std::vector<Event>& events) {
+    for (unsigned i = 0; i < events.size(); i++)
+    {
+        if (events[i].type == EventType::LoopEnd)
+        {
+            events[i].time = events[i+1].time;
+        }
+        
+    }
+}
+
 void ConvertTimes(std::vector<Event>& events)
 {
     for (Event& event : events)
     {
+        printf("Event type=%d, time=%d, param1=%d, param2=%d\n", event.type, event.time, event.param1, event.param2);
         event.time = (24 * g_clocksPerBeat * event.time) / g_midiTimeDiv;
 
         if (event.type == EventType::Note)
@@ -645,9 +662,9 @@ void ConvertTimes(std::vector<Event>& events)
 
             if (!g_exactGateTime && duration < 96)
                 duration = g_noteDurationLUT[duration];
-
             event.param2 = duration;
         }
+
     }
 }
 
@@ -662,6 +679,7 @@ std::unique_ptr<std::vector<Event>> InsertTimingEvents(std::vector<Event>& inEve
 
     for (const Event& event : inEvents)
     {
+
         while (EventCompare(timingEvent, event))
         {
             outEvents->push_back(timingEvent);
@@ -683,6 +701,8 @@ std::unique_ptr<std::vector<Event>> InsertTimingEvents(std::vector<Event>& inEve
         outEvents->push_back(event);
     }
 
+    
+
     return outEvents;
 }
 
@@ -694,6 +714,7 @@ std::unique_ptr<std::vector<Event>> SplitTime(std::vector<Event>& inEvents)
 
     for (const Event& event : inEvents)
     {
+
         std::int32_t diff = event.time - time;
 
         if (diff > 96)
@@ -770,6 +791,7 @@ void CalculateWaits(std::vector<Event>& events)
             events[i].type = EventType::WholeNoteMark;
             events[i].param2 = wholeNoteCount++;
         }
+        
     }
 }
 
@@ -944,7 +966,7 @@ void ReadMidiTracks()
                     auto it = std::remove_if(s_seqEvents.begin(), s_seqEvents.end(), [](const Event& event) { return event.type == EventType::Tempo; });
                     s_seqEvents.erase(it, s_seqEvents.end());
                 }
-
+                fixLoop(*events);
                 ConvertTimes(*events);
                 events = InsertTimingEvents(*events);
                 events = CreateTies(*events);
