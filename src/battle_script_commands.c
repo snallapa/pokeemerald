@@ -10204,16 +10204,16 @@ static void Cmd_handleballthrow(void)
 static void Cmd_givecaughtmon(void)
 {
     struct Pokemon* p = malloc(sizeof(struct Pokemon));
-    SetMonData(p, MON_DATA_STATUS, *GetMonData(&gEnemyParty[0], MON_DATA_STATUS));
-    SetMonData(p, MON_DATA_LEVEL, *GetMonData(&gEnemyParty[0], MON_DATA_LEVEL));
-    SetMonData(p, MON_DATA_HP, *GetMonData(&gEnemyParty[0], MON_DATA_HP));
-    SetMonData(p, MON_DATA_MAX_HP, *GetMonData(&gEnemyParty[0], MON_DATA_MAX_HP));
-    SetMonData(p, MON_DATA_ATK, *GetMonData(&gEnemyParty[0], MON_DATA_ATK));
-    SetMonData(p, MON_DATA_DEF, *GetMonData(&gEnemyParty[0], MON_DATA_DEF));
-    SetMonData(p, MON_DATA_SPEED, *GetMonData(&gEnemyParty[0], MON_DATA_SPEED));
-    SetMonData(p, MON_DATA_SPATK, *GetMonData(&gEnemyParty[0], MON_DATA_SPATK));
-    SetMonData(p, MON_DATA_SPDEF, *GetMonData(&gEnemyParty[0], MON_DATA_SPDEF));
-    SetMonData(p, MON_DATA_MAIL, *GetMonData(&gEnemyParty[0], MON_DATA_MAIL));
+    p->status = GetMonData(&gEnemyParty[0], MON_DATA_STATUS));
+    p->level = GetMonData(&gEnemyParty[0], MON_DATA_LEVEL));
+    p->hp= GetMonData(&gEnemyParty[0], MON_DATA_HP));
+    p->maxHP= GetMonData(&gEnemyParty[0], MON_DATA_MAX_HP));
+    p->attack= GetMonData(&gEnemyParty[0], MON_DATA_ATK));
+    p->defense= GetMonData(&gEnemyParty[0], MON_DATA_DEF));
+    p->speed= GetMonData(&gEnemyParty[0], MON_DATA_SPEED));
+    p->spAttack= GetMonData(&gEnemyParty[0], MON_DATA_SPATK));
+    p->spDefense= GetMonData(&gEnemyParty[0], MON_DATA_SPDEF));
+    p->mail= GetMonData(&gEnemyParty[0], MON_DATA_MAIL));
 
     if (GiveMonToPlayer(p) != MON_GIVEN_TO_PARTY)
     {
