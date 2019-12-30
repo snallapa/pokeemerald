@@ -246,6 +246,18 @@ $(MID_SUBDIR)/mus_machi_s3.s: %.s: %.mid
 $(MID_SUBDIR)/mus_machi_s4.s: %.s: %.mid
 	$(MID) $< $@ -E -R$(STD_REVERB) -G019 -V080
 
+$(MID_SUBDIR)/pissy.s: %.s: %.mid
+	$(MID) $< $@ -E -R$(STD_REVERB) -G019 -V080
+
+$(MID_SUBDIR)/bop.s: %.s: %.mid
+	$(MID) $< $@ -E -R$(STD_REVERB) -G019 -V080
+
+$(MID_SUBDIR)/falls_down.s: %.s: %.mid
+	$(MID) $< $@ -E -R$(STD_REVERB) -G019 -V080
+
+$(MID_SUBDIR)/hitr.s: %.s: %.mid
+	$(MID) $< $@ -E -R$(STD_REVERB) -G019 -V080
+
 $(MID_SUBDIR)/mus_machupi.s: %.s: %.mid
 	$(MID) $< $@ -E -R$(STD_REVERB) -G080 -V080
 

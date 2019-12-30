@@ -143,6 +143,8 @@ static void FeebasSeedRng(u16 seed)
 
 static u8 ChooseWildMonIndex_Land(void)
 {
+
+
     u8 rand = Random() % ENCOUNTER_CHANCE_LAND_MONS_TOTAL;
 
     if (rand < ENCOUNTER_CHANCE_LAND_MONS_SLOT_0)
@@ -526,6 +528,12 @@ bool8 StandardWildEncounter(u16 currMetaTileBehavior, u16 previousMetaTileBehavi
 {
     u16 headerId;
     struct Roamer *roamer;
+    bool8 isChampion;
+    if (GetGameStat(GAME_STAT_ENTERED_HOF) > 0) {
+        isChampion = TRUE;
+    } else {
+        isChampion = FALSE;
+    }
 
     if (sWildEncountersDisabled == TRUE)
         return FALSE;
@@ -533,6 +541,7 @@ bool8 StandardWildEncounter(u16 currMetaTileBehavior, u16 previousMetaTileBehavi
     headerId = GetCurrentMapWildMonHeaderId();
     if (headerId == 0xFFFF)
     {
+        // BATTLE PIKE
         if (gMapHeader.mapLayoutId == LAYOUT_BATTLE_FRONTIER_BATTLE_PIKE_ROOM_WILD_MONS)
         {
             headerId = GetBattlePikeWildMonHeaderId();
@@ -548,6 +557,7 @@ bool8 StandardWildEncounter(u16 currMetaTileBehavior, u16 previousMetaTileBehavi
             BattleSetup_StartBattlePikeWildBattle();
             return TRUE;
         }
+        // PYRAMID
         if (gMapHeader.mapLayoutId == LAYOUT_BATTLE_FRONTIER_BATTLE_PYRAMID_FLOOR)
         {
             headerId = gSaveBlock2Ptr->frontier.curChallengeBattleNum;
@@ -565,6 +575,7 @@ bool8 StandardWildEncounter(u16 currMetaTileBehavior, u16 previousMetaTileBehavi
     }
     else
     {
+        //  LAND TILE
         if (MetatileBehavior_IsLandWildEncounter(currMetaTileBehavior) == TRUE)
         {
             if (gWildMonHeaders[headerId].landMonsInfo == NULL)
@@ -573,7 +584,7 @@ bool8 StandardWildEncounter(u16 currMetaTileBehavior, u16 previousMetaTileBehavi
                 return FALSE;
             else if (DoWildEncounterRateTest(gWildMonHeaders[headerId].landMonsInfo->encounterRate, FALSE) != TRUE)
                 return FALSE;
-
+            //ROAMER LATIOS/LATIAS
             if (TryStartRoamerEncounter() == TRUE)
             {
                 roamer = &gSaveBlock1Ptr->roamer;
@@ -585,18 +596,28 @@ bool8 StandardWildEncounter(u16 currMetaTileBehavior, u16 previousMetaTileBehavi
             }
             else
             {
+                //OUTBREAK POKEMON???
                 if (DoMassOutbreakEncounterTest() == TRUE && SetUpMassOutbreakEncounter(WILD_CHECK_REPEL | WILD_CHECK_KEEN_EYE) == TRUE)
                 {
                     BattleSetup_StartWildBattle();
                     return TRUE;
                 }
 
-                // try a regular wild land encounter
-                if (TryGenerateWildMon(gWildMonHeaders[headerId].landMonsInfo, WILD_AREA_LAND, WILD_CHECK_REPEL | WILD_CHECK_KEEN_EYE) == TRUE)
-                {
-                    BattleSetup_StartWildBattle();
-                    return TRUE;
+                // try a regular wild land encounter (champion vs non champion)
+                if (isChampion && gWildMonHeaders[headerId].championLandMonsInfo != NULL) {
+                    if (TryGenerateWildMon(gWildMonHeaders[headerId].championLandMonsInfo, WILD_AREA_LAND, WILD_CHECK_REPEL | WILD_CHECK_KEEN_EYE) == TRUE)
+                    {
+                        BattleSetup_StartWildBattle();
+                        return TRUE;
+                    }
+                } else {
+                    if (TryGenerateWildMon(gWildMonHeaders[headerId].landMonsInfo, WILD_AREA_LAND, WILD_CHECK_REPEL | WILD_CHECK_KEEN_EYE) == TRUE)
+                    {
+                        BattleSetup_StartWildBattle();
+                        return TRUE;
+                    }
                 }
+
 
                 return FALSE;
             }
@@ -613,6 +634,7 @@ bool8 StandardWildEncounter(u16 currMetaTileBehavior, u16 previousMetaTileBehavi
             else if (DoWildEncounterRateTest(gWildMonHeaders[headerId].waterMonsInfo->encounterRate, FALSE) != TRUE)
                 return FALSE;
 
+            //ROAMER LATIOS/LATIAS
             if (TryStartRoamerEncounter() == TRUE)
             {
                 roamer = &gSaveBlock1Ptr->roamer;
@@ -624,10 +646,18 @@ bool8 StandardWildEncounter(u16 currMetaTileBehavior, u16 previousMetaTileBehavi
             }
             else // try a regular surfing encounter
             {
-                if (TryGenerateWildMon(gWildMonHeaders[headerId].waterMonsInfo, WILD_AREA_WATER, WILD_CHECK_REPEL | WILD_CHECK_KEEN_EYE) == TRUE)
-                {
-                    BattleSetup_StartWildBattle();
-                    return TRUE;
+                if (isChampion && gWildMonHeaders[headerId].championWaterMonsInfo != NULL) {
+                    if (TryGenerateWildMon(gWildMonHeaders[headerId].championWaterMonsInfo, WILD_AREA_WATER, WILD_CHECK_REPEL | WILD_CHECK_KEEN_EYE) == TRUE)
+                    {
+                        BattleSetup_StartWildBattle();
+                        return TRUE;
+                    }
+                } else {
+                    if (TryGenerateWildMon(gWildMonHeaders[headerId].waterMonsInfo, WILD_AREA_WATER, WILD_CHECK_REPEL | WILD_CHECK_KEEN_EYE) == TRUE)
+                    {
+                        BattleSetup_StartWildBattle();
+                        return TRUE;
+                    }
                 }
 
                 return FALSE;
@@ -671,11 +701,18 @@ bool8 SweetScentWildEncounter(void)
 {
     s16 x, y;
     u16 headerId;
-
+    bool8 isChampion;
+    if (GetGameStat(GAME_STAT_ENTERED_HOF) > 0) {
+        isChampion = TRUE;
+    } else {
+        isChampion = FALSE;
+    }
     PlayerGetDestCoords(&x, &y);
     headerId = GetCurrentMapWildMonHeaderId();
+    
     if (headerId == 0xFFFF)
-    {
+    {   
+        // BATTLE PIKE
         if (gMapHeader.mapLayoutId == LAYOUT_BATTLE_FRONTIER_BATTLE_PIKE_ROOM_WILD_MONS)
         {
             headerId = GetBattlePikeWildMonHeaderId();
@@ -686,6 +723,7 @@ bool8 SweetScentWildEncounter(void)
             BattleSetup_StartBattlePikeWildBattle();
             return TRUE;
         }
+        // PYRAMID
         if (gMapHeader.mapLayoutId == LAYOUT_BATTLE_FRONTIER_BATTLE_PYRAMID_FLOOR)
         {
             headerId = gSaveBlock2Ptr->frontier.curChallengeBattleNum;
@@ -704,16 +742,25 @@ bool8 SweetScentWildEncounter(void)
             if (gWildMonHeaders[headerId].landMonsInfo == NULL)
                 return FALSE;
 
+            //ROAMER
             if (TryStartRoamerEncounter() == TRUE)
             {
                 BattleSetup_StartRoamerBattle();
                 return TRUE;
             }
 
-            if (DoMassOutbreakEncounterTest() == TRUE)
+            if (DoMassOutbreakEncounterTest() == TRUE) {
                 SetUpMassOutbreakEncounter(0);
-            else
-                TryGenerateWildMon(gWildMonHeaders[headerId].landMonsInfo, WILD_AREA_LAND, 0);
+            }
+            else {
+                if (isChampion  && gWildMonHeaders[headerId].championLandMonsInfo != NULL) {
+                    TryGenerateWildMon(gWildMonHeaders[headerId].championLandMonsInfo, WILD_AREA_LAND, 0);
+                } else {
+                    TryGenerateWildMon(gWildMonHeaders[headerId].landMonsInfo, WILD_AREA_LAND, 0);
+                }
+            }
+            
+                
 
             BattleSetup_StartWildBattle();
             return TRUE;
@@ -730,8 +777,11 @@ bool8 SweetScentWildEncounter(void)
                 BattleSetup_StartRoamerBattle();
                 return TRUE;
             }
-
-            TryGenerateWildMon(gWildMonHeaders[headerId].waterMonsInfo, WILD_AREA_WATER, 0);
+            if (isChampion && gWildMonHeaders[headerId].championWaterMonsInfo != NULL) {
+                TryGenerateWildMon(gWildMonHeaders[headerId].championWaterMonsInfo, WILD_AREA_WATER, 0);
+            } else {
+                TryGenerateWildMon(gWildMonHeaders[headerId].waterMonsInfo, WILD_AREA_WATER, 0);
+            }
             BattleSetup_StartWildBattle();
             return TRUE;
         }
@@ -753,7 +803,14 @@ bool8 DoesCurrentMapHaveFishingMons(void)
 void FishingWildEncounter(u8 rod)
 {
     u16 species;
-
+    u16 headerId;
+    bool8 isChampion;
+    if (GetGameStat(GAME_STAT_ENTERED_HOF) > 0) {
+        isChampion = TRUE;
+    } else {
+        isChampion = FALSE;
+    }
+    headerId = GetCurrentMapWildMonHeaderId();
     if (CheckFeebas() == TRUE)
     {
         u8 level = ChooseWildMonLevel(&gWildFeebasRoute119Data);
@@ -763,7 +820,12 @@ void FishingWildEncounter(u8 rod)
     }
     else
     {
-        species = GenerateFishingWildMon(gWildMonHeaders[GetCurrentMapWildMonHeaderId()].fishingMonsInfo, rod);
+        if (isChampion && gWildMonHeaders[headerId].championFishingMonsInfo != NULL) {
+            species = GenerateFishingWildMon(gWildMonHeaders[headerId].championFishingMonsInfo, rod);
+        } else {
+            species = GenerateFishingWildMon(gWildMonHeaders[headerId].fishingMonsInfo, rod);
+        }
+        
     }
     IncrementGameStat(GAME_STAT_FISHING_CAPTURES);
     SetPokemonAnglerSpecies(species);

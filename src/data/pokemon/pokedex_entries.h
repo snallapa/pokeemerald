@@ -3062,7 +3062,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TORCHIC] =
     {
-        .categoryName = _("CHICK"),
+        .categoryName = _("BITCH"),
         .height = 4,
         .weight = 25,
         .description = gTorchicPokedexText,
@@ -3098,7 +3098,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_MUDKIP] =
     {
-        .categoryName = _("MUD FISH"),
+        .categoryName = _("MUD BOY"),
         .height = 4,
         .weight = 76,
         .description = gMudkipPokedexText,
