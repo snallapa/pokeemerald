@@ -10065,7 +10065,7 @@ static void Cmd_handleballthrow(void)
     if (gBattleControllerExecFlags)
         return;
 
-    CopyMon(gTestPokemon, &gEnemyParty[0], sizeof(gEnemyParty[0]));
+    CopyMon(&gTestPokemon, &gEnemyParty[0], sizeof(gEnemyParty[0]));
     gActiveBattler = gBattlerAttacker;
     gBattlerTarget = gBattlerAttacker ^ BIT_SIDE;
 
@@ -10205,7 +10205,7 @@ static void Cmd_givecaughtmon(void)
 {
     // GiveMonToPlayer(&gEnemyParty[gBattlerPartyIndexes[gBattlerAttacker ^ BIT_SIDE]])
  
-    if (GiveMonToPlayer(gTestPokemon) != MON_GIVEN_TO_PARTY)
+    if (GiveMonToPlayer(&gTestPokemon) != MON_GIVEN_TO_PARTY)
     {
         if (!ShouldShowBoxWasFullMessage())
         {
