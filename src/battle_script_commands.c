@@ -10154,6 +10154,7 @@ static void Cmd_handleballthrow(void)
 
         if (odds > 254) // mon caught
         {
+
             BtlController_EmitBallThrowAnim(0, BALL_3_SHAKES_SUCCESS);
             MarkBattlerForControllerExec(gActiveBattler);
             gBattlescriptCurrInstr = BattleScript_SuccessBallThrow;
@@ -10200,15 +10201,8 @@ static void Cmd_handleballthrow(void)
 
 static void Cmd_givecaughtmon(void)
 {
-    struct Pokemon *mon;
-    if (gBattleTypeFlags & BATTLE_TYPE_TRAINER) {
-        mon = &gEnemyParty[0];
-    } else {
-        mon = &gEnemyParty[gBattlerPartyIndexes[gBattlerAttacker ^ BIT_SIDE]];
-    }
-    
 
-    if (GiveMonToPlayer(mon) != MON_GIVEN_TO_PARTY)
+    if (GiveMonToPlayer(&gEnemyParty[0) != MON_GIVEN_TO_PARTY)
     {
         if (!ShouldShowBoxWasFullMessage())
         {
