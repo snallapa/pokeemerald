@@ -10154,7 +10154,6 @@ static void Cmd_handleballthrow(void)
 
         if (odds > 254) // mon caught
         {
-
             BtlController_EmitBallThrowAnim(0, BALL_3_SHAKES_SUCCESS);
             MarkBattlerForControllerExec(gActiveBattler);
             gBattlescriptCurrInstr = BattleScript_SuccessBallThrow;
@@ -10201,8 +10200,9 @@ static void Cmd_handleballthrow(void)
 
 static void Cmd_givecaughtmon(void)
 {
-
-    if (GiveMonToPlayer(&gEnemyParty[0]) != MON_GIVEN_TO_PARTY)
+    // GiveMonToPlayer(&gEnemyParty[gBattlerPartyIndexes[gBattlerAttacker ^ BIT_SIDE]])
+ 
+    if (GiveMonToPlayer(&gPlayerParty[0]) != MON_GIVEN_TO_PARTY)
     {
         if (!ShouldShowBoxWasFullMessage())
         {
