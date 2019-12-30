@@ -379,7 +379,7 @@ RivalsHouse_1F_Text_MayWhoAreYou: @ 81F8EC6
 	.string "Glad to meet you!\p"
 	.string "I…\n"
 	.string "I have this dream of becoming friends\l"
-	.string "with POKéMON all over the world.\p"
+	.string "with POKéMON all over the world .\p"
 	.string "I… I heard about you, {PLAYER}{KUN}, from\n"
 	.string "my dad, PROF. BIRCH.\p"
 	.string "I was hoping that you would be nice,\n"

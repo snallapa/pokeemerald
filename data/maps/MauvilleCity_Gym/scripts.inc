@@ -266,35 +266,35 @@ MauvilleCity_Gym_EventScript_GymStatue:: @ 820E175
 	end
 
 MauvilleCity_Gym_Text_GymGuideAdvice: @ 820E17F
-	.string "Hey, how's it going, CHAMPION-\n"
-	.string "bound {PLAYER}?\p"
-	.string "WATTSON, the LEADER of MAUVILLE\n"
-	.string "GYM, uses ELECTRIC-type POKéMON.\p"
+	.string "Hey, fuckin idiot!\n"
+	.string "{PLAYER}?\p"
+	.string "Welcome to MAUVILLE,\n"
+	.string "where they use electric types.\p"
 	.string "If you challenge him with WATER-type\n"
 	.string "POKéMON, he'll zap them! Bzzt!\p"
 	.string "And, he's put in switch-controlled\n"
-	.string "doors all over his GYM! Eccentric!\p"
-	.string "Hey, go for it!$"
+	.string "doors all over his GYM! Fuckin weird!\p"
+	.string "Go for it, nerd!$"
 
 MauvilleCity_Gym_Text_GymGuidePostVictory: @ 820E283
-	.string "Whoa, you're electrifying!\n"
-	.string "You've powered the door open!$"
+	.string "Fuck bro, you're shocking!\n"
+	.string "BEEP BOOP BEEP!$"
 
 MauvilleCity_Gym_Text_KirkPreBattle: @ 820E2BC
-	.string "My electric soul, it'll shatter your\n"
+	.string "BEEP BOOP BEEP\n"
 	.string "dreams whole, whoa-yeahah!$"
 
 MauvilleCity_Gym_Text_KirkDefeat: @ 820E2FC
-	.string "That was plugged in, amped up,\n"
+	.string "BEEP BOOP BEEP,\n"
 	.string "over-driven electric, man!$"
 
 MauvilleCity_Gym_Text_KirkPostBattle: @ 820E336
-	.string "POKéMON and rock, it's all about heart,\n"
+	.string "BEEP BOOP BEEP,\n"
 	.string "whoa-yeah!$"
 
 MauvilleCity_Gym_Text_ShawnPreBattle: @ 820E369
-	.string "I trained under WATTSON!\n"
-	.string "There ain't no way I'll lose easily!$"
+	.string "BEEP BOOP BEEP!\n"
+	.string "BEEP BOOP BEEP!$"
 
 MauvilleCity_Gym_Text_ShawnDefeat: @ 820E3A7
 	.string "Unplugged and turned off…$"
@@ -303,7 +303,7 @@ MauvilleCity_Gym_Text_ShawnPostBattle: @ 820E3C1
 	.string "WATTSON, our GYM LEADER, has been\n"
 	.string "around for a long, long time.\p"
 	.string "He was battling even before your\n"
-	.string "daddy was born, that tough coot.$"
+	.string "ugly daddy was born.$"
 
 MauvilleCity_Gym_Text_BenPreBattle: @ 820E443
 	.string "This GYM's got puzzles!\n"

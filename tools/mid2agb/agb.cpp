@@ -447,6 +447,8 @@ void PrintAgbTrack(std::vector<Event>& events)
     for (unsigned i = 0; events[i].type != EventType::EndOfTrack; i++)
     {
         const Event& event = events[i];
+        // printf("Event type = %d, Event time = %d, Event param1 = %d, Event param2 = %d\n", event.type, event.time, event.param1, event.param2);
+
 
         if (IsPatternBoundary(event.type))
         {
