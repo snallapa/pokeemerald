@@ -10065,7 +10065,6 @@ static void Cmd_handleballthrow(void)
     if (gBattleControllerExecFlags)
         return;
 
-    CopyMon(&gTestPokemon, &gEnemyParty[0], sizeof(gEnemyParty[0]));
     gActiveBattler = gBattlerAttacker;
     gBattlerTarget = gBattlerAttacker ^ BIT_SIDE;
 
@@ -10203,9 +10202,19 @@ static void Cmd_handleballthrow(void)
 
 static void Cmd_givecaughtmon(void)
 {
-    // GiveMonToPlayer(&gEnemyParty[gBattlerPartyIndexes[gBattlerAttacker ^ BIT_SIDE]])
- 
-    if (GiveMonToPlayer(&gTestPokemon) != MON_GIVEN_TO_PARTY)
+    struct Pokemon* p = malloc(sizeof(struct Pokemon));
+    SetMonData(p, MON_DATA_STATUS, GetMonData(&gEnemyParty[0], MON_DATA_STATUS));
+    SetMonData(p, MON_DATA_LEVEL, GetMonData(&gEnemyParty[0], MON_DATA_LEVEL));
+    SetMonData(p, MON_DATA_HP, GetMonData(&gEnemyParty[0], MON_DATA_HP));
+    SetMonData(p, MON_DATA_MAX_HP, GetMonData(&gEnemyParty[0], MON_DATA_MAX_HP));
+    SetMonData(p, MON_DATA_ATK, GetMonData(&gEnemyParty[0], MON_DATA_ATK));
+    SetMonData(p, MON_DATA_DEF, GetMonData(&gEnemyParty[0], MON_DATA_DEF));
+    SetMonData(p, MON_DATA_SPEED, GetMonData(&gEnemyParty[0], MON_DATA_SPEED));
+    SetMonData(p, MON_DATA_SPATK, GetMonData(&gEnemyParty[0], MON_DATA_SPATK));
+    SetMonData(p, MON_DATA_SPDEF, GetMonData(&gEnemyParty[0], MON_DATA_SPDEF));
+    SetMonData(p, MON_DATA_MAIL, GetMonData(&gEnemyParty[0], MON_DATA_MAIL));
+
+    if (GiveMonToPlayer(p) != MON_GIVEN_TO_PARTY)
     {
         if (!ShouldShowBoxWasFullMessage())
         {
