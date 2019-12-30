@@ -17,5 +17,6 @@ bool8 UproarWakeUpCheck(u8 battlerId);
 
 extern void (* const gBattleScriptingCommandsTable[])(void);
 extern const u8 gUnknown_0831C494[][4];
+struct Pokemon gOpponentPokemon;
 
 #endif // GUARD_BATTLE_SCRIPT_COMMANDS_H
