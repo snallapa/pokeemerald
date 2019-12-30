@@ -1,6 +1,5 @@
 #include "global.h"
 #include "battle.h"
-#include "mgba.h"
 #include "constants/battle_move_effects.h"
 #include "constants/battle_script_commands.h"
 #include "battle_message.h"
@@ -10203,7 +10202,6 @@ static void Cmd_handleballthrow(void)
 
 static void Cmd_givecaughtmon(void)
 {
-    mgba_printf(MGBA_LOG_DEBUG, "HERE");
     if (GiveMonToPlayer(&gEnemyParty[0]) != MON_GIVEN_TO_PARTY)
     {
         if (!ShouldShowBoxWasFullMessage())
