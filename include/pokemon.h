@@ -258,7 +258,7 @@ extern const u8 gStatStageRatios[][2];
 extern const u16 gLinkPlayerFacilityClasses[];
 extern const struct SpriteTemplate gUnknown_08329D98[];
 extern const s8 gNatureStatTable[][5];
-extern struct Pokemon gTestPokemon;
+extern struct Pokemon* gTestPokemon;
 
 void ZeroBoxMonData(struct BoxPokemon *boxMon);
 void ZeroMonData(struct Pokemon *mon);
