@@ -648,7 +648,6 @@ void ConvertTimes(std::vector<Event>& events)
 {
     for (Event& event : events)
     {
-        printf("Event type=%d, time=%d, param1=%d, param2=%d\n", event.type, event.time, event.param1, event.param2);
         event.time = (24 * g_clocksPerBeat * event.time) / g_midiTimeDiv;
 
         if (event.type == EventType::Note)
