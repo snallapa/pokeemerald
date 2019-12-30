@@ -10200,7 +10200,7 @@ static void Cmd_handleballthrow(void)
 
 static void Cmd_givecaughtmon(void)
 {
-    Pokemon *mon;
+    struct Pokemon *mon;
     if (gBattleTypeFlags & BATTLE_TYPE_TRAINER) {
         mon = &gEnemyParty[0];
     } else {
