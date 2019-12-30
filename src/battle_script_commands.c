@@ -58,7 +58,7 @@ extern struct MusicPlayerInfo gMPlayInfo_BGM;
 
 extern const u8* const gBattleScriptsForMoveEffects[];
 
-struct Pokemon opponentPokemon = {};
+struct Pokemon gOpponentPokemon = {};
 
 #define DEFENDER_IS_PROTECTED ((gProtectStructs[gBattlerTarget].protected) && (gBattleMoves[gCurrentMove].flags & FLAG_PROTECT_AFFECTED))
 
@@ -10065,7 +10065,7 @@ static void Cmd_handleballthrow(void)
     if (gBattleControllerExecFlags)
         return;
 
-    CopyMon(&opponentPokemon, &gEnemyParty[0], sizeof(gEnemyParty[0]));
+    CopyMon(&gOpponentPokemon, &gEnemyParty[0], sizeof(gEnemyParty[0]));
     gActiveBattler = gBattlerAttacker;
     gBattlerTarget = gBattlerAttacker ^ BIT_SIDE;
 
@@ -10205,7 +10205,7 @@ static void Cmd_givecaughtmon(void)
 {
     // GiveMonToPlayer(&gEnemyParty[gBattlerPartyIndexes[gBattlerAttacker ^ BIT_SIDE]])
  
-    if (GiveMonToPlayer(&opponentPokemon) != MON_GIVEN_TO_PARTY)
+    if (GiveMonToPlayer(&gOpponentPokemon) != MON_GIVEN_TO_PARTY)
     {
         if (!ShouldShowBoxWasFullMessage())
         {
