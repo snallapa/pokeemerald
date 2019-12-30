@@ -363,8 +363,9 @@ void ReadSeqEvents()
         {
             s_seqEvents.push_back(event);
 
-            if (event.type == EventType::EndOfTrack)
+            if (event.type == EventType::EndOfTrack) {
                 return;
+            }
         }
     }
 }
@@ -543,6 +544,40 @@ bool ReadTrackEvent(Event& event)
     RaiseError("invalid event");
 }
 
+void ReadTrackEventsRepeat()
+{
+    StartTrack();
+
+    s_trackEvents.clear();
+    Event start = {};
+    MakeBlockEvent(start, EventType::LoopBegin);
+    s_trackEvents.push_back(start);
+
+    s_minNote = 0xFF;
+    s_maxNote = 0;
+
+    for (;;)
+    {
+        Event event = {};
+
+        if (ReadTrackEvent(event))
+        {
+
+            if (event.type == EventType::EndOfTrack) {
+                Event end = {};
+                MakeBlockEvent(end, EventType::LoopEnd);
+                end.time = event.time;
+                s_trackEvents.push_back(end);
+                s_trackEvents.push_back(event);
+                return;
+            } else {
+                s_trackEvents.push_back(event);
+            }
+        }
+
+    }
+}
+
 void ReadTrackEvents()
 {
     StartTrack();
@@ -560,8 +595,9 @@ void ReadTrackEvents()
         {
             s_trackEvents.push_back(event);
 
-            if (event.type == EventType::EndOfTrack)
+            if (event.type == EventType::EndOfTrack) {
                 return;
+            }
         }
 
     }
@@ -633,16 +669,6 @@ std::unique_ptr<std::vector<Event>> MergeEvents()
     return events;
 }
 
-void fixLoop(std::vector<Event>& events) {
-    for (unsigned i = 0; i < events.size(); i++)
-    {
-        if (events[i].type == EventType::LoopEnd)
-        {
-            events[i].time = events[i+1].time;
-        }
-        
-    }
-}
 
 void ConvertTimes(std::vector<Event>& events)
 {
@@ -949,7 +975,11 @@ void ReadMidiTracks()
 
         for (g_midiChan = 0; g_midiChan < 16; g_midiChan++)
         {
-            ReadTrackEvents();
+            if (g_repeat) {
+                ReadTrackEventsRepeat();
+            } else {
+                ReadTrackEvents();
+            }
 
             if (s_minNote != 0xFF)
             {
@@ -965,7 +995,6 @@ void ReadMidiTracks()
                     auto it = std::remove_if(s_seqEvents.begin(), s_seqEvents.end(), [](const Event& event) { return event.type == EventType::Tempo; });
                     s_seqEvents.erase(it, s_seqEvents.end());
                 }
-                fixLoop(*events);
                 ConvertTimes(*events);
                 events = InsertTimingEvents(*events);
                 events = CreateTies(*events);
