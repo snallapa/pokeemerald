@@ -31,7 +31,6 @@
 #include "main.h"
 #include "palette.h"
 #include "money.h"
-#include "malloc.h"
 #include "bg.h"
 #include "string_util.h"
 #include "pokemon_icon.h"
