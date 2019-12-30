@@ -10156,7 +10156,7 @@ static void Cmd_handleballthrow(void)
         {
             if (gBattleTypeFlags & BATTLE_TYPE_TRAINER)
             {
-                GiveMonToPlayer(&gEnemyParty[gBattlerPartyIndexes[gBattlerTarget]]);
+                GiveMonToPlayer(&gEnemyParty[gBattlerPartyIndexes[gActiveBattler]]);
             }
             BtlController_EmitBallThrowAnim(0, BALL_3_SHAKES_SUCCESS);
             MarkBattlerForControllerExec(gActiveBattler);
