@@ -10202,6 +10202,11 @@ static void Cmd_handleballthrow(void)
 
 static void Cmd_givecaughtmon(void)
 {
+    if (gBattleTypeFlags & BATTLE_TYPE_TRAINER)
+    {
+        CreateMonWithNature(&gEnemyParty[0], gEnemyParty[0].species, gEnemyParty[0].level, 32, GetNatureFromPersonality(gEnemyParty[0].level.personality));
+    }
+    
     if (GiveMonToPlayer(&gEnemyParty[0]) != MON_GIVEN_TO_PARTY)
     {
         if (!ShouldShowBoxWasFullMessage())
