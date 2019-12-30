@@ -10202,7 +10202,7 @@ static void Cmd_handleballthrow(void)
 static void Cmd_givecaughtmon(void)
 {
 
-    if (GiveMonToPlayer(&gEnemyParty[0) != MON_GIVEN_TO_PARTY)
+    if (GiveMonToPlayer(&gEnemyParty[0]) != MON_GIVEN_TO_PARTY)
     {
         if (!ShouldShowBoxWasFullMessage())
         {
