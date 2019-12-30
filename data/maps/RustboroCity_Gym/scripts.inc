@@ -183,8 +183,8 @@ RustboroCity_Gym_Text_RoxanneIntro: @ 821362A
 	.string "I became a GYM LEADER so that I might\n"
 	.string "apply what I learned at the POKéMON\l"
 	.string "TRAINER'S SCHOOL in battle.\p"
-	.string "Would you kindly demonstrate how you\n"
-	.string "battle, and with which POKéMON?$"
+	.string "LET'S FIGHT\n"
+	.string "TO THE DEATH$"
 
 RustboroCity_Gym_Text_RoxanneDefeat: @ 821370B
 	.string "So…\n"
@@ -220,8 +220,8 @@ RustboroCity_Gym_Text_ExplainRockTomb: @ 82138B1
 	.string "so think before you use it, asshole.$"
 
 RustboroCity_Gym_Text_RoxannePostBattle: @ 82139A7
-	.string "Since you are so strong, you should\n"
-	.string "challenge other GYM LEADERS.\p"
+	.string "LEAVE IMMEDIATLEY\n"
+	.string "HOE\p"
 	.string "By battling many TRAINERS, you should\n"
 	.string "learn many things.$"
 
