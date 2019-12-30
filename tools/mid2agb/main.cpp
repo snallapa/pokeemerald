@@ -42,6 +42,7 @@ int g_clocksPerBeat = 1;
 bool g_exactGateTime = false;
 bool g_compressionEnabled = true;
 
+
 [[noreturn]] static void PrintUsage()
 {
     std::printf(
