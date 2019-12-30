@@ -41,6 +41,7 @@ int g_reverb = -1;
 int g_clocksPerBeat = 1;
 bool g_exactGateTime = false;
 bool g_compressionEnabled = true;
+bool g_repeat = false;
 
 
 [[noreturn]] static void PrintUsage()
@@ -181,6 +182,9 @@ int main(int argc, char** argv)
                 break;
             case 'X':
                 g_clocksPerBeat = 2;
+                break;
+            case 'F':
+                g_repeat = true;
                 break;
             default:
                 PrintUsage();
