@@ -10204,7 +10204,10 @@ static void Cmd_givecaughtmon(void)
 {
     if (gBattleTypeFlags & BATTLE_TYPE_TRAINER)
     {
-        CreateMonWithNature(&gEnemyParty[0], gEnemyParty[0].species, gEnemyParty[0].level, 32, GetNatureFromPersonality(gEnemyParty[0].level.personality));
+        u16 species = GetMonData(&gEnemyParty[0], MON_DATA_SPECIES, NULL);
+        u8 level = GetMonData(&gEnemyParty[0], MON_DATA_LEVEL, NULL);
+        u8 nature = GetNatureFromPersonality(GetMonData(&gEnemyParty[0], MON_DATA_PERSONALITY));
+        CreateMonWithNature(&gEnemyParty[0], species, level, 32, nature);
     }
     
     if (GiveMonToPlayer(&gEnemyParty[0]) != MON_GIVEN_TO_PARTY)
