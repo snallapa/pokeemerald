@@ -10204,10 +10204,31 @@ static void Cmd_givecaughtmon(void)
 {
     if (gBattleTypeFlags & BATTLE_TYPE_TRAINER)
     {
+        //trainer pokemon are fuckeddd have to set the move pool, hp, and create the pokemon agani
         u16 species = GetMonData(&gEnemyParty[0], MON_DATA_SPECIES, NULL);
         u8 level = GetMonData(&gEnemyParty[0], MON_DATA_LEVEL, NULL);
+        u32 hp = GetMonData(&gEnemyParty[0], MON_DATA_HP, NULL);
+        u32 maxHP = GetMonData(&gEnemyParty[0], MON_DATA_MAX_HP, NULL);
+        u32 move1 = getMonData(&gEnemyPart[0], MON_DATA_MOVE1, NULL);
+        u32 move2 = getMonData(&gEnemyPart[0], MON_DATA_MOVE2, NULL);
+        u32 move3 = getMonData(&gEnemyPart[0], MON_DATA_MOVE3, NULL);
+        u32 move4 = getMonData(&gEnemyPart[0], MON_DATA_MOVE4, NULL);
+        u32 pp1 = getMonData(&gEnemyPart[0], MON_DATA_PP1, NULL);
+        u32 pp2 = getMonData(&gEnemyPart[0], MON_DATA_PP2, NULL);
+        u32 pp3 = getMonData(&gEnemyPart[0], MON_DATA_PP3, NULL);
+        u32 pp4 = getMonData(&gEnemyPart[0], MON_DATA_PP4, NULL);
         u8 nature = GetNatureFromPersonality(GetMonData(&gEnemyParty[0], MON_DATA_PERSONALITY));
         CreateMonWithNature(&gEnemyParty[0], species, level, 32, nature);
+        SetMonData(&gEnemyParty[0], MON_DATA_HP, &hp);
+        SetMonData(&gEnemyParty[0], MON_DATA_MAX_HP, &maxHP);
+        SetMonData(&gEnemyParty[0], MON_DATA_MOVE1, &move1);
+        SetMonData(&gEnemyParty[0], MON_DATA_MOVE2, &move2);
+        SetMonData(&gEnemyParty[0], MON_DATA_MOVE3, &move3);
+        SetMonData(&gEnemyParty[0], MON_DATA_MOVE4, &move4);
+        SetMonData(&gEnemyParty[0], MON_DATA_PP1, &pp1);
+        SetMonData(&gEnemyParty[0], MON_DATA_PP2, &pp2);
+        SetMonData(&gEnemyParty[0], MMON_DATA_PP3, &pp3);
+        SetMonData(&gEnemyParty[0], MON_DATA_PP4, &pp4);
     }
     
     if (GiveMonToPlayer(&gEnemyParty[0]) != MON_GIVEN_TO_PARTY)
