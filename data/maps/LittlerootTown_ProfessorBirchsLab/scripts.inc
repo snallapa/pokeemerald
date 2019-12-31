@@ -289,6 +289,19 @@ LittlerootTown_ProfessorBirchsLab_EventScript_Aide:: @ 81F9F84
 	release
 	end
 
+LittlerootTown_ProfessorBirchsLab_EventScript_Test::
+	lock
+	faceplayer
+	goto_if_set FLAG_ADVENTURE_STARTED, LittlerootTown_ProfessorBirchsLab_EventScript_Test2
+	msgbox LittlerootTown_ProfessorBirchsLab_Text_BirchAwayOnFieldwork, MSGBOX_DEFAULT
+	release
+	end
+
+LittlerootTown_ProfessorBirchsLab_EventScript_Test2::
+	givemon SPECIES_CYNDAQUIL, 5, ITEM_NONE
+	release
+	end
+
 LittlerootTown_ProfessorBirchsLab_EventScript_AideAlreadyMet:: @ 81F9FA7
 	msgbox LittlerootTown_ProfessorBirchsLab_Text_BirchIsntOneForDeskWork, MSGBOX_DEFAULT
 	release
