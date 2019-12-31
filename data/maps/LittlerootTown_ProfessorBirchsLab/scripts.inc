@@ -281,7 +281,6 @@ LittlerootTown_ProfessorBirchsLab_Movement_PlayerEnterLabForJohtoStarter: @ 81F9
 LittlerootTown_ProfessorBirchsLab_EventScript_Aide:: @ 81F9F84
 	lock
 	faceplayer
-	givemon SPECIES_CYNDAQUIL, 5, ITEM_NONE
 	compare VAR_BIRCH_LAB_STATE, 3
 	goto_if_ge LittlerootTown_ProfessorBirchsLab_EventScript_AideReceivedStarter
 	goto_if_set FLAG_BIRCH_AIDE_MET, LittlerootTown_ProfessorBirchsLab_EventScript_AideAlreadyMet
@@ -1042,3 +1041,32 @@ LittlerootTown_ProfessorBirchsLab_Text_ScottAboardSSTidalCall: @ 81FBD1A
 	.string "we meet. I'll be waiting!\p"
 	.string "… … … … … …\n"
 	.string "… … … … … Click!$"
+
+LittlerootTown_ProfessorBirchsLab_EventScript_TestAide::
+	lock
+	faceplayer
+	compare VAR_BIRCH_LAB_STATE, 3
+	goto_if_ge LittlerootTown_ProfessorBirchsLab_EventScript_TestAideGet
+	msgbox LittlerootTown_ProfessorBirchsLab_Text_TestAide1, MSGBOX_DEFAULT
+	release
+	end
+
+LittlerootTown_ProfessorBirchsLab_EventScript_TestAideGet::
+	msgbox LittlerootTown_ProfessorBirchsLab_Text_TestAide2, MSGBOX_DEFAULT
+	givemon SPECIES_CYNDAQUIL, 5, ITEM_NONE
+	msgbox LittlerootTown_ProfessorBirchsLab_Text_AideReceived, MSGBOX_DEFAULT
+	release
+	end
+
+LittlerootTown_ProfessorBirchsLab_Text_AideReceived:
+	.string "{PLAYER} received the CYNDAQUIL\n"
+	.string "from this mans!$"
+
+
+LittlerootTown_ProfessorBirchsLab_Text_TestAide1:
+	.string "heyyyy\n"
+	.string "this mans isnt here\p"
+
+LittlerootTown_ProfessorBirchsLab_Text_TestAide2:
+	.string "want a pokemon??\n"
+	.string "here you go!!\p"
