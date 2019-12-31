@@ -57,6 +57,8 @@ extern struct MusicPlayerInfo gMPlayInfo_BGM;
 
 extern const u8* const gBattleScriptsForMoveEffects[];
 
+
+
 #define DEFENDER_IS_PROTECTED ((gProtectStructs[gBattlerTarget].protected) && (gBattleMoves[gCurrentMove].flags & FLAG_PROTECT_AFFECTED))
 
 // this file's functions
@@ -9886,18 +9888,51 @@ static void Cmd_handleballthrow(void)
 
 static void Cmd_givecaughtmon(void)
 {
-    if (GiveMonToPlayer(&gEnemyParty[gBattlerPartyIndexes[gBattlerAttacker ^ BIT_SIDE]]) != MON_GIVEN_TO_PARTY)
+    struct Pokemon* p = &gEnemyParty[gBattlerPartyIndexes[gBattlerAttacker ^ BIT_SIDE]];
+    if (gBattleTypeFlags & BATTLE_TYPE_TRAINER)
+    {
+        
+        //trainer pokemon are fuckeddd have to set the move pool, hp, and create the pokemon again
+        u16 species = GetMonData(p, MON_DATA_SPECIES, NULL);
+        u8 level = GetMonData(p, MON_DATA_LEVEL, NULL);
+        u32 hp = GetMonData(p, MON_DATA_HP, NULL);
+        u32 maxHP = GetMonData(p, MON_DATA_MAX_HP, NULL);
+        u32 move1 = GetMonData(p, MON_DATA_MOVE1, NULL);
+        u32 move2 = GetMonData(p, MON_DATA_MOVE2, NULL);
+        u32 move3 = GetMonData(p, MON_DATA_MOVE3, NULL);
+        u32 move4 = GetMonData(p, MON_DATA_MOVE4, NULL);
+        u32 pp1 = GetMonData(p, MON_DATA_PP1, NULL);
+        u32 pp2 = GetMonData(p, MON_DATA_PP2, NULL);
+        u32 pp3 = GetMonData(p, MON_DATA_PP3, NULL);
+        u32 pp4 = GetMonData(p, MON_DATA_PP4, NULL);
+        u32 ball = GetMonData(p, MON_DATA_POKEBALL, NULL);
+        u8 nature = GetNatureFromPersonality(GetMonData(p, MON_DATA_PERSONALITY));
+        CreateMonWithNature(p, species, level, 32, nature);
+        SetMonData(p, MON_DATA_HP, &hp);
+        SetMonData(p, MON_DATA_MAX_HP, &maxHP);
+        SetMonData(p, MON_DATA_MOVE1, &move1);
+        SetMonData(p, MON_DATA_MOVE2, &move2);
+        SetMonData(p, MON_DATA_MOVE3, &move3);
+        SetMonData(p, MON_DATA_MOVE4, &move4);
+        SetMonData(p, MON_DATA_PP1, &pp1);
+        SetMonData(p, MON_DATA_PP2, &pp2);
+        SetMonData(p, MON_DATA_PP3, &pp3);
+        SetMonData(p, MON_DATA_PP4, &pp4);
+        SetMonData(p, MON_DATA_POKEBALL, &ball);
+    }
+    
+    if (GiveMonToPlayer(p) != MON_GIVEN_TO_PARTY)
     {
         if (!ShouldShowBoxWasFullMessage())
         {
             gBattleCommunication[MULTISTRING_CHOOSER] = 0;
             StringCopy(gStringVar1, GetBoxNamePtr(VarGet(VAR_PC_BOX_TO_SEND_MON)));
-            GetMonData(&gEnemyParty[gBattlerPartyIndexes[gBattlerAttacker ^ BIT_SIDE]], MON_DATA_NICKNAME, gStringVar2);
+            GetMonData(p, MON_DATA_NICKNAME, gStringVar2);
         }
         else
         {
             StringCopy(gStringVar1, GetBoxNamePtr(VarGet(VAR_PC_BOX_TO_SEND_MON))); // box the mon was sent to
-            GetMonData(&gEnemyParty[gBattlerPartyIndexes[gBattlerAttacker ^ BIT_SIDE]], MON_DATA_NICKNAME, gStringVar2);
+            GetMonData(p, MON_DATA_NICKNAME, gStringVar2);
             StringCopy(gStringVar3, GetBoxNamePtr(GetPCBoxToSendMon())); //box the mon was going to be sent to
             gBattleCommunication[MULTISTRING_CHOOSER] = 2;
         }
@@ -9906,17 +9941,18 @@ static void Cmd_givecaughtmon(void)
             gBattleCommunication[MULTISTRING_CHOOSER]++;
     }
 
-    gBattleResults.caughtMonSpecies = GetMonData(&gEnemyParty[gBattlerPartyIndexes[gBattlerAttacker ^ BIT_SIDE]], MON_DATA_SPECIES, NULL);
-    GetMonData(&gEnemyParty[gBattlerPartyIndexes[gBattlerAttacker ^ BIT_SIDE]], MON_DATA_NICKNAME, gBattleResults.caughtMonNick);
-    gBattleResults.caughtMonBall = GetMonData(&gEnemyParty[gBattlerPartyIndexes[gBattlerAttacker ^ BIT_SIDE]], MON_DATA_POKEBALL, NULL);
+    gBattleResults.caughtMonSpecies = GetMonData(p, MON_DATA_SPECIES, NULL);
+    GetMonData(p, MON_DATA_NICKNAME, gBattleResults.caughtMonNick);
+    gBattleResults.caughtMonBall = GetMonData(p, MON_DATA_POKEBALL, NULL);
 
     gBattlescriptCurrInstr++;
 }
 
 static void Cmd_trysetcaughtmondexflags(void)
 {
-    u16 species = GetMonData(&gEnemyParty[0], MON_DATA_SPECIES, NULL);
-    u32 personality = GetMonData(&gEnemyParty[0], MON_DATA_PERSONALITY, NULL);
+    struct Pokemon* p = &gEnemyParty[gBattlerPartyIndexes[gBattlerAttacker ^ BIT_SIDE]];
+    u16 species = GetMonData(p, MON_DATA_SPECIES, NULL);
+    u32 personality = GetMonData(p, MON_DATA_PERSONALITY, NULL);
 
     if (GetSetPokedexFlag(SpeciesToNationalPokedexNum(species), FLAG_GET_CAUGHT))
     {
@@ -9931,7 +9967,8 @@ static void Cmd_trysetcaughtmondexflags(void)
 
 static void Cmd_displaydexinfo(void)
 {
-    u16 species = GetMonData(&gEnemyParty[0], MON_DATA_SPECIES, NULL);
+    struct Pokemon* p = &gEnemyParty[gBattlerPartyIndexes[gBattlerAttacker ^ BIT_SIDE]];
+    u16 species = GetMonData(p, MON_DATA_SPECIES, NULL);
 
     switch (gBattleCommunication[0])
     {
