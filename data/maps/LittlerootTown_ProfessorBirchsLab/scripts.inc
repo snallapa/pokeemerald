@@ -1065,8 +1065,8 @@ LittlerootTown_ProfessorBirchsLab_Text_AideReceived:
 
 LittlerootTown_ProfessorBirchsLab_Text_TestAide1:
 	.string "heyyyy\n"
-	.string "this mans isnt here\p"
+	.string "this mans isnt here$"
 
 LittlerootTown_ProfessorBirchsLab_Text_TestAide2:
 	.string "want a pokemon??\n"
-	.string "here you go!!\p"
+	.string "here you go!!$"
