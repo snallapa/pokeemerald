@@ -1054,7 +1054,10 @@ LittlerootTown_ProfessorBirchsLab_EventScript_TestAide::
 LittlerootTown_ProfessorBirchsLab_EventScript_TestAideGet::
 	msgbox LittlerootTown_ProfessorBirchsLab_Text_TestAide2, MSGBOX_DEFAULT
 	givemon SPECIES_CYNDAQUIL, 5, ITEM_NONE
-	msgbox LittlerootTown_ProfessorBirchsLab_Text_AideReceived, MSGBOX_DEFAULT
+	message LittlerootTown_ProfessorBirchsLab_Text_AideReceived
+	waitmessage
+	playfanfare MUS_FANFA4
+	waitfanfare
 	release
 	end
 
