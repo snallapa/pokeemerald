@@ -10209,14 +10209,14 @@ static void Cmd_givecaughtmon(void)
         u8 level = GetMonData(&gEnemyParty[0], MON_DATA_LEVEL, NULL);
         u32 hp = GetMonData(&gEnemyParty[0], MON_DATA_HP, NULL);
         u32 maxHP = GetMonData(&gEnemyParty[0], MON_DATA_MAX_HP, NULL);
-        u32 move1 = getMonData(&gEnemyPart[0], MON_DATA_MOVE1, NULL);
-        u32 move2 = getMonData(&gEnemyPart[0], MON_DATA_MOVE2, NULL);
-        u32 move3 = getMonData(&gEnemyPart[0], MON_DATA_MOVE3, NULL);
-        u32 move4 = getMonData(&gEnemyPart[0], MON_DATA_MOVE4, NULL);
-        u32 pp1 = getMonData(&gEnemyPart[0], MON_DATA_PP1, NULL);
-        u32 pp2 = getMonData(&gEnemyPart[0], MON_DATA_PP2, NULL);
-        u32 pp3 = getMonData(&gEnemyPart[0], MON_DATA_PP3, NULL);
-        u32 pp4 = getMonData(&gEnemyPart[0], MON_DATA_PP4, NULL);
+        u32 move1 = getMonData(&gEnemyParty[0], MON_DATA_MOVE1, NULL);
+        u32 move2 = getMonData(&gEnemyParty[0], MON_DATA_MOVE2, NULL);
+        u32 move3 = getMonData(&gEnemyParty[0], MON_DATA_MOVE3, NULL);
+        u32 move4 = getMonData(&gEnemyParty[0], MON_DATA_MOVE4, NULL);
+        u32 pp1 = getMonData(&gEnemyParty[0], MON_DATA_PP1, NULL);
+        u32 pp2 = getMonData(&gEnemyParty[0], MON_DATA_PP2, NULL);
+        u32 pp3 = getMonData(&gEnemyParty[0], MON_DATA_PP3, NULL);
+        u32 pp4 = getMonData(&gEnemyParty[0], MON_DATA_PP4, NULL);
         u8 nature = GetNatureFromPersonality(GetMonData(&gEnemyParty[0], MON_DATA_PERSONALITY));
         CreateMonWithNature(&gEnemyParty[0], species, level, 32, nature);
         SetMonData(&gEnemyParty[0], MON_DATA_HP, &hp);
@@ -10227,7 +10227,7 @@ static void Cmd_givecaughtmon(void)
         SetMonData(&gEnemyParty[0], MON_DATA_MOVE4, &move4);
         SetMonData(&gEnemyParty[0], MON_DATA_PP1, &pp1);
         SetMonData(&gEnemyParty[0], MON_DATA_PP2, &pp2);
-        SetMonData(&gEnemyParty[0], MMON_DATA_PP3, &pp3);
+        SetMonData(&gEnemyParty[0], MON_DATA_PP3, &pp3);
         SetMonData(&gEnemyParty[0], MON_DATA_PP4, &pp4);
     }
     
