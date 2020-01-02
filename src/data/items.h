@@ -4884,4 +4884,16 @@ const struct Item gItems[] =
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = 0,
     },
+
+    [ITEM_TRADE_STONE] =
+    {
+        .name = _("TRADE STONE"),
+        .itemId = ITEM_TRADE_STONE,
+        .price = 2100,
+        .description = sTradeStoneDesc,
+        .pocket = POCKET_ITEMS,
+        .type = 1,
+        .fieldUseFunc = ItemUseOutOfBattle_EvolutionStone,
+        .secondaryId = 0,
+    },
 };
