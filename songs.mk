@@ -252,6 +252,9 @@ $(MID_SUBDIR)/pissy.s: %.s: %.mid
 $(MID_SUBDIR)/bop.s: %.s: %.mid
 	$(MID) $< $@ -E -R$(STD_REVERB) -G019 -V080
 
+$(MID_SUBDIR)/roxanne.s: %.s: %.mid
+	$(MID) $< $@ -E -R$(STD_REVERB) -G019 -V080 -F
+
 $(MID_SUBDIR)/falls_down.s: %.s: %.mid
 	$(MID) $< $@ -E -R$(STD_REVERB) -G019 -V080
 

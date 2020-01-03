@@ -615,6 +615,7 @@ gSongTable:: @ 86B49F0
 	song falls_down, 0, 0
 	song bop, 0, 0
 	song hitr, 0, 0
+	song roxanne, 0, 0
 
 	.align 2
 dummy_song_header: @ 86B5D00
