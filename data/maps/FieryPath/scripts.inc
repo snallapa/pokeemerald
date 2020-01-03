@@ -30,7 +30,7 @@ FieryPath_EventScript_JaelenGive::
 
 
 FieryPath_Text_JaelenIntro:
-	.string "What's a young lad like you \ndoing in this cave?\p"
+	.string "What's a lad like you \ndoing in this cave?\p"
 	.string "Looking for a battle youngblood?$"
 
 FieryPath_Text_JaelenGive:
