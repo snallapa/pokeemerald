@@ -962,13 +962,13 @@ LittlerootTown_EventScript_GiveRunningShoes:: @ 81E8693
 
 LittlerootTown_Text_OurNewHomeLetsGoInside: @ 81E86BC
 	.string "MOM: {PLAYER}, we're here, honey!\p"
-	.string "It must be tiring sitting back there with our shit\n"
-	.string "in the moving truck. Lmao I can't believe\p"
-	.string "I actually made your dumbass do that.\p"
-	.string "How do you like it?\n"
+	.string "It must be tiring sitting back there with\n"
+	.string "our shit in the moving truck.\p"
+	.string " Lmao I can't believe I made your\p"
+	.string "dumbass do that.\n"
 	.string "This is our new shithole!\p"
-	.string "It has a southern Florida feel, but it seems to be\n"
-	.string "an easy place to live, don't you think?\p"
+	.string "It has a northern Florida feel,\n"
+	.string "but it seems an easy place to live, no?\p"
 	.string "And, you get your own room, {PLAYER}!\n"
 	.string "Let's go inside.$"
 
@@ -987,15 +987,15 @@ LittlerootTown_Text_WearTheseRunningShoes: @ 81E87F0
 	.string "They'll put some crack in your ass!$"
 
 LittlerootTown_Text_SwitchShoesWithRunningShoes: @ 81E8925
-	.string "{PLAYER} switched shoes with the\n"
-	.string "RUNNING SHOES.$"
+	.string "{PLAYER} put on the\n"
+	.string "RED OCTOBERS.$"
 
 LittlerootTown_Text_ExplainRunningShoes: @ 81E894F
 	.string "MOM: {PLAYER}, those shoes came with\n"
 	.string "instructions.\p"
 	.string "“Press the B Button while wearing these\n"
-	.string "RUNNING SHOES to run extra-fast!\p"
-	.string "“Slip on these RUNNING SHOES and race\n"
+	.string "RED OCTOBERS to run fast!\p"
+	.string "“Slip on these RED OCTOBERS and race\n"
 	.string "in the great outdoors!”$"
 
 LittlerootTown_Text_ComeHomeIfAnythingHappens: @ 81E8A03
@@ -1005,7 +1005,7 @@ LittlerootTown_Text_ComeHomeIfAnythingHappens: @ 81E8A03
 	.string "POKéMON now…\l"
 	.string "Your father will be pissed off.\p"
 	.string "…But please be careful.\n"
-	.string "If anything happens, you can come home.\p"
+	.string "If anything happens, don't come home.\p"
 	.string "Go on, go get them, you asshole!$"
 
 LittlerootTown_Text_CanUsePCToStoreItems: @ 81E8ACF
@@ -1016,7 +1016,7 @@ LittlerootTown_Text_CanUsePCToStoreItems: @ 81E8ACF
 LittlerootTown_Text_BirchSpendsDaysInLab: @ 81E8B25
 	.string "PROF. BIRCH spends days in his LAB\n"
 	.string "studying, then he'll suddenly go out in\l"
-	.string "the wild to do more research…\p"
+	.string "the wild to do more masturbating..\p"
 	.string "When does PROF. BIRCH spend time\n"
 	.string "at home?$"
 
@@ -1048,7 +1048,7 @@ LittlerootTown_Text_GoodLuckCatchingPokemon: @ 81E8D07
 
 LittlerootTown_Text_TownSign: @ 81E8D32
 	.string "LITTLEROOT TOWN\n"
-	.string "“A town that has vibes like South Florida.”$"
+	.string "“A town that has vibes like North Florida.”$"
 
 LittlerootTown_Text_ProfBirchsLab: @ 81E8D69
 	.string "PROF. BIRCH'S POKéMON LAB$"

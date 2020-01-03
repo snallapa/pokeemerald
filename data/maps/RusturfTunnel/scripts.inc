@@ -440,16 +440,17 @@ RusturfTunnel_Text_ComeAndGetSome: @ 822D1C8
 	.string "Come and get some, then!$"
 
 RusturfTunnel_Text_Peeko: @ 822D1F7
-	.string "PEEKO: Pii pihyoh!$"
+	.string "PEEKO: Fuck dis smelly man bruh!$"
 
 RusturfTunnel_Text_GruntIntro: @ 822D20A
 	.string "Grah, keelhaul it all!\p"
 	.string "That hostage POKéMON turned out to\n"
-	.string "be worthless!\p"
+	.string "be a piece of shit!\p"
 	.string "And to think I made a getaway…\n"
 	.string "In this tunnel to nowhere!\p"
 	.string "Hey! You!\n"
-	.string "So you want to battle me?$"
+	.string "Let me beat your ass so\n"
+	.string "I don't hate myself.$"
 
 RusturfTunnel_Text_GruntDefeat: @ 822D2B0
 	.string "Urrrggh! My career in crime comes to\n"
@@ -460,7 +461,7 @@ RusturfTunnel_Text_GruntTakePackage: @ 822D2E1
 	.string "The BOSS told me this would be a\n"
 	.string "slick-and-easy job to pull.\p"
 	.string "All I had to do was steal some package\n"
-	.string "from DEVON.\p"
+	.string "from that DEVON corp.\p"
 	.string "Tch!\n"
 	.string "You want it back that badly, take it!$"
 
@@ -478,23 +479,23 @@ RusturfTunnel_Text_ThankYouLetsGoHomePeeko: @ 822D3BA
 	.string "I sincerely thank you!\p"
 	.string "Now, if there's anything that troubles\n"
 	.string "you, don't hesitate to tell me!\p"
-	.string "You can usually find me in my cottage\n"
+	.string "Find me in my very nice cottage\n"
 	.string "by the sea near PETALBURG WOODS.\p"
-	.string "Come, PEEKO, we should make our way\n"
-	.string "home.\p"
-	.string "PEEKO: Pihyoh!$"
+	.string "I'm definitley not luring a child\n"
+	.string "into my home. Ahaha haha ha.\p"
+	.string "PEEKO: Fuck dis shit bruh.$"
 
 RusturfTunnel_Text_WhyCantTheyKeepDigging: @ 822D510
 	.string "… …\p"
 	.string "Why can't they keep digging?\n"
 	.string "Is the bedrock too hard?\p"
-	.string "My beloved awaits me in VERDANTURF\n"
+	.string "My bitch awaits me in VERDANTURF\n"
 	.string "TOWN just beyond here…\p"
 	.string "If RUSTBORO and VERDANTURF were\n"
 	.string "joined by this tunnel, I could visit\l"
 	.string "her every day…\p"
-	.string "But this…\n"
-	.string "What am I to do?$"
+	.string "I'm so horny, beating my meat daily.\n"
+	.string "What do I do?$"
 
 RusturfTunnel_Text_ToGetToVerdanturf: @ 822D5F3
 	.string "To get from RUSTBORO to VERDANTURF,\n"
@@ -517,6 +518,7 @@ RusturfTunnel_Text_WandaReunion: @ 822D745
 	.string "WANDA!\n"
 	.string "Now I can see you anytime!\p"
 	.string "WANDA: That's…wonderful.\p"
+	.string "WANDA: ehehe heh.\p"
 	.string "Please, take some rest at my home.$"
 
 RusturfTunnel_Text_BoyfriendOnOtherSideOfRock: @ 822D7A3
