@@ -262,7 +262,6 @@
 #define EVENT_OBJ_GFX_VAR_E 254
 #define EVENT_OBJ_GFX_VAR_F 255
 
-
 #define SHADOW_SIZE_S   0
 #define SHADOW_SIZE_M   1
 #define SHADOW_SIZE_L   2

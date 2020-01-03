@@ -329,7 +329,6 @@ const struct EventObjectGraphicsInfo *const gEventObjectGraphicsInfoPointers[] =
     [EVENT_OBJ_GFX_UNUSED_SQUIRTLE_DOLL] =     &gEventObjectGraphicsInfo_UnusedSquirtleDoll,
     [EVENT_OBJ_GFX_UNUSED_WOOPER_DOLL] =       &gEventObjectGraphicsInfo_UnusedWooperDoll,
     [EVENT_OBJ_GFX_UNUSED_PIKACHU_DOLL] =      &gEventObjectGraphicsInfo_UnusedPikachuDoll,
-    [EVENT_OBJ_GFX_UNUSED_PORYGON2_DOLL] =     &gEventObjectGraphicsInfo_UnusedPorygon2Doll,
     [EVENT_OBJ_GFX_CUTTABLE_TREE] =            &gEventObjectGraphicsInfo_CuttableTree,
     [EVENT_OBJ_GFX_MART_EMPLOYEE] =            &gEventObjectGraphicsInfo_MartEmployee,
     [EVENT_OBJ_GFX_ROOFTOP_SALE_WOMAN] =       &gEventObjectGraphicsInfo_RooftopSaleWoman,
