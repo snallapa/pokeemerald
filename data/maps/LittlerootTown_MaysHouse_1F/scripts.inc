@@ -370,7 +370,7 @@ RivalsHouse_1F_Text_ShouldGoHomeEverySoOften: @ 81F8E01
 
 RivalsHouse_1F_Text_MayWhoAreYou: @ 81F8EC6
 	.string "Huh?\n"
-	.string "Who… Who are you?\p"
+	.string "Who… Who the fuck are you?\p"
 	.string "… … … … … … … …\n"
 	.string "… … … … … … … …\p"
 	.string "Oh, you're {PLAYER}{KUN}.\n"
@@ -381,7 +381,7 @@ RivalsHouse_1F_Text_MayWhoAreYou: @ 81F8EC6
 	.string "I have this dream of becoming friends\l"
 	.string "with POKéMON all over the world .\p"
 	.string "I… I heard about you, {PLAYER}{KUN}, from\n"
-	.string "my dad, PROF. BIRCH.\p"
+	.string "my alcoholic dad, PROF. BIRCH.\p"
 	.string "I was hoping that you would be nice,\n"
 	.string "{PLAYER}{KUN}, and that we could be friends.\p"
 	.string "Oh, this is silly, isn't it?\n"
