@@ -11967,7 +11967,7 @@ const struct Trainer gTrainers[] = {
         .aiFlags = 0,
         .partySize = ARRAY_COUNT(sParty_May16),
         .party = {.NoItemDefaultMoves = sParty_May16},
-    }
+    },
 
     [TRAINER_JAELEN] =
     {
