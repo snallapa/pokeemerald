@@ -170,6 +170,7 @@ const u32 gEventObjectPic_Skitty[] = INCBIN_U32("graphics/event_objects/pics/pok
 const u32 gEventObjectPic_Kecleon[] = INCBIN_U32("graphics/event_objects/pics/pokemon/kecleon.4bpp");
 const u32 gEventObjectPic_Rayquaza[] = INCBIN_U32("graphics/event_objects/pics/pokemon/rayquaza.4bpp");
 const u32 gEventObjectPic_RayquazaStill[] = INCBIN_U32("graphics/event_objects/pics/pokemon/rayquaza_still.4bpp");
+const u32 gEventObjectPic_SnorlaxStill[] = INCBIN_U32("graphics/event_objects/pics/pokemon/snorlax_still.4bpp");
 const u32 gEventObjectPic_Zigzagoon[] = INCBIN_U32("graphics/event_objects/pics/pokemon/zigzagoon.4bpp");
 const u32 gEventObjectPic_Pikachu[] = INCBIN_U32("graphics/event_objects/pics/pokemon/pikachu.4bpp");
 const u32 gEventObjectPic_Azumarill[] = INCBIN_U32("graphics/event_objects/pics/pokemon/azumarill.4bpp");

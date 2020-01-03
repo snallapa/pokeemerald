@@ -1805,6 +1805,18 @@ const struct SpriteFrameImage gEventObjectPicTable_Rayquaza[] = {
     overworld_frame(gEventObjectPic_Rayquaza, 8, 8, 4),
 };
 
+const struct SpriteFrameImage gEventObjectPicTable_SnorlaxStill[] = {
+    obj_frame_tiles(gEventObjectPic_SnorlaxStill),
+    obj_frame_tiles(gEventObjectPic_SnorlaxStill),
+    obj_frame_tiles(gEventObjectPic_SnorlaxStill),
+    obj_frame_tiles(gEventObjectPic_SnorlaxStill),
+    obj_frame_tiles(gEventObjectPic_SnorlaxStill),
+    obj_frame_tiles(gEventObjectPic_SnorlaxStill),
+    obj_frame_tiles(gEventObjectPic_SnorlaxStill),
+    obj_frame_tiles(gEventObjectPic_SnorlaxStill),
+    obj_frame_tiles(gEventObjectPic_SnorlaxStill),
+};
+
 const struct SpriteFrameImage gEventObjectPicTable_RayquazaStill[] = {
     obj_frame_tiles(gEventObjectPic_RayquazaStill),
     obj_frame_tiles(gEventObjectPic_RayquazaStill),

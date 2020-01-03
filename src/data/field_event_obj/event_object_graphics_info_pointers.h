@@ -40,6 +40,7 @@ const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_SchoolKidM;
 const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_Maniac;
 const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_HexManiac;
 const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_Rayquaza1;
+const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_Snorlax;
 const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_SwimmerM;
 const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_SwimmerF;
 const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_BlackBelt;
@@ -486,6 +487,7 @@ const struct EventObjectGraphicsInfo *const gEventObjectGraphicsInfoPointers[] =
     [EVENT_OBJ_GFX_LINK_RS_MAY] =              &gEventObjectGraphicsInfo_RubySapphireMay,
     [EVENT_OBJ_GFX_LUGIA] =                    &gEventObjectGraphicsInfo_Lugia,
     [EVENT_OBJ_GFX_HOOH] =                     &gEventObjectGraphicsInfo_HoOh,
+    [EVENT_OBJ_GFX_SNORLAX] =                  &gEventObjectGraphicsInfo_Snorlax,
 };
 
 const struct EventObjectGraphicsInfo *const gMauvilleOldManGraphicsInfoPointers[] = {

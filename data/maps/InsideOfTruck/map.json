@@ -52,6 +52,19 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "InsideOfTruck_EventScript_MovingBox",
       "flag": "0"
+    },
+    {
+      "graphics_id": "EVENT_OBJ_GFX_AQUA_MEMBER_M",
+      "x": 1,
+      "y": 1,
+      "elevation": 8,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "0",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Grunt_EventScript",
+      "flag": "0"
     }
   ],
   "warp_events": [
