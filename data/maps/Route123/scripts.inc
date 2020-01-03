@@ -175,6 +175,35 @@ Route123_EventScript_RematchFernando:: @ 81F6407
 	msgbox Route123_Text_FernandoPostRematch, MSGBOX_AUTOCLOSE
 	end
 
+Route123_EventScript_Florence::
+	trainerbattle_single TRAINER_Florence, Route123_Text_FlorenceIntro, Route123_Text_FlorenceDefeated, Route123_EventScript_FlorenceGive
+	end
+
+Route123_EventScript_FlorenceGive::
+	lockall
+	msgbox Route123_Text_FlorenceGive, MSGBOX_DEFAULT
+	givemon SPECIES_CHIKORITA, 5, ITEM_NONE
+	playfanfare MUS_FANFA4
+	message Route123_Text_ObtainedCyndaquil
+	waitmessage
+	waitfanfare
+	releaseall
+	end
+
+Route123_Text_FlorenceIntro:
+	.string "How very nice to meet you \ngood sir\p"
+	.string "Beat me to get a nice gift!!$"
+
+Route123_Text_JaelenGive:
+	.string "motherfucker I raised this\n"
+	.string "for so long too$"
+
+Route123_Text_JaelenDefeated:
+	.string "Oh dear....$"
+
+Route123_Text_ObtainedCyndaquil:
+	.string "{PLAYER} obtained a CHIKORITA.$"
+
 Route123_Text_LoveGrassMonsHaveAny: @ 81F641E
 	.string "I love GRASS-type POKéMON!\p"
 	.string "Do you have any GRASS-type POKéMON?$"

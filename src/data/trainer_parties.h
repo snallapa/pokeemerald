@@ -12465,3 +12465,34 @@ static const struct TrainerMonItemCustomMoves sParty_Jaelen[] = {
     .moves = MOVE_SUNNY_DAY, MOVE_FLAMETHROWER, MOVE_NONE, MOVE_NONE
     }
 };
+
+static const struct TrainerMonItemCustomMoves sParty_Florence[] = {
+    {
+    .iv = 255,
+    .lvl = 28,
+    .species = SPECIES_PARASECT,
+    .heldItem = ITEM_NONE,
+    .moves = MOVE_GIGA_DRAIN, MOVE_SWORDS_DANCE, MOVE_STUN_SPORE, MOVE_NONE
+    },
+    {
+    .iv = 255,
+    .lvl = 31,
+    .species = SPECIES_EXEGGUTOR,
+    .heldItem = ITEM_NONE,
+    .moves = MOVE_SLEEP_POWDER, MOVE_STUN_SPORE, MOVE_SOLAR_BEAM, MOVE_NONE
+    },
+    {
+    .iv = 255,
+    .lvl = 33,
+    .species = SPECIES_JUMPLUFF,
+    .heldItem = ITEM_NONE,
+    .moves = MOVE_ENCORE, MOVE_LEECH_SEED, MOVE_SUBSTITUTE, MOVE_SLEEP_POWDER
+    },
+    {
+    .iv = 255,
+    .lvl = 35,
+    .species = SPECIES_MEGANIUM,
+    .heldItem = ITEM_LEFTOVERS,
+    .moves = MOVE_SYNTHESIS, MOVE_LIGHT_SCREEN, MOVE_SOLAR_BEAM, MOVE_COUNTER
+    }
+};

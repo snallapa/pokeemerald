@@ -858,7 +858,7 @@
 #define TRAINER_MAY_16                      854
 #define TRAINER_JAELEN                      855
 #define TRAINER_JAYSON                      856
-#define TRAINER_KEMBA                       857
+#define TRAINER_FLORENCE                    857
 
 #define TRAINERS_COUNT                      858
 

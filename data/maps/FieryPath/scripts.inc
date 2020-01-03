@@ -18,7 +18,6 @@ FieryPath_EventScript_Jaelen::
 
 FieryPath_EventScript_JaelenGive::
 	lockall
-	setvar VAR_TEMP_1, SPECIES_CYNDAQUIL
 	msgbox FieryPath_Text_JaelenGive, MSGBOX_DEFAULT
 	givemon SPECIES_CYNDAQUIL, 5, ITEM_NONE
 	playfanfare MUS_FANFA4
