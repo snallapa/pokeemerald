@@ -11981,7 +11981,7 @@ const struct Trainer gTrainers[] = {
         .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT | AI_SCRIPT_CHECK_VIABILITY,
         .partySize = ARRAY_COUNT(sParty_Jaelen),
         .party = {.ItemCustomMoves = sParty_Jaelen},
-    }
+    },
 
     [TRAINER_FLORENCE] =
     {
