@@ -194,11 +194,11 @@ Route123_Text_FlorenceIntro:
 	.string "How very nice to meet you \ngood sir\p"
 	.string "Beat me to get a nice gift!!$"
 
-Route123_Text_JaelenGive:
+Route123_Text_FlorenceGive:
 	.string "motherfucker I raised this\n"
 	.string "for so long too$"
 
-Route123_Text_JaelenDefeated:
+Route123_Text_FlorenceDefeated:
 	.string "Oh dear....$"
 
 Route123_Text_ObtainedCyndaquil:
