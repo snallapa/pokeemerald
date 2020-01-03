@@ -40,6 +40,7 @@ const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_SchoolKidM;
 const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_Maniac;
 const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_HexManiac;
 const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_Rayquaza1;
+const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_Snorlax;
 const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_SwimmerM;
 const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_SwimmerF;
 const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_BlackBelt;
@@ -328,7 +329,7 @@ const struct EventObjectGraphicsInfo *const gEventObjectGraphicsInfoPointers[] =
     [EVENT_OBJ_GFX_UNUSED_SQUIRTLE_DOLL] =     &gEventObjectGraphicsInfo_UnusedSquirtleDoll,
     [EVENT_OBJ_GFX_UNUSED_WOOPER_DOLL] =       &gEventObjectGraphicsInfo_UnusedWooperDoll,
     [EVENT_OBJ_GFX_UNUSED_PIKACHU_DOLL] =      &gEventObjectGraphicsInfo_UnusedPikachuDoll,
-    [EVENT_OBJ_GFX_UNUSED_PORYGON2_DOLL] =     &gEventObjectGraphicsInfo_UnusedPorygon2Doll,
+    [EVENT_OBJ_GFX_SNORLAX] =                  &gEventObjectGraphicsInfo_Snorlax,
     [EVENT_OBJ_GFX_CUTTABLE_TREE] =            &gEventObjectGraphicsInfo_CuttableTree,
     [EVENT_OBJ_GFX_MART_EMPLOYEE] =            &gEventObjectGraphicsInfo_MartEmployee,
     [EVENT_OBJ_GFX_ROOFTOP_SALE_WOMAN] =       &gEventObjectGraphicsInfo_RooftopSaleWoman,
@@ -485,7 +486,7 @@ const struct EventObjectGraphicsInfo *const gEventObjectGraphicsInfoPointers[] =
     [EVENT_OBJ_GFX_LINK_RS_BRENDAN] =          &gEventObjectGraphicsInfo_RubySapphireBrendan,
     [EVENT_OBJ_GFX_LINK_RS_MAY] =              &gEventObjectGraphicsInfo_RubySapphireMay,
     [EVENT_OBJ_GFX_LUGIA] =                    &gEventObjectGraphicsInfo_Lugia,
-    [EVENT_OBJ_GFX_HOOH] =                     &gEventObjectGraphicsInfo_HoOh,
+    [EVENT_OBJ_GFX_HOOH] =                     &gEventObjectGraphicsInfo_HoOh
 };
 
 const struct EventObjectGraphicsInfo *const gMauvilleOldManGraphicsInfoPointers[] = {
