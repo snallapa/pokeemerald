@@ -58,3 +58,9 @@ InsideOfTruck_Text_BoxPrintedWithMonLogo: @ 823BF75
 	.string "It's a POKéMON brand moving and\n"
 	.string "delivery service.$"
 
+Grunt_EventScript:: @ 823BF6C
+	msgbox Grunt_Text, MSGBOX_SIGN
+	end
+
+Grunt_Text:
+	.string "Fuck you lookin at?$"
