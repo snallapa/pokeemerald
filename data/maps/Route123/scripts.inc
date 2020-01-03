@@ -176,7 +176,7 @@ Route123_EventScript_RematchFernando:: @ 81F6407
 	end
 
 Route123_EventScript_Florence::
-	trainerbattle_single TRAINER_Florence, Route123_Text_FlorenceIntro, Route123_Text_FlorenceDefeated, Route123_EventScript_FlorenceGive
+	trainerbattle_single TRAINER_FLORENCE, Route123_Text_FlorenceIntro, Route123_Text_FlorenceDefeated, Route123_EventScript_FlorenceGive
 	end
 
 Route123_EventScript_FlorenceGive::
