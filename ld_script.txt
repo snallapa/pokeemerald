@@ -1228,6 +1228,7 @@ SECTIONS {
         sound/songs/midi/falls_down.o(.rodata);
         sound/songs/midi/bop.o(.rodata);
         sound/songs/midi/hitr.o(.rodata);
+        sound/songs/midi/roxanne.o(.rodata);
     } =0
 
     lib_rodata :
