@@ -12496,3 +12496,34 @@ static const struct TrainerMonItemCustomMoves sParty_Florence[] = {
     .moves = MOVE_SYNTHESIS, MOVE_LIGHT_SCREEN, MOVE_SOLAR_BEAM, MOVE_COUNTER
     }
 };
+
+static const struct TrainerMonItemCustomMoves sParty_Jayson[] = {
+    {
+    .iv = 255,
+    .lvl = 35,
+    .species = SPECIES_POLIWRATH,
+    .heldItem = ITEM_NONE,
+    .moves = MOVE_BELLY_DRUM, MOVE_BRICK_BREAK, MOVE_SUBSTITUTE, MOVE_NONE
+    },
+    {
+    .iv = 255,
+    .lvl = 36,
+    .species = SPECIES_SLOWBRO,
+    .heldItem = ITEM_NONE,
+    .moves = MOVE_FOCUS_PUNCH, MOVE_SURF, MOVE_PSYCHIC, MOVE_NONE
+    },
+    {
+    .iv = 255,
+    .lvl = 38,
+    .species = SPECIES_CLOYSTER,
+    .heldItem = ITEM_NONE,
+    .moves = MOVE_SPIKES, MOVE_ICE_BEAM, MOVE_EXPLOSION, MOVE_NONE
+    },
+    {
+    .iv = 255,
+    .lvl = 40,
+    .species = SPECIES_FERALIGATR,
+    .heldItem = ITEM_LEFTOVERS,
+    .moves = MOVE_EARTHQUAKE, MOVE_FOCUS_PUNCH, MOVE_REST, MOVE_NONE
+    }
+};

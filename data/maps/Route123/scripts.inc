@@ -184,7 +184,7 @@ Route123_EventScript_FlorenceGive::
 	msgbox Route123_Text_FlorenceGive, MSGBOX_DEFAULT
 	givemon SPECIES_CHIKORITA, 5, ITEM_NONE
 	playfanfare MUS_FANFA4
-	message Route123_Text_ObtainedCyndaquil
+	message Route123_Text_ObtainedChikorita
 	waitmessage
 	waitfanfare
 	releaseall
@@ -201,7 +201,7 @@ Route123_Text_FlorenceGive:
 Route123_Text_FlorenceDefeated:
 	.string "Oh dear....$"
 
-Route123_Text_ObtainedCyndaquil:
+Route123_Text_ObtainedChikorita:
 	.string "{PLAYER} obtained a CHIKORITA.$"
 
 Route123_Text_LoveGrassMonsHaveAny: @ 81F641E

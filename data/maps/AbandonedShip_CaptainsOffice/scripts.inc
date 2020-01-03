@@ -23,6 +23,35 @@ AbandonedShip_CaptainsOffice_EventScript_ThisIsSSCactus:: @ 823881A
 	release
 	end
 
+AbandonedShip_CaptainsOffice_EventScript_Jayson::
+	trainerbattle_single TRAINER_Jayson, AbandonedShip_CaptainsOffice_Text_JaysonIntro, AbandonedShip_CaptainsOffice_Text_JaysonDefeated, AbandonedShip_CaptainsOffice_EventScript_JaysonGive
+	end
+
+AbandonedShip_CaptainsOffice_EventScript_JaysonGive::
+	lockall
+	msgbox AbandonedShip_CaptainsOffice_Text_JaysonGive, MSGBOX_DEFAULT
+	givemon SPECIES_TOTODILE, 5, ITEM_NONE
+	playfanfare MUS_FANFA4
+	message AbandonedShip_CaptainsOffice_Text_ObtainedTotodile
+	waitmessage
+	waitfanfare
+	releaseall
+	end
+
+
+AbandonedShip_CaptainsOffice_Text_JaysonIntro:
+	.string "I have been at sea \nfor way too long?\p"
+	.string "I am crazy in the brain!$"
+
+AbandonedShip_CaptainsOffice_Text_JaysonGive:
+	.string "You deserved this$"
+
+AbandonedShip_CaptainsOffice_Text_JaysonDefeated:
+	.string "I have to walk to the\n plank now$"
+
+AbandonedShip_CaptainsOffice_Text_ObtainedTotodile: 
+	.string "{PLAYER} obtained a TOTODILE.$"
+
 AbandonedShip_CaptainsOffice_Text_NoSuccessFindingScanner: @ 8238824
 	.string "I'm investigating this ship on behalf\n"
 	.string "of CAPT. STERN.\p"
