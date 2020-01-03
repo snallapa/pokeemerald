@@ -11968,4 +11968,18 @@ const struct Trainer gTrainers[] = {
         .partySize = ARRAY_COUNT(sParty_May16),
         .party = {.NoItemDefaultMoves = sParty_May16},
     }
+
+    [TRAINER_JAELEN] =
+    {
+        .partyFlags = 0,
+        .trainerClass = TRAINER_CLASS_GENTLEMAN,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = TRAINER_PIC_GENTLEMAN,
+        .trainerName = _("JAELEN"),
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT | AI_SCRIPT_CHECK_VIABILITY,
+        .partySize = ARRAY_COUNT(sParty_Jaelen),
+        .party = {.ItemCustomMoves = sParty_Jaelen},
+    }
 };

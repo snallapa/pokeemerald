@@ -12,3 +12,18 @@ FieryPath_EventScript_MoveScottToFallarbor:: @ 8230F37
 	clearflag FLAG_HIDE_FALLARBOR_TOWN_BATTLE_TENT_SCOTT
 	return
 
+FieryPath_EventScript_Jaelen::
+	trainerbattle_single TRAINER_JAELEN, FieryPath_Text_JaelenIntro, FieryPath_Text_JaelenDefeated
+	msgbox FieryPath_Text_JaelenGive, MSGBOX_DEFAULT
+	givemon SPECIES_CYNDAQUIL, 5, ITEM_NONE
+
+FieryPath_Text_JaelenIntro:
+	.string "\n"
+	.string "$"
+
+FieryPath_Text_JaelenGive:
+	.string "Take this,\n"
+	.string "it's a doggone keeper$"
+
+FieryPath_Text_JaelenDefeated:
+	.string "Well... Fuck$"

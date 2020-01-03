@@ -12435,25 +12435,33 @@ static const struct TrainerMonNoItemDefaultMoves sParty_May16[] = {
     }
 };
 
-static const struct TrainerMonNoItemDefaultMoves sParty_Jaelen[] = {
+static const struct TrainerMonItemCustomMoves sParty_Jaelen[] = {
     {
     .iv = 255,
-    .lvl = 5,
+    .lvl = 30,
     .species = SPECIES_NINETALES,
+    .heldItem = ITEM_NONE,
+    .moves = MOVE_FIRE_BLAST, MOVE_GRUDGE, MOVE_SUBSTITUTE, MOVE_WILL_O_WISP
     },
     {
     .iv = 255,
-    .lvl = 5,
+    .lvl = 32,
     .species = SPECIES_MAGCARGO,
+    .heldItem = ITEM_NONE,
+    .moves = MOVE_FLAMETHROWER, MOVE_YAWN, MOVE_FACADE, MOVE_NONE
     },
     {
     .iv = 255,
-    .lvl = 5,
+    .lvl = 32,
     .species = SPECIES_HOUNDOOM,
+    .heldItem = ITEM_NONE,
+    .moves = MOVE_CRUNCH, MOVE_PURSUIT, MOVE_FLAMETHROWER, MOVE_NONE
     },
     {
     .iv = 255,
-    .lvl = 5,
+    .lvl = 35,
     .species = SPECIES_TYPHLOSION,
+    .heldItem = ITEM_LEFTOVERS,
+    .moves = MOVE_SUNNY_DAY, MOVE_FLAMETHROWER, MOVE_NONE, MOVE_NONE
     }
 };
