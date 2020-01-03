@@ -12434,3 +12434,96 @@ static const struct TrainerMonNoItemDefaultMoves sParty_MayLinkPlaceholder[] = {
     .species = SPECIES_KYOGRE,
     }
 };
+
+static const struct TrainerMonItemCustomMoves sParty_Jaelen[] = {
+    {
+    .iv = 255,
+    .lvl = 30,
+    .species = SPECIES_NINETALES,
+    .heldItem = ITEM_NONE,
+    .moves = MOVE_FIRE_BLAST, MOVE_GRUDGE, MOVE_SUBSTITUTE, MOVE_WILL_O_WISP
+    },
+    {
+    .iv = 255,
+    .lvl = 32,
+    .species = SPECIES_MAGCARGO,
+    .heldItem = ITEM_NONE,
+    .moves = MOVE_FLAMETHROWER, MOVE_YAWN, MOVE_FACADE, MOVE_NONE
+    },
+    {
+    .iv = 255,
+    .lvl = 32,
+    .species = SPECIES_HOUNDOOM,
+    .heldItem = ITEM_NONE,
+    .moves = MOVE_CRUNCH, MOVE_PURSUIT, MOVE_FLAMETHROWER, MOVE_NONE
+    },
+    {
+    .iv = 255,
+    .lvl = 35,
+    .species = SPECIES_TYPHLOSION,
+    .heldItem = ITEM_LEFTOVERS,
+    .moves = MOVE_SUNNY_DAY, MOVE_FLAMETHROWER, MOVE_NONE, MOVE_NONE
+    }
+};
+
+static const struct TrainerMonItemCustomMoves sParty_Florence[] = {
+    {
+    .iv = 255,
+    .lvl = 28,
+    .species = SPECIES_PARASECT,
+    .heldItem = ITEM_NONE,
+    .moves = MOVE_GIGA_DRAIN, MOVE_SWORDS_DANCE, MOVE_STUN_SPORE, MOVE_NONE
+    },
+    {
+    .iv = 255,
+    .lvl = 31,
+    .species = SPECIES_EXEGGUTOR,
+    .heldItem = ITEM_NONE,
+    .moves = MOVE_SLEEP_POWDER, MOVE_STUN_SPORE, MOVE_SOLAR_BEAM, MOVE_NONE
+    },
+    {
+    .iv = 255,
+    .lvl = 33,
+    .species = SPECIES_JUMPLUFF,
+    .heldItem = ITEM_NONE,
+    .moves = MOVE_ENCORE, MOVE_LEECH_SEED, MOVE_SUBSTITUTE, MOVE_SLEEP_POWDER
+    },
+    {
+    .iv = 255,
+    .lvl = 35,
+    .species = SPECIES_MEGANIUM,
+    .heldItem = ITEM_LEFTOVERS,
+    .moves = MOVE_SYNTHESIS, MOVE_LIGHT_SCREEN, MOVE_SOLAR_BEAM, MOVE_COUNTER
+    }
+};
+
+static const struct TrainerMonItemCustomMoves sParty_Jayson[] = {
+    {
+    .iv = 255,
+    .lvl = 35,
+    .species = SPECIES_POLIWRATH,
+    .heldItem = ITEM_NONE,
+    .moves = MOVE_BELLY_DRUM, MOVE_BRICK_BREAK, MOVE_SUBSTITUTE, MOVE_NONE
+    },
+    {
+    .iv = 255,
+    .lvl = 36,
+    .species = SPECIES_SLOWBRO,
+    .heldItem = ITEM_NONE,
+    .moves = MOVE_FOCUS_PUNCH, MOVE_SURF, MOVE_PSYCHIC, MOVE_NONE
+    },
+    {
+    .iv = 255,
+    .lvl = 38,
+    .species = SPECIES_CLOYSTER,
+    .heldItem = ITEM_NONE,
+    .moves = MOVE_SPIKES, MOVE_ICE_BEAM, MOVE_EXPLOSION, MOVE_NONE
+    },
+    {
+    .iv = 255,
+    .lvl = 40,
+    .species = SPECIES_FERALIGATR,
+    .heldItem = ITEM_LEFTOVERS,
+    .moves = MOVE_EARTHQUAKE, MOVE_FOCUS_PUNCH, MOVE_REST, MOVE_NONE
+    }
+};
