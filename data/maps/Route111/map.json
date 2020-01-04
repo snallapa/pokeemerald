@@ -630,8 +630,8 @@
     },
     {
       "graphics_id": "EVENT_OBJ_GFX_SNORLAX",
-      "x": 15,
-      "y": 24,
+      "x": 12,
+      "y": 23,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 0,
