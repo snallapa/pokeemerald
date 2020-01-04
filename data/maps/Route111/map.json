@@ -215,7 +215,7 @@
     {
       "graphics_id": "EVENT_OBJ_GFX_BREAKABLE_ROCK",
       "x": 18,
-      "y": 105,
+      "y": 101,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 0,
@@ -228,7 +228,7 @@
     {
       "graphics_id": "EVENT_OBJ_GFX_BREAKABLE_ROCK",
       "x": 19,
-      "y": 90,
+      "y": 100,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 0,
@@ -627,29 +627,9 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Route111_EventScript_RockSmashTipFatMan",
       "flag": "FLAG_HIDE_ROUTE_111_ROCK_SMASH_TIP_GUY"
-    },
-    {
-      "graphics_id": "EVENT_OBJ_GFX_SNORLAX",
-      "x": 12,
-      "y": 23,
-      "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "0",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "GabbyAndTy_EventScript_TyBattle4",
-      "flag": "0"
     }
   ],
   "warp_events": [
-    {
-      "x": 26,
-      "y": 18,
-      "elevation": 0,
-      "dest_map": "MAP_ROUTE111_OLD_LADYS_REST_STOP",
-      "dest_warp_id": 0
-    },
     {
       "x": 13,
       "y": 113,
@@ -662,6 +642,13 @@
       "y": 87,
       "elevation": 0,
       "dest_map": "MAP_DESERT_RUINS",
+      "dest_warp_id": 0
+    },
+    {
+      "x": 26,
+      "y": 18,
+      "elevation": 0,
+      "dest_map": "MAP_ROUTE111_OLD_LADYS_REST_STOP",
       "dest_warp_id": 0
     },
     {
