@@ -118,13 +118,7 @@ Route112_EventScript_Snorlax::
 	dowildbattle
 	clearflag FLAG_SYS_CTRL_OBJ_DELETE
 	specialvar VAR_RESULT, GetBattleOutcome
-	compare VAR_RESULT, B_OUTCOME_WON
-	goto_if_eq Route112_EventScript_DefeatedSnorlax
-	compare VAR_RESULT, B_OUTCOME_RAN
-	goto_if_eq Route112_EventScript_DefeatedSnorlax
-	compare VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED
-	goto_if_eq Route112_EventScript_DefeatedSnorlax
-	setflag FLAG_SNORLAX
+	goto Route112_EventScript_DefeatedSnorlax
 	releaseall
 	end
 
