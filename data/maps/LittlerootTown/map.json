@@ -144,7 +144,7 @@
       "x": 7,
       "y": 16,
       "elevation": 0,
-      "dest_map": "MeteorFalls_StevensCave",
+      "dest_map": "MAP_METEOR_FALLS_STEVENS_CAVE",
       "dest_warp_id": 0
     }
   ],
