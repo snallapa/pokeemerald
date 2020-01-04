@@ -110,6 +110,26 @@ Route112_EventScript_Shayla:: @ 81F1F28
 	msgbox Route112_Text_ShaylaPostBattle, MSGBOX_AUTOCLOSE
 	end
 
+Route112_EventScript_Snorlax::
+	lockall
+	waitse
+	playmoncry SPECIES_SNORLAX, 2
+	delay 40
+	waitmoncry
+	setwildbattle SPECIES_SNORLAX, 35, ITEM_NONE
+	setflag FLAG_SYS_CTRL_OBJ_DELETE
+	dowildbattle
+	clearflag FLAG_SYS_CTRL_OBJ_DELETE
+	specialvar VAR_RESULT, GetBattleOutcome
+	goto Route112_EventScript_DefeatedSnorlax
+	releaseall
+	end
+
+Route112_EventScript_DefeatedSnorlax::
+	setflag FLAG_SNORLAX
+	goto Common_EventScript_RemoveStaticPokemon
+	end
+
 Route112_Text_LeaderGoingToAwakenThing: @ 81F1F3F
 	.string "Hey, man, is our leader really going\n"
 	.string "to awaken that thing?$"
