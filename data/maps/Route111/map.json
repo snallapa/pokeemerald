@@ -630,8 +630,8 @@
     },
     {
       "graphics_id": "EVENT_OBJ_GFX_SNORLAX",
-      "x": 12,
-      "y": 40,
+      "x": 15,
+      "y": 24,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 0,
@@ -644,6 +644,13 @@
   ],
   "warp_events": [
     {
+      "x": 26,
+      "y": 18,
+      "elevation": 0,
+      "dest_map": "MAP_ROUTE111_OLD_LADYS_REST_STOP",
+      "dest_warp_id": 0
+    },
+    {
       "x": 13,
       "y": 113,
       "elevation": 0,
@@ -655,13 +662,6 @@
       "y": 87,
       "elevation": 0,
       "dest_map": "MAP_DESERT_RUINS",
-      "dest_warp_id": 0
-    },
-    {
-      "x": 26,
-      "y": 18,
-      "elevation": 0,
-      "dest_map": "MAP_ROUTE111_OLD_LADYS_REST_STOP",
       "dest_warp_id": 0
     },
     {
