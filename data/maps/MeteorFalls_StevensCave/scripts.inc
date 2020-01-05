@@ -14,15 +14,20 @@ MeteorFalls_StevensCave_EventScript_Steven:: @ 823B182
 	waitmovement 0
 	msgbox MeteorFalls_StevensCave_Text_ShouldKnowHowGoodIAmExpectWorst, MSGBOX_DEFAULT
 	trainerbattle_no_intro TRAINER_STEVEN, MeteorFalls_StevensCave_Text_StevenDefeat
-	msgbox MeteorFalls_StevensCave_Text_MyPredictionCameTrue, MSGBOX_DEFAULT
+	vgoto MeteorFalls_StevensCave_EventScript_Defeated
 	setflag FLAG_DEFEATED_METEOR_FALLS_STEVEN
 	release
 	end
 
-MeteorFalls_StevensCave_EventScript_Defeated:: @ 823B1CD
+MeteorFalls_StevensCave_EventScript_Defeated::
 	applymovement 1, Common_Movement_FacePlayer
 	waitmovement 0
 	msgbox MeteorFalls_StevensCave_Text_MyPredictionCameTrue, MSGBOX_DEFAULT
+	goto_if_unset FLAG_RECEIVED_AURORA_TICKET, MeteorFalls_StevensCave_EventScript_GiveTicket
+	release
+	end
+
+MeteorFalls_StevensCave_EventScript_GiveTicket::
 	checkitemspace ITEM_AURORA_TICKET, 1
 	compare VAR_RESULT, FALSE
 	vgoto_if_eq MeteorFalls_StevensCave_AuroraTicket_NoBagSpace
@@ -32,7 +37,6 @@ MeteorFalls_StevensCave_EventScript_Defeated:: @ 823B1CD
 	vmessage MeteorFalls_StevensCave_Text_AuroraTicketUseAtPort
 	waitmessage
 	waitbuttonpress
-	release
 	release
 	end
 
