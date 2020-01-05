@@ -86,7 +86,7 @@ MeteorFalls_StevensCave_Text_MyPredictionCameTrue: @ 823B358
 	.string "And where will you go from here?\p"
 	.string "… … … … … …\n"
 	.string "… … … … … …\p"
-	.string "Haha, even I couldn't tell you that ho.\p$"
-	.string "I give you this reluctantly, \nHave this gift$"
+	.string "Haha, even I couldn't tell you that ho.\p"
+	.string "I came across this recently.\nTake 	this gift$"
 
 
