@@ -87,6 +87,6 @@ MeteorFalls_StevensCave_Text_MyPredictionCameTrue: @ 823B358
 	.string "… … … … … …\n"
 	.string "… … … … … …\p"
 	.string "Haha, even I couldn't tell you that ho.\p"
-	.string "I came across this recently.\nTake 	this gift$"
+	.string "I came across this and now\n I hand it to you$"
 
 
