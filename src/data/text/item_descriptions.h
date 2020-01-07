@@ -14,7 +14,7 @@ static const u8 sUltraBallDesc[] = _(
 
 static const u8 sShadowBallDesc[] = _(
     "A thief BALL that\n"
-    "can steal an opponent\n"
+    "can steal trainer\n"
     "pokemon in battle.");
 
 static const u8 sGreatBallDesc[] = _(

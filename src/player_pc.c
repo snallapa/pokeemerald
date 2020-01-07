@@ -171,6 +171,7 @@ static const struct ItemSlot gNewGamePCItems[] =
 {
     { ITEM_POTION, 1 },
     { ITEM_SHADOW_BALL, 1 },
+    { ITEM_ULTRA_BALL, 1 },
     { ITEM_NONE, 0 }
 };
 

@@ -10068,6 +10068,13 @@ static void Cmd_handleballthrow(void)
     gActiveBattler = gBattlerAttacker;
     gBattlerTarget = gBattlerAttacker ^ BIT_SIDE;
 
+    if (gBattleTypeFlags & BATTLE_TYPE_TRAINER && gLastUsedItem != ITEM_SHADOW_BALL)
+    {
+        BtlController_EmitBallThrowAnim(0, BALL_TRAINER_BLOCK);
+        MarkBattlerForControllerExec(gActiveBattler);
+        gBattlescriptCurrInstr = BattleScript_TrainerBallBlock;
+    }
+
     if (gBattleTypeFlags & BATTLE_TYPE_WALLY_TUTORIAL)
     {
         BtlController_EmitBallThrowAnim(0, BALL_3_SHAKES_SUCCESS);
@@ -10126,6 +10133,9 @@ static void Cmd_handleballthrow(void)
             case ITEM_LUXURY_BALL:
             case ITEM_PREMIER_BALL:
                 ballMultiplier = 10;
+                break;
+            case ITEM_SHADOW_BALL:
+                ballMultiplier = 20;
                 break;
             }
         }
