@@ -12,6 +12,9 @@ const u32 gItemIconPalette_MasterBall[] = INCBIN_U32("graphics/items/icon_palett
 const u32 gItemIcon_UltraBall[] = INCBIN_U32("graphics/items/icons/ultra_ball.4bpp.lz");
 const u32 gItemIconPalette_UltraBall[] = INCBIN_U32("graphics/items/icon_palettes/ultra_ball.gbapal.lz");
 
+const u32 gItemIcon_ShadowBall[] = INCBIN_U32("graphics/items/icons/shadow_ball.4bpp.lz");
+const u32 gItemIconPalette_ShadowBall[] = INCBIN_U32("graphics/items/icon_palettes/shadow_ball.gbapal.lz");
+
 const u32 gItemIcon_GreatBall[] = INCBIN_U32("graphics/items/icons/great_ball.4bpp.lz");
 const u32 gItemIconPalette_GreatBall[] = INCBIN_U32("graphics/items/icon_palettes/great_ball.gbapal.lz");
 

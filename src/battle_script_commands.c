@@ -10068,7 +10068,13 @@ static void Cmd_handleballthrow(void)
     gActiveBattler = gBattlerAttacker;
     gBattlerTarget = gBattlerAttacker ^ BIT_SIDE;
 
-    if (gBattleTypeFlags & BATTLE_TYPE_WALLY_TUTORIAL)
+    if (gBattleTypeFlags & BATTLE_TYPE_TRAINER && gLastUsedItem != ITEM_SHADOW_BALL)
+    {
+        BtlController_EmitBallThrowAnim(0, BALL_TRAINER_BLOCK);
+        MarkBattlerForControllerExec(gActiveBattler);
+        gBattlescriptCurrInstr = BattleScript_TrainerBallBlock;
+    }
+    else if (gBattleTypeFlags & BATTLE_TYPE_WALLY_TUTORIAL)
     {
         BtlController_EmitBallThrowAnim(0, BALL_3_SHAKES_SUCCESS);
         MarkBattlerForControllerExec(gActiveBattler);
@@ -10127,6 +10133,9 @@ static void Cmd_handleballthrow(void)
             case ITEM_PREMIER_BALL:
                 ballMultiplier = 10;
                 break;
+            case ITEM_SHADOW_BALL:
+                ballMultiplier = 20;
+                break;
             }
         }
         else
@@ -10149,8 +10158,13 @@ static void Cmd_handleballthrow(void)
             }
             else
             {
-                if (gBattleResults.catchAttempts[gLastUsedItem - ITEM_ULTRA_BALL] < 0xFF)
-                    gBattleResults.catchAttempts[gLastUsedItem - ITEM_ULTRA_BALL]++;
+                u16 index = gLastUsedItem - ITEM_ULTRA_BALL;
+                if (gLastUsedItem == ITEM_SHADOW_BALL) {
+                    index = 11;
+                }
+                if (gBattleResults.catchAttempts[index] < 0xFF) {
+                    gBattleResults.catchAttempts[index]++;
+                }
             }
         }
 
