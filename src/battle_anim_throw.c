@@ -138,6 +138,7 @@ static const struct CaptureStar sCaptureStars[] =
 #define TAG_PARTICLES_TIMERBALL   55029
 #define TAG_PARTICLES_LUXURYBALL  55030
 #define TAG_PARTICLES_PREMIERBALL 55031
+#define TAG_PARTICLES_SHADOWBALL  55032
 
 static const struct CompressedSpriteSheet sBallParticleSpriteSheets[POKEBALL_COUNT] =
 {
@@ -153,6 +154,7 @@ static const struct CompressedSpriteSheet sBallParticleSpriteSheets[POKEBALL_COU
     [BALL_TIMER]   = {gBattleAnimSpriteGfx_Particles, 0x100, TAG_PARTICLES_TIMERBALL},
     [BALL_LUXURY]  = {gBattleAnimSpriteGfx_Particles, 0x100, TAG_PARTICLES_LUXURYBALL},
     [BALL_PREMIER] = {gBattleAnimSpriteGfx_Particles, 0x100, TAG_PARTICLES_PREMIERBALL},
+    [BALL_SHADOW]  = {gBattleAnimSpriteGfx_Particles, 0x100, TAG_PARTICLES_SHADOWBALL},
 };
 
 static const struct CompressedSpritePalette sBallParticlePalettes[POKEBALL_COUNT] =
@@ -169,6 +171,7 @@ static const struct CompressedSpritePalette sBallParticlePalettes[POKEBALL_COUNT
     [BALL_TIMER]   = {gBattleAnimSpritePal_CircleImpact, TAG_PARTICLES_TIMERBALL},
     [BALL_LUXURY]  = {gBattleAnimSpritePal_CircleImpact, TAG_PARTICLES_LUXURYBALL},
     [BALL_PREMIER] = {gBattleAnimSpritePal_CircleImpact, TAG_PARTICLES_PREMIERBALL},
+    [BALL_SHADOW]  = {gBattleAnimSpritePal_CircleImpact, TAG_PARTICLES_SHADOWBALL},
 };
 
 static const union AnimCmd sAnim_RegularBall[] =
@@ -237,6 +240,7 @@ static const u8 sBallParticleAnimNums[POKEBALL_COUNT] =
     [BALL_TIMER]   = 5,
     [BALL_LUXURY]  = 4,
     [BALL_PREMIER] = 4,
+    [BALL_SHADOW] = 1
 };
 
 static const TaskFunc sBallParticleAnimationFuncs[POKEBALL_COUNT] =
@@ -253,6 +257,7 @@ static const TaskFunc sBallParticleAnimationFuncs[POKEBALL_COUNT] =
     [BALL_TIMER]   = TimerBallOpenParticleAnimation,
     [BALL_LUXURY]  = GreatBallOpenParticleAnimation,
     [BALL_PREMIER] = PremierBallOpenParticleAnimation,
+    [BALL_SHADOW]  = GreatBallOpenParticleAnimation,
 };
 
 static const struct SpriteTemplate sBallParticleSpriteTemplates[POKEBALL_COUNT] =
@@ -365,6 +370,15 @@ static const struct SpriteTemplate sBallParticleSpriteTemplates[POKEBALL_COUNT] 
         .affineAnims = gDummySpriteAffineAnimTable,
         .callback = SpriteCallbackDummy,
     },
+    {
+        .tileTag = TAG_PARTICLES_SHADOWBALL,
+        .paletteTag = TAG_PARTICLES_SHADOWBALL,
+        .oam = &gOamData_AffineOff_ObjNormal_8x8,
+        .anims = gAnims_BallParticles,
+        .images = NULL,
+        .affineAnims = gDummySpriteAffineAnimTable,
+        .callback = SpriteCallbackDummy,
+    },
 };
 
 const u16 gBallOpenFadeColors[] =
@@ -381,6 +395,7 @@ const u16 gBallOpenFadeColors[] =
     [BALL_TIMER] = RGB(29, 30, 30),
     [BALL_LUXURY] = RGB(31, 17, 10),
     [BALL_PREMIER] = RGB(31, 9, 10),
+    [BALL_SHADOW] = RGB(20, 15, 12),
 
     // Garbage data
     RGB(0, 0, 0),
@@ -747,6 +762,8 @@ u8 ItemIdToBallId(u16 ballItem)
         return BALL_LUXURY;
     case ITEM_PREMIER_BALL:
         return BALL_PREMIER;
+    case ITEM_SHADOW_BALL:
+        return BALL_SHADOW;
     case ITEM_POKE_BALL:
     default:
         return BALL_POKE;
