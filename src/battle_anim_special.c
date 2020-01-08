@@ -116,6 +116,7 @@ static const struct BallCaptureSuccessStarData sBallCaptureSuccessStarData[] =
 #define TAG_PARTICLES_TIMERBALL   55029
 #define TAG_PARTICLES_LUXURYBALL  55030
 #define TAG_PARTICLES_PREMIERBALL 55031
+#define TAG_PARTICLES_SHADOWBALL 55032
 
 const struct CompressedSpriteSheet gBallParticleSpritesheets[] =
 {
@@ -131,6 +132,7 @@ const struct CompressedSpriteSheet gBallParticleSpritesheets[] =
     {gBattleAnimSpriteGfx_Particles, 0x100, TAG_PARTICLES_TIMERBALL},
     {gBattleAnimSpriteGfx_Particles, 0x100, TAG_PARTICLES_LUXURYBALL},
     {gBattleAnimSpriteGfx_Particles, 0x100, TAG_PARTICLES_PREMIERBALL},
+    {gBattleAnimSpriteGfx_Particles, 0x100, TAG_PARTICLES_SHADOWBALL},
 };
 
 const struct CompressedSpritePalette gBallParticlePalettes[] =
@@ -147,6 +149,7 @@ const struct CompressedSpritePalette gBallParticlePalettes[] =
     {gBattleAnimSpritePal_CircleImpact, TAG_PARTICLES_TIMERBALL},
     {gBattleAnimSpritePal_CircleImpact, TAG_PARTICLES_LUXURYBALL},
     {gBattleAnimSpritePal_CircleImpact, TAG_PARTICLES_PREMIERBALL},
+    {gBattleAnimSpritePal_CircleImpact, TAG_PARTICLES_SHADOWBALL},
 };
 
 const union AnimCmd gAnim_RegularBall[] =
@@ -338,6 +341,15 @@ const struct SpriteTemplate gBallParticlesSpriteTemplates[] =
     {
         .tileTag = TAG_PARTICLES_PREMIERBALL,
         .paletteTag = TAG_PARTICLES_PREMIERBALL,
+        .oam = &gOamData_AffineOff_ObjNormal_8x8,
+        .anims = gAnims_BallParticles,
+        .images = NULL,
+        .affineAnims = gDummySpriteAffineAnimTable,
+        .callback = SpriteCallbackDummy,
+    },
+    {
+        .tileTag = TAG_PARTICLES_SHADOWBALL,
+        .paletteTag = TAG_PARTICLES_SHADOWBALL,
         .oam = &gOamData_AffineOff_ObjNormal_8x8,
         .anims = gAnims_BallParticles,
         .images = NULL,
