@@ -679,15 +679,17 @@ const struct Item gItems[] =
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
     },
 
-    [ITEM_034] =
+    [ITEM_SHADOW_BALL] =
     {
-        .name = _("????????"),
-        .itemId = ITEM_NONE,
-        .price = 0,
-        .description = sDummyDesc,
-        .pocket = POCKET_ITEMS,
-        .type = ITEM_USE_BAG_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .name = _("SHADOW BALL"),
+        .itemId = ITEM_SHADOW_BALL,
+        .price = 1200,
+        .description = sShadowBallDesc,
+        .pocket = POCKET_POKE_BALLS,
+        .type = ITEM_POTION - FIRST_BALL,
+        .battleUsage = ITEM_B_USE_OTHER,
+        .battleUseFunc = ItemUseInBattle_PokeBall,
+        .secondaryId = ITEM_POTION - FIRST_BALL,
     },
 
     [ITEM_035] =
