@@ -235,6 +235,7 @@ const TaskFunc gBallParticleAnimationFuncs[] =
     TimerBallOpenParticleAnimation,
     GreatBallOpenParticleAnimation,
     PremierBallOpenParticleAnimation,
+    GreatBallOpenParticleAnimation
 };
 
 const struct SpriteTemplate gBallParticlesSpriteTemplates[] =
