@@ -4036,8 +4036,7 @@ static void RemoveAndCreateMonMarkingsSprite(struct Pokemon *mon)
 
 static void CreateCaughtBallSprite(struct Pokemon *mon)
 {
-    // u8 ball = ItemIdToBallId(GetMonData(mon, MON_DATA_POKEBALL));
-    u8 ball = BALL_SHADOW;
+    u8 ball = ItemIdToBallId(GetMonData(mon, MON_DATA_POKEBALL));
 
     LoadBallGfx(ball);
     sMonSummaryScreen->spriteIds[1] = CreateSprite(&gBallSpriteTemplates[ball], 16, 136, 0);

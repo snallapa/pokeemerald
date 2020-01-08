@@ -10268,7 +10268,10 @@ static void Cmd_givecaughtmon(void)
         if (FlagGet(FLAG_SYS_PC_LANETTE))
             gBattleCommunication[MULTISTRING_CHOOSER]++;
     }
-
+    if (gLastUsedItem == ITEM_SHADOW_BALL) {
+        u8 ball = ITEM_SHADOW_BALL;
+        SetMonData(p, MON_DATA_POKEBALL, &ball);
+    }
     gBattleResults.caughtMonSpecies = GetMonData(p, MON_DATA_SPECIES, NULL);
     GetMonData(p, MON_DATA_NICKNAME, gBattleResults.caughtMonNick);
     gBattleResults.caughtMonBall = GetMonData(p, MON_DATA_POKEBALL, NULL);
