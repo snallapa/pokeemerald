@@ -215,6 +215,7 @@ const u8 gBallParticleAnimNums[] =
     [BALL_TIMER] = 5,
     [BALL_LUXURY] = 4,
     [BALL_PREMIER] = 4,
+    [BALL_SHADOW] = 1
 };
 
 const TaskFunc gBallParticleAnimationFuncs[] =
@@ -359,6 +360,7 @@ const u16 gBallOpenFadeColors[] =
     [BALL_TIMER] = RGB(29, 30, 30),
     [BALL_LUXURY] = RGB(31, 17, 10),
     [BALL_PREMIER] = RGB(31, 9, 10),
+    [BALL_SHADOW] = RGB(20, 15, 12),
 
     // Garbage data
     RGB(0, 0, 0),
