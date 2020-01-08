@@ -10158,8 +10158,13 @@ static void Cmd_handleballthrow(void)
             }
             else
             {
-                if (gBattleResults.catchAttempts[gLastUsedItem - ITEM_ULTRA_BALL] < 0xFF)
-                    gBattleResults.catchAttempts[gLastUsedItem - ITEM_ULTRA_BALL]++;
+                u16 index = gLastUsedItem - ITEM_ULTRA_BALL;
+                if (gLastUsedItem == ITEM_SHADOW_BALL) {
+                    index = 11;
+                }
+                if (gBattleResults.catchAttempts[index] < 0xFF) {
+                    gBattleResults.catchAttempts[index]++;
+                }
             }
         }
 

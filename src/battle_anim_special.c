@@ -116,7 +116,7 @@ static const struct BallCaptureSuccessStarData sBallCaptureSuccessStarData[] =
 #define TAG_PARTICLES_TIMERBALL   55029
 #define TAG_PARTICLES_LUXURYBALL  55030
 #define TAG_PARTICLES_PREMIERBALL 55031
-#define TAG_PARTICLES_SHADOWBALL 55032
+#define TAG_PARTICLES_SHADOWBALL  55032
 
 const struct CompressedSpriteSheet gBallParticleSpritesheets[] =
 {
