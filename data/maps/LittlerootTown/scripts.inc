@@ -959,12 +959,12 @@ LittlerootTown_Text_OurNewHomeLetsGoInside: @ 81E86BC
 	.string "MOM: {PLAYER}, we're here, honey!\p"
 	.string "It must be tiring sitting back there with\n"
 	.string "our shit in the moving truck.\p"
-	.string " Lmao I can't believe I made your\p"
-	.string "dumbass do that.\n"
-	.string "This is our new shithole!\p"
-	.string "It has a northern Florida feel,\n"
-	.string "but it seems an easy place to live, no?\p"
-	.string "And, you get your own room, {PLAYER}!\n"
+	.string " Lmao I can't believe I made your\n"
+	.string "dumbass do that.\p"
+	.string "This is our new shithole!\n"
+	.string "It has a northern Florida feel,\p"
+	.string "but it seems an easy place to live, no?\n"
+	.string "And, you get your own room, {PLAYER}!\p"
 	.string "Let's go inside.$"
 
 LittlerootTown_Text_WaitPlayer: @ 81E87E1

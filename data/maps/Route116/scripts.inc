@@ -374,8 +374,8 @@ Route116_Text_ScoundrelMadeOffWithPeeko: @ 81F309D
 	.string "We were on our walk, PEEKO and I, when\n"
 	.string "we were jumped by an odd thug…\p"
 	.string "The scoundrel made off with my\n"
-	.string "darling PEEKO!\p"
-	.string "Wrrrooooooaaaar! PEEKO!$"
+	.string "dear waifu, PEEKO!\p"
+	.string "PEEEEEEEKOOOOO!$"
 
 Route116_Text_WantToDigTunnel: @ 81F3140
 	.string "Nnn… Roar!\p"

@@ -523,34 +523,32 @@ Route109_Text_LittleKidsDartAround: @ 81EEF08
 	.string "Little kids can dart around so quickly…\p"
 	.string "You don't dare take your eyes off them\n"
 	.string "for an instant. It's very taxing.\p"
-	.string "Mine are with my POKéMON, so they\n"
-	.string "should be okay, but…$"
+	.string "Oh fuck, I got distracted. Where\n"
+	.string "did these little buggers go?!?!$"
 
 Route109_Text_SandCastleTakingLongTime: @ 81EEFB0
-	.string "Our sand castle's taking a long time\n"
-	.string "to make.$"
+	.string "Our sand castle's looks sooo\n"
+	.string "bad.$"
 
 Route109_Text_YouCanHaveThis: @ 81EEFDE
 	.string "You can have this!$"
 
 Route109_Text_WereGoingToMakeBigCastle: @ 81EEFF1
 	.string "We're going to get all the sand from\n"
-	.string "the beach and make a big castle!\p"
+	.string "the beach and make a huuge castle!\p"
 	.string "And then we're going to be a king and\n"
 	.string "queen.\p"
-	.string "We'll let you be a servant.$"
+	.string "We'll let you be a slave stranger.$"
 
 Route109_Text_ZigzagoonPicksUpLitter: @ 81EF080
 	.string "The water around these parts is clean.\p"
 	.string "But, I get my ZIGZAGOON to pick up\n"
 	.string "litter from the shoreline at times.\p"
-	.string "Dirty water becomes rain and joins our\n"
-	.string "rivers, which we drink from…\p"
-	.string "If we pollute the sea, it all comes\n"
-	.string "back to haunt us eventually.$"
+	.string "That's how we give back to the \n"
+	.string "communities we trash ourselves.$"
 
 Route109_Text_ZigzagoonCry: @ 81EF173
-	.string "ZIGZAGOON: Guguu?$"
+	.string "ZIGZAGOON: I cannot believe this!?!$"
 
 Route109_Text_SeashoreHouseSign: @ 81EF185
 	.string "SEASHORE HOUSE\p"
