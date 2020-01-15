@@ -1365,7 +1365,7 @@ PetalburgCity_Gym_Text_NormanDefeat: @ 8206107
 	.string "I lost to {PLAYER}?\p"
 	.string "what the FUCK!\n"
 	.string "Take this. I have a lot to think\n"
-	.strnig "about.$"
+	.string "about.$"
 
 PetalburgCity_Gym_Text_ReceivedBalanceBadge: @ 8206162
 	.string "{PLAYER} received the BALANCE BADGE\n"
