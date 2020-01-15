@@ -721,13 +721,13 @@ PetalburgCity_EventScript_GymBoy:: @ 81DC82E
 	end
 
 PetalburgCity_Text_WhereIsWally: @ 81DC837
-	.string "Where has our WALLY gone?\p"
+	.string "Where has our WALLY gone?!?!\p"
 	.string "We have to leave for VERDANTURF TOWN\n"
-	.string "very soon…$"
+	.string "very soon and I can't find him!!!$"
 
 PetalburgCity_Text_AreYouRookieTrainer: @ 81DC881
 	.string "Hiya! Are you maybe…\n"
-	.string "A rookie TRAINER?\p"
+	.string "A noob TRAINER?\p"
 	.string "Do you know what POKéMON TRAINERS\n"
 	.string "do when they reach a new town?\p"
 	.string "They first check what kind of GYM\n"
@@ -742,10 +742,10 @@ PetalburgCity_Text_ThisIsGymSign: @ 81DC93E
 
 PetalburgCity_Text_WaterReflection: @ 81DC985
 	.string "My face is reflected in the water.\p"
-	.string "It's a shining grin full of hope…\p"
-	.string "Or it could be a look of somber silence\n"
-	.string "struggling with fear…\p"
-	.string "What do you see reflected in your face?$"
+	.string "I see past my looks and into my soul\p"
+	.string ", looking inward has always helped me\n"
+	.string "with my feasrs...\p"
+	.string "What do you see when you look inside?$"
 
 PetalburgCity_Text_FullPartyExplanation: @ 81DCA30
 	.string "Let's say you have six POKéMON.\n"
@@ -756,7 +756,7 @@ PetalburgCity_Text_FullPartyExplanation: @ 81DCA30
 PetalburgCity_Text_GymSign: @ 81DCAAA
 	.string "PETALBURG CITY POKéMON GYM\n"
 	.string "LEADER: NORMAN\l"
-	.string "“A man in pursuit of power!”$"
+	.string "“IT'S YOUR FATHER!”$"
 
 PetalburgCity_Text_CitySign: @ 81DCAF1
 	.string "PETALBURG CITY\n"
@@ -773,11 +773,11 @@ PetalburgCity_Text_AreYouATrainer: @ 81DCB31
 PetalburgCity_Text_WellMaybeNot: @ 81DCB82
 	.string "… … … … … …\p"
 	.string "Well, maybe not.\n"
-	.string "Your clothes aren't all that dirty.\p"
+	.string "You look a bit nerdy to be one.\p"
 	.string "You're either a rookie TRAINER,\n"
 	.string "or maybe you're just an ordinary kid.$"
 
 PetalburgCity_Text_ImLookingForTalentedTrainers: @ 81DCC09
 	.string "I'm roaming the land in search of\n"
-	.string "talented TRAINERS.\p"
-	.string "I'm sorry to have taken your time.$"
+	.string "the very best.\p"
+	.string "I should have known it was not you$"

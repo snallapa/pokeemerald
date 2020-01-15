@@ -1234,21 +1234,21 @@ PetalburgCity_Gym_Text_DadYoureHereWithYourPokemon: @ 82057A2
 	.string "Well, if it isn't {PLAYER}!\n"
 	.string "So you're all finished moving in?\p"
 	.string "I'm surprised that you managed to\n"
-	.string "get here by yourself.\p"
-	.string "I thought you were a fucking idiot\n"
-	.string "That's why I left your ass.\p"
-	.string "Fuck your mom too.\n"
-	.string "Don't become a TRAINER like me, {PLAYER}.\p"
-	.string "Please don't.\n"
-	.string "Fuck off now.$"
+	.string "without any of my help.\p"
+	.string "I was hoping you guys could do it all\n"
+	.string "That's why I left you so far away...\p"
+	.string "I mean we could have lived here right.\n"
+	.string "Anyways,don't become a TRAINER\p"
+	.string "like me, {PLAYER}. Please don't.\n"
+	.string "Leave me now.$"
 
 PetalburgCity_Gym_Text_WallyIdLikeAPokemon: @ 82058B1
 	.string "Um… I…\n"
-	.string "I'd like to get a POKéMON, please…$"
+	.string "I'd like to get one POKéMON, please…$"
 
 PetalburgCity_Gym_Text_DadOhYoureWallyRight: @ 82058DB
 	.string "DAD: Hm? You're… Uh… Oh, right.\n"
-	.string "You're that asshole WALLY, right?$"
+	.string "You're that annoying child WALLY, right?$"
 
 PetalburgCity_Gym_Text_WallyIveNeverCaughtAPokemon: @ 8205910
 	.string "WALLY: Uh, Um. I'm going to go stay with my\n"
@@ -1298,36 +1298,36 @@ PetalburgCity_Gym_Text_WallyThankYouBye: @ 8205B4C
 	.string "my POKéMON.\p"
 	.string "I promise I'll take really good\n"
 	.string "care of it.\p"
-	.string "Oh! My mom's waiting for me,\n"
+	.string "Oh! My mom's looking for me,\n"
 	.string "so I have to go!\p"
 	.string "Bye, {PLAYER}!$"
 
 PetalburgCity_Gym_Text_DadGoCollectBadges: @ 8205C40
 	.string "DAD: Now…\p"
-	.string "{PLAYER}, if you want to become a\n"
+	.string "if you really want to become a\n"
 	.string "strong TRAINER, here's my advice.\p"
-	.string "Head for RUSTBORO CITY beyond this\n"
+	.string "Go to RUSTBORO CITY beyond this\n"
 	.string "town.\p"
-	.string "There, you should challenge\n"
+	.string "There, you should square up\n"
 	.string "the GYM LEADER, ROXANNE.\p"
-	.string "After her, go on to other POKéMON\n"
+	.string "After her, move on to other POKéMON\n"
 	.string "GYMS and defeat their LEADERS.\p"
 	.string "Collect BADGES from them,\n"
 	.string "understood?\p"
 	.string "Of course, I'm a GYM LEADER, too.\n"
 	.string "We'll battle one day, {PLAYER}.\p"
-	.string "But that's only after you become\n"
-	.string "stronger.$"
+	.string "And I will try to kick your\n"
+	.string "ass that day. Go now, child$"
 
 PetalburgCity_Gym_Text_NormanGoToRustboro: @ 8205DB4
 	.string "DAD: Hm? Aren't you going to the\n"
 	.string "POKéMON GYM in RUSTBORO CITY?\p"
 	.string "There's no challenge for me to\n"
-	.string "battle a greenhorn TRAINER.\p"
+	.string "battle a weak TRAINER.\p"
 	.string "{PLAYER}, I want you to challenge me\n"
-	.string "when you become a lot stronger.\p"
+	.string "when you are actually worthy.\p"
 	.string "I'll battle you, {PLAYER}, when you\n"
-	.string "can show me four GYM BADGES, okay?$"
+	.string "can show me FOUR GYM BADGES, okay!?$"
 
 PetalburgCity_Gym_Text_NormanGoToDewford: @ 8205EAE
 	.string "DAD: I see… So, you've beaten\n"
@@ -1336,7 +1336,7 @@ PetalburgCity_Gym_Text_NormanGoToDewford: @ 8205EAE
 	.string "who are stronger than you, {PLAYER}.\p"
 	.string "Across the sea in DEWFORD TOWN is a\n"
 	.string "GYM LEADER named BRAWLY.\p"
-	.string "You should go challenge him.$"
+	.string "I SAID FOUR BADGES.$"
 
 PetalburgCity_Gym_Text_YouHaveGottenStronger: @ 8205F87
 	.string "DAD: Hm… {PLAYER}, you have gotten\n"
@@ -1351,7 +1351,7 @@ PetalburgCity_Gym_Text_NormanIntro: @ 8205FE5
 	.string "a POKéMON battle.\p"
 	.string "{PLAYER}…\p"
 	.string "I'm so fucking pissed that I have to have\n"
-	.string "a real battle with my own degenerate child.\p"
+	.string "a real battle with my own weak child.\p"
 	.string "But, a battle is a battle!\p"
 	.string "I will do everything in my power as\n"
 	.string "a GYM LEADER to win.\p"
@@ -1364,7 +1364,8 @@ PetalburgCity_Gym_Text_NormanDefeat: @ 8206107
 	.string "I can't believe it. {PLAYER}…\p"
 	.string "I lost to {PLAYER}?\p"
 	.string "what the FUCK!\n"
-	.string "take this and get the fuck out.$"
+	.string "Take this. I have a lot to think\n"
+	.strnig "about.$"
 
 PetalburgCity_Gym_Text_ReceivedBalanceBadge: @ 8206162
 	.string "{PLAYER} received the BALANCE BADGE\n"
@@ -1389,8 +1390,8 @@ PetalburgCity_Gym_Text_ExplainFacade: @ 8206254
 PetalburgCity_Gym_Text_DadHappyAndSad: @ 82062FB
 	.string "DAD: As the GYM LEADER, I can't\n"
 	.string "express how upset I am…\p"
-	.string "But as a father, it makes me both\n"
-	.string "happy and a little sad. It's odd…$"
+	.string "But as a father, it makes me\n"
+	.string "so depressed...$"
 
 PetalburgCity_Gym_Text_PleaseComeWithMe: @ 8206377
 	.string "Ah, there you are, {PLAYER}{KUN}!\p"
@@ -1407,8 +1408,8 @@ PetalburgCity_Gym_Text_DadGoingToKeepTraining: @ 8206417
 	.string "your mother every so often.\p"
 	.string "I'm going to stay here and redouble\n"
 	.string "my training.\p"
-	.string "It would bother me as a TRAINER to\n"
-	.string "not avenge my loss to you, {PLAYER}!$"
+	.string "It would bother me as a father to\n"
+	.string "not kick your ass, {PLAYER}!$"
 
 PetalburgCity_Gym_Text_DadNoAmountOfTrainingIsEnough: @ 82064C3
 	.string "DAD: {PLAYER}, how are things going?\p"

@@ -102,20 +102,20 @@ Route109_SeashoreHouse_EventScript_TrainersNotCompleted:: @ 8269553
 
 Route109_SeashoreHouse_Text_SeashoreHouseIntro: @ 8269555
 	.string "I'm the owner of the SEASHORE HOUSE.\n"
-	.string "But you can call me MR. SEA!\p"
+	.string "But you can call me MR. SHORE!\p"
 	.string "What I love above all is to see hot\n"
-	.string "POKéMON battles.\p"
-	.string "Let me see that your heart burns hot!\p"
-	.string "If you can defeat all the TRAINERS\n"
-	.string "here, I'll reward your efforts.$"
+	.string "TRAINER..... battles....\p"
+	.string "Let me see that how hot your \p"
+	.string "body can get! If you can defeat all \n"
+	.string "the TRAINERS here, I'll present a gift.$"
 
 Route109_SeashoreHouse_Text_ShowMeSomeHotMatches: @ 8269635
-	.string "Show me some hot matches!\p"
+	.string "Show me some hot people!\p"
 	.string "I run this SEASHORE HOUSE just for\n"
 	.string "that reason alone!$"
 
 Route109_SeashoreHouse_Text_TakeTheseSodaPopBottles: @ 8269685
-	.string "You're scorching hot!\n"
+	.string "You're so fucking hot!\n"
 	.string "Those battles blazed!\l"
 	.string "I'm more than just satisfied!\p"
 	.string "As thanks for showing me your hot\n"

@@ -107,14 +107,14 @@ Route104_MrBrineysHouse_Text_WaitUpPeeko: @ 8229E70
 
 Route104_MrBrineysHouse_Text_ItsYouLetsSailToDewford: @ 8229E9B
 	.string "Hm? You're {PLAYER}{KUN}!\n"
-	.string "You saved my darling PEEKO!\l"
+	.string "You saved my waifu PEEKO!\l"
 	.string "We owe so much to you!\p"
 	.string "What's that?\n"
 	.string "You want to sail with me?\p"
 	.string "Hmhm…\p"
 	.string "You have a LETTER bound for DEWFORD\n"
 	.string "and a package for SLATEPORT, then?\p"
-	.string "Quite the busy life you must lead!\p"
+	.string "You youngins always up to something!\p"
 	.string "But, certainly, what you're asking is\n"
 	.string "no problem at all.\p"
 	.string "You've come to the right man!\n"
@@ -123,7 +123,7 @@ Route104_MrBrineysHouse_Text_ItsYouLetsSailToDewford: @ 8229E9B
 Route104_MrBrineysHouse_Text_SetSailForDewford: @ 8229FE9
 	.string "MR. BRINEY: DEWFORD it is, then!\p"
 	.string "Anchors aweigh!\n"
-	.string "PEEKO, we're setting sail, my darling!$"
+	.string "PEEKO, we're setting sail, dear!$"
 
 Route104_MrBrineysHouse_Text_DeclineDeliverySail: @ 822A041
 	.string "MR. BRINEY: Is that so?\n"
@@ -161,5 +161,5 @@ Route104_MrBrineysHouse_Text_TellMeWheneverYouWantToSail: @ 822A2C3
 	.string "you want to set sail!$"
 
 Route104_MrBrineysHouse_Text_Peeko: @ 822A337
-	.string "PEEKO: Pii piihyoro!$"
+	.string "PEEKO: I'm his grimy waifu!$"
 

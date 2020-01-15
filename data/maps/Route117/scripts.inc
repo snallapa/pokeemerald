@@ -198,7 +198,7 @@ Route117_Text_ArentTheseFlowersPretty: @ 81F3CFD
 	.string "I planted them all!$"
 
 Route117_Text_AirIsTastyHere: @ 81F3D41
-	.string "The air is tasty here!$"
+	.string "I love snorting here!$"
 
 Route117_Text_RouteSignVerdanturf: @ 81F3D58
 	.string "ROUTE 117\n"
@@ -210,5 +210,5 @@ Route117_Text_RouteSignMauville: @ 81F3D74
 
 Route117_Text_DayCareSign: @ 81F3D8E
 	.string "POKéMON DAY CARE\n"
-	.string "“Let us raise your POKéMON.”$"
+	.string "“expert pokemon fuckers.”$"
 

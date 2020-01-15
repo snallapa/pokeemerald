@@ -597,8 +597,8 @@ Route111_EventScript_TrainerHillSign:: @ 81F146C
 Route111_Text_BattleOurFamily: @ 81F1475
 	.string "Hello! I take it you're a traveler.\p"
 	.string "How's this? What do you say to taking\n"
-	.string "on our family of four in a series of\l"
-	.string "POKéMON battles?$"
+	.string "on our entire fucking family of four\l"
+	.string "in a series of POKéMON battles?$"
 
 Route111_Text_IsThatSo: @ 81F14F5
 	.string "Is that so?\n"
@@ -612,39 +612,39 @@ Route111_Text_VictorDefeat: @ 81F1542
 	.string "You're a lot tougher than I expected!$"
 
 Route111_Text_VictorPostBattle: @ 81F156F
-	.string "Hey, all!\n"
+	.string "Hey, everybody!\n"
 	.string "I've found a pretty strong TRAINER!$"
 
 Route111_Text_VictoriaIntro: @ 81F159D
 	.string "Oh, my goodness! Aren't you young?\p"
-	.string "You must be quite the TRAINER to beat\n"
-	.string "my husband, though.\p"
-	.string "It's my turn to battle now!$"
+	.string "And quite nice, but my husband\n"
+	.string "though. Let's see how worthy\p"
+	.string "you truly are!$"
 
 Route111_Text_VictoriaDefeat: @ 81F1616
 	.string "Oh, gosh!\n"
-	.string "I can't get over how strong you are!$"
+	.string "I can't get over how strong you look!$"
 
 Route111_Text_VictoriaPostBattle: @ 81F1645
 	.string "There's a strong TRAINER here!\n"
-	.string "This one's really strong!$"
+	.string "This one's really nice!$"
 
 Route111_Text_ViviIntro: @ 81F167E
 	.string "You're stronger than Mommy? Wow!\p"
-	.string "But I'm strong, too!\n"
-	.string "Really! Honestly!$"
+	.string "But I'm really fucking good!\n"
+	.string "So let's fight!$"
 
 Route111_Text_ViviDefeat: @ 81F16C6
-	.string "Huh? Did I just lose?$"
+	.string "Huh? I have never lost before..$"
 
 Route111_Text_ViviPostBattle: @ 81F16DC
-	.string "This stinks…\p"
-	.string "…Snivel… Grandma!$"
+	.string "This sucks...\p"
+	.string "GRANDMA please help!$"
 
 Route111_Text_VickyIntro: @ 81F16FB
 	.string "How dare you make my granddaughter\n"
 	.string "cry!\p"
-	.string "For that, I'm going to smack you!\n"
+	.string "For that, I'm going to fuck you up!\n"
 	.string "Prepare to lose!$"
 
 Route111_Text_VickyDefeat: @ 81F1756
@@ -697,35 +697,35 @@ Route111_Text_TrainerTipsSpAtkSpDef: @ 81F1987
 	.string "DEFENSE.”$"
 
 Route111_Text_ShouldBeMirageTowerAroundHere: @ 81F1A22
-	.string "There should be a tower made of sand\n"
-	.string "around here somewhere.\p"
-	.string "But for some reason, it can be seen\n"
-	.string "sometimes, and sometimes not.\p"
-	.string "That's why I call it the MIRAGE TOWER.$"
+	.string "I was tripping the other day and\n"
+	.string "thought I saw a tower around here.\p"
+	.string "I name it the MIRAGE TOWER!"
+	.string "But really I need to lay off\p"
+	.string "the trippy berries.$"
 
 Route111_Text_MirageTowerClearlyVisible: @ 81F1AC7
 	.string "I see it!\n"
 	.string "The tower of sand!\p"
-	.string "The sand tower they called a mirage\n"
+	.string "The sand tower that stands tall\n"
 	.string "is clearly visible!\p"
-	.string "But it looks so fragile…\n"
-	.string "It could crumble away anytime…\p"
+	.string "But it looks so… wavy\n"
+	.string "It could fall away anytime…\p"
 	.string "I want to go inside it, but I can't\n"
-	.string "get my courage up for it…$"
+	.string "seem to move my legs towards it…$"
 
 Route111_Text_ThatWasShockingSandRainedDown: @ 81F1B92
 	.string "Whoa…\n"
-	.string "That was shocking.\p"
-	.string "Sand rained down in chunks all of\n"
+	.string "That fucked me up.\p"
+	.string "Sand just poured down all of a\n"
 	.string "a sudden.\p"
 	.string "What was it like inside?\n"
-	.string "Were there sandy ghosts and such?$"
+	.string "Were there sand monsters??$"
 
 Route111_Text_MirageTowerHasntBeenSeenSince: @ 81F1C12
 	.string "Since I spoke to you, the tower of sand\n"
-	.string "hasn't been seen.\p"
-	.string "Perhaps it really was\n"
-	.string "the MIRAGE TOWER…$"
+	.string "hasn't been here.\p"
+	.string "I have stood here for hours waiting\n"
+	.string "for the MIRAGE TOWER…$"
 
 Route111_Text_ClawFossilDisappeared: @ 81F1C74
 	.string "The CLAW FOSSIL disappeared into\n"

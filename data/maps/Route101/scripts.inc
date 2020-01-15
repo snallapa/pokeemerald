@@ -266,13 +266,13 @@ Route101_Text_HelpMe: @ 81EBE8F
 	.string "H-help me!$"
 
 Route101_Text_PleaseHelp: @ 81EBE9A
-	.string "Hello! You over there!\n"
+	.string "YOO! You over there!\n"
 	.string "Please! Help!\p"
 	.string "In my BAG!\n"
 	.string "There's a POKé BALL!$"
 
 Route101_Text_DontLeaveMe: @ 81EBEDF
-	.string "Wh-Where are you going?!\n"
+	.string "Where the fuck are you going?!\n"
 	.string "Don't leave me like this!$"
 
 Route101_Text_YouSavedMe: @ 81EBF12

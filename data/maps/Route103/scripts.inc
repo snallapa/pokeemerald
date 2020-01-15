@@ -294,49 +294,44 @@ Route103_EventScript_Isabelle:: @ 81EC78F
 	end
 
 Route103_Text_MayRoute103Pokemon: @ 81EC7A6
-	.string "MAY: Let's see… The POKéMON found\n"
-	.string "on ROUTE 103 include…$"
+	.string "MAY: Let's see rolling it this way\n"
+	.string "would be easiest...$"
 
 Route103_Text_MayLetsBattle: @ 81EC7DE
 	.string "Oh, hi, {PLAYER}{KUN}!\p"
-	.string "…Oh, my dumbass dad gave you\n"
+	.string "…Oh, my old dad gave you\n"
 	.string "a POKéMON as a gift, huh?\p"
 	.string "Since we're here, let's have a quick\n"
 	.string "battle!\p"
-	.string "I'll fuck you up pussy\n"
-	.string "ass bitch!$"
+	.string "I'll fuck you up!$"
 
 Route103_Text_MayDefeated: @ 81EC881
-	.string "Alright what the fuck.\n"
-	.string "WHAT THE FUCKKKKKKKK!$"
+	.string "Alright, maybe you are better.\n"
+	.string "time to smoke this one off...$"
 
 Route103_Text_MayTimeToHeadBack: @ 81EC8AE
-	.string "Fuck you I'm out this bitch.$"
+	.string "Let's head back, I left\n"
+	.string "something in the lab...$"
 
 Route103_Text_BrendanRoute103Pokemon: @ 81EC989
-	.string "BRENDAN: Okay, so it's this one and\n"
-	.string "that one that live on ROUTE 103…$"
+	.string "BRENDAN: Let's see rolling it this\n"
+	.string "way would be easiest...$"
 
 Route103_Text_BrendanLetsBattle: @ 81EC9CE
-	.string "Hey, it's {PLAYER}!\p"
-	.string "…Oh, yeah, Dad gave you a POKéMON.\p"
-	.string "Since we're here, how about a little\n"
-	.string "battle?\p"
-	.string "I'll teach you what being a TRAINER's\n"
-	.string "about!$"
+	.string "Oh, hi, {PLAYER}{KUN}!\p"
+	.string "…Oh, my old dad gave you\n"
+	.string "a POKéMON as a gift, huh?\p"
+	.string "Since we're here, let's have a quick\n"
+	.string "battle!\p"
+	.string "I'll fuck you up!$"
 
 Route103_Text_BrendanDefeated: @ 81ECA59
-	.string "Huh, {PLAYER}, you're not too shabby.$"
+	.string "Alright, maybe you are better.\n"
+	.string "time to smoke this one off...$"
 
 Route103_Text_BrendanTimeToHeadBack: @ 81ECA79
-	.string "BRENDAN: I think I get it.\n"
-	.string "I think I know why my dad has his eye\l"
-	.string "out for you now.\p"
-	.string "Look, your POKéMON already likes you,\n"
-	.string "even though you just got it.\p"
-	.string "{PLAYER}, I get the feeling that you\n"
-	.string "could befriend any POKéMON with ease.\p"
-	.string "We should head back to the LAB.$"
+	.string "Let's head back, I left\n"
+	.string "something in the lab...$"
 
 Route103_Text_ShouldHaveBroughtPotion: @ 81ECB73
 	.string "My POKéMON is staggeringly tired…\n"
