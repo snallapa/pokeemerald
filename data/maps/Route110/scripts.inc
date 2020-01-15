@@ -774,34 +774,34 @@ Route110_Movement_BirchExit4: @ 81EFB57
 
 Route110_Text_WeCantTalkAboutAquaActivities: @ 81EFB5D
 	.string "TEAM AQUA's activities…\n"
-	.string "We can't talk about them yet.$"
+	.string "shhhhhhhhhhh.$"
 
 Route110_Text_KickUpARuckus: @ 81EFB93
 	.string "I want to get going to SLATEPORT and\n"
-	.string "kick up a ruckus!$"
+	.string "just fuck shit up!$"
 
 Route110_Text_MyFirstJobInAqua: @ 81EFBCA
-	.string "This is my first job after joining\n"
-	.string "TEAM AQUA. It's a little scary.$"
+	.string "This is my first job doing this.\n"
+	.string "Don't know if I'm gang material.$"
 
 Route110_Text_AquaActionsBringSmiles: @ 81EFC0D
-	.string "TEAM AQUA's actions should bring\n"
+	.string "TEAM AQUA's actions WILL bring\n"
 	.string "smiles to people's faces!$"
 
 Route110_Text_MayLetsBattle: @ 81EFC48
 	.string "MAY: Hi, {PLAYER}{KUN}, long time no see!\p"
-	.string "While I was searching for other\n"
-	.string "POKéMON, my POKéMON grew stronger.\p"
+	.string "While I was searching for some\n"
+	.string "drugs, my POKéMON grew stronger.\p"
 	.string "So…\n"
-	.string "How about a little battle?$"
+	.string "How about we do this rn, right here?$"
 
 Route110_Text_MayDefeated: @ 81EFCCB
-	.string "Yikes!\n"
-	.string "You're better than I expected!$"
+	.string "Fuck, not again!\n"
+	.string "unfair that you do this to me!$"
 
 Route110_Text_MayTakeThis: @ 81EFCF1
 	.string "MAY: {PLAYER}{KUN}, you've been busy\n"
-	.string "training, too, haven't you?\p"
+	.string "fucking people up haven't you?\p"
 	.string "I think you deserve a reward!\n"
 	.string "This is from me!$"
 
@@ -822,14 +822,14 @@ Route110_Text_BrendanLetsBattle: @ 81EFE3F
 	.string "I'll check for you.$"
 
 Route110_Text_BrendanDefeated: @ 81EFEB4
-	.string "Hmm…\n"
-	.string "You're pretty good.$"
+	.string "Fuck, not again!\n"
+	.string "unfair that you do this to me!$"
 
 Route110_Text_BrendanTakeThis: @ 81EFECD
-	.string "BRENDAN: {PLAYER}, you've trained\n"
-	.string "without me noticing…\p"
-	.string "Good enough!\n"
-	.string "Here, take this.$"
+	.string "BRENDAN: {PLAYER}{KUN}, you've been\n"
+	.string "busy fucking people up haven't you?\p"
+	.string "I think you deserve a reward!\n"
+	.string "This is from me!$"
 
 Route110_Text_BrendanExplainItemfinder: @ 81EFF1C
 	.string "BRENDAN: That's an ITEMFINDER.\p"
@@ -847,12 +847,12 @@ Route110_Text_RideBikeAtFullSpeed: @ 81EFFC3
 Route110_Text_HairStreamsBehindMe: @ 81F0006
 	.string "How do you like the way my raven-\n"
 	.string "colored hair streams behind me?\p"
-	.string "I grew my hair out just for that.$"
+	.string "I think its sexy af.$"
 
 Route110_Text_YouGotBikeFromRydel: @ 81F006A
 	.string "Oh, hey, you got that BIKE from RYDEL!\p"
 	.string "Oh, it's glaringly obvious.\n"
-	.string "It says right on your bike…\p"
+	.string "I annoy people with that name so here:\p"
 	.string "RYDEL, RYDEL, RYDEL, RYDEL, RYDEL,\n"
 	.string "RYDEL, RYDEL, RYDEL, RYDEL, RYDEL,\p"
 	.string "RYDEL, RYDEL, RYDEL, RYDEL, RYDEL,\n"
@@ -872,8 +872,8 @@ Route110_Text_TwoRoads: @ 81F0261
 	.string "Perhaps that is right and fair.$"
 
 Route110_Text_WalkOnTheLowRoad: @ 81F02CA
-	.string "I don't have a BIKE, so I'll take\n"
-	.string "a leisurely walk on the low road.$"
+	.string "I don't own a BIKE, so I'll take\n"
+	.string "a lug around on the low road.$"
 
 Route110_Text_BikeTechniques: @ 81F030E
 	.string "Learning techniques will make BIKE\n"
@@ -900,9 +900,9 @@ Route110_Text_ChallengeReactionBest: @ 81F0431
 	.string "You've shaken me to my very soul!$"
 
 Route110_Text_ChallengeReactionGood: @ 81F04A4
-	.string "Your technique is remarkable.\p"
-	.string "I suggest you speed up a bit while\n"
-	.string "still avoiding collisions.$"
+	.string "Your technique is alright.\p"
+	.string "I suggest you just be faster\n"
+	.string "and not hit shit.$"
 
 Route110_Text_ChallengeReactionOk: @ 81F0500
 	.string "I would consider you a work in\n"
@@ -911,23 +911,23 @@ Route110_Text_ChallengeReactionOk: @ 81F0500
 	.string "sheer pleasure of cycling.$"
 
 Route110_Text_ChallengeReactionBad: @ 81F0567
-	.string "My word… Your cycling skills border\n"
-	.string "on terrifying.\p"
+	.string "My word… Your cycling skills are\n"
+	.string "fucking awful.\p"
 	.string "Most certainly, you need much more\n"
 	.string "practice riding.$"
 
 Route110_Text_ChallengeReactionWorst: @ 81F05CE
 	.string "…I am aghast…\p"
-	.string "You're perhaps not cut out for this\n"
-	.string "unfortunate cycling business.\p"
+	.string "You're sooo bad at this. Maybe the\n"
+	.string "ucycling business isn't for you.\p"
 	.string "You ought to give serious thought to\n"
-	.string "returning that BIKE to RYDEL.$"
+	.string "throwing that bike away.$"
 
 Route110_Text_RatedForNumberOfCollisions: @ 81F0661
 	.string "This is CYCLING ROAD.\p"
 	.string "If you were to ride from MAUVILLE to\n"
 	.string "SLATEPORT on a MACH BIKE, you would\l"
-	.string "be rated for the number of collisions\l"
+	.string "be critiqued for the number of collisions\l"
 	.string "and your total time.$"
 
 Route110_Text_AlwaysAimHigher: @ 81F06FB
@@ -940,7 +940,7 @@ Route110_Text_AcroBikesDoNotQualify: @ 81F0755
 	.string "MACH BIKES are rated for their number\l"
 	.string "of collisions and their total times.\p"
 	.string "ACRO BIKES do not qualify for rating.\n"
-	.string "They are easy to turn, so it's not fair.$"
+	.string "They are for bitches really.$"
 
 Route110_Text_SlateportCitySign: @ 81F0812
 	.string "ROUTE 110\n"
@@ -950,10 +950,10 @@ Route110_Text_CyclingRoadSign: @ 81F082D
 	.string "SEASIDE CYCLING ROAD$"
 
 Route110_Text_AquaWasHere: @ 81F0842
-	.string "“TEAM AQUA was here!”\p"
+	.string "“TEAM AQUA waz her!”\p"
 	.string "Someone painted that onto this sign,\n"
 	.string "but then someone else painted over it.\p"
-	.string "“TEAM MAGMA rules!” is what it\n"
+	.string "“TEAM AQUA IS ASS!” is what it\n"
 	.string "says now.$"
 
 Route110_Text_Route103Sign: @ 81F08CD

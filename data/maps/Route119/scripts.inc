@@ -502,15 +502,15 @@ Route119_EventScript_ScottWonAtFortreeGymCall:: @ 81F49EC
 Route119_Text_MayIntro: @ 81F49FD
 	.string "MAY: {PLAYER}{KUN}!\n"
 	.string "Where were you? I was looking for you!\p"
-	.string "How much stronger have you gotten?\n"
-	.string "Let me check for you!\p"
+	.string "I got some dank stuff in my arsenal?\n"
+	.string "Let me show you!\p"
 	.string "Ready with your POKéMON?\n"
 	.string "Of course you are! Go!$"
 
 Route119_Text_MayDefeat: @ 81F4A98
-	.string "Achah!\n"
+	.string "fUCK!\n"
 	.string "{PLAYER}{KUN}, you're strong!\p"
-	.string "I was worried that you might be\n"
+	.string "I was hoping that you might be\n"
 	.string "struggling with your training.$"
 
 Route119_Text_MayPresentForYou: @ 81F4AF3
@@ -520,28 +520,29 @@ Route119_Text_MayPresentForYou: @ 81F4AF3
 
 Route119_Text_MayExplainFly: @ 81F4B56
 	.string "MAY: Use FLY, and your POKéMON will\n"
-	.string "instantly carry you to any town you've\l"
-	.string "already visited.\p"
+	.string "instantly carry you ON ITS BACK.\p"
 	.string "But, to use FLY, you have to get\n"
 	.string "the GYM BADGE from FORTREE CITY.\l"
 	.string "That's important, so don't forget.\p"
 	.string "You should FLY home and visit\n"
 	.string "LITTLEROOT for a change.\p"
-	.string "I bet your mom's worried about you,\n"
+	.string "I bet your mom misses you,\n"
 	.string "{PLAYER}{KUN}.\p"
-	.string "Well, let's meet again somewhere!$"
+	.string "Eh, maybe not... See you soon!$"
 
 Route119_Text_BrendanIntro: @ 81F4C9A
 	.string "BRENDAN: {PLAYER}! So this is where\n"
-	.string "you've been looking for POKéMON?\p"
+	.string "you've been smoking lately?\p"
 	.string "Let me see how good you got.\n"
 	.string "I'll test you!\p"
 	.string "Now!\n"
 	.string "It's a battle, so battle!$"
 
 Route119_Text_BrendanDefeat: @ 81F4D24
-	.string "Hmm…\n"
-	.string "You've gotten pretty darn decent.$"
+	.string "fUCK!\n"
+	.string "{PLAYER}{KUN}, you're strong!\p"
+	.string "I was hoping that you might be\n"
+	.string "struggling with your training.$"
 
 Route119_Text_BrendanIllGiveYouThis: @ 81F4D4B
 	.string "BRENDAN: I'd say you're good enough\n"
@@ -550,26 +551,30 @@ Route119_Text_BrendanIllGiveYouThis: @ 81F4D4B
 	.string "Try it out.$"
 
 Route119_Text_BrendanExplainFly: @ 81F4DB5
-	.string "BRENDAN: Use FLY, and your POKéMON\n"
-	.string "instantly carries you to any town\l"
-	.string "you've already visited.\p"
-	.string "But you need the FORTREE GYM BADGE \n"
-	.string "to do that.\p"
-	.string "Anyway, I have to move along.$"
+	.string "MAY: Use FLY, and your POKéMON will\n"
+	.string "instantly carry you ON ITS BACK.\p"
+	.string "But, to use FLY, you have to get\n"
+	.string "the GYM BADGE from FORTREE CITY.\l"
+	.string "That's important, so don't forget.\p"
+	.string "You should FLY home and visit\n"
+	.string "LITTLEROOT for a change.\p"
+	.string "I bet your mom misses you,\n"
+	.string "{PLAYER}{KUN}.\p"
+	.string "Eh, maybe not... See you soon!$"
 
 Route119_Text_ScottWayToGoBeSeeingYou: @ 81F4E60
 	.string "SCOTT: Hahahah!\n"
 	.string "Way to go, {PLAYER}{KUN}!\p"
 	.string "I just passed by a TRAINER riding\n"
 	.string "a BIKE.\p"
-	.string "You just beat that TRAINER, didn't you?\n"
-	.string "It was pretty obvious that you did.\p"
-	.string "The kid looked really upset with\n"
-	.string "a face all red from anger.\p"
-	.string "I sure seem to run into you often.\n"
-	.string "Are you off to FORTREE GYM next?\p"
-	.string "I expect that you'll do well at the GYM.\n"
-	.string "Well, I'll be seeing you!$"
+	.string "You just beat that mofo, just like\n"
+	.string "that? It was pretty obvious \p"
+	.string "The kid looked real mad with\n"
+	.string "results of it.\p"
+	.string "Oh why do I keep following you?\n"
+	.string "well let's just say.... \p"
+	.string "I am highly interested in you so\n"
+	.string "I'll be seeing you soon!$"
 
 
 Route119_Text_ScottYouWonAtFortreeGym: @ 81F4FBA
@@ -581,7 +586,7 @@ Route119_Text_ScottYouWonAtFortreeGym: @ 81F4FBA
 	.string "Your strength…\n"
 	.string "Perhaps you really are the TRAINER\l"
 	.string "that I've been searching for.\p"
-	.string "Remember, you have a fan in me.\n"
+	.string "Remember, I am always watching.\n"
 	.string "I'll be cheering from the sidelines.\l"
 	.string "Keep up the great work!\p"
 	.string "… … … … … …\n"
@@ -589,12 +594,12 @@ Route119_Text_ScottYouWonAtFortreeGym: @ 81F4FBA
 
 Route119_Text_StayAwayFromWeatherInstitute: @ 81F50EB
 	.string "We're standing lookout here.\p"
-	.string "Hey, you! Stay away from the WEATHER\n"
+	.string "BRUV! Stay away from the WEATHER\n"
 	.string "INSTITUTE. It's not safe.$"
 
 Route119_Text_DontGoNearWeatherInstitute: @ 81F5147
 	.string "Lookout duty is surprisingly boring.\p"
-	.string "Hey, you! Please don't go near the\n"
+	.string "BRUV! Please don't go near the\n"
 	.string "WEATHER INSTITUTE.$"
 
 Route119_Text_ThoughtFlyByCatchingBirdMons: @ 81F51A2

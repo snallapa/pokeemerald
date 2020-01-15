@@ -79,7 +79,7 @@ Route102_Text_WatchMeCatchPokemon: @ 81EC1F8
 	.string "WALLY: {PLAYER}…\n"
 	.string "POKéMON hide in tall grass like this,\l"
 	.string "don't they?\p"
-	.string "Dam I'm ugly.\n"
+	.string "Damn I'm ugly.\n"
 	.string "…Whoa!\p"
 	.string "…Whoa!$"
 
@@ -95,7 +95,7 @@ Route102_Text_ImNotVeryTall: @ 81EC2C0
 	.string "I'm…not very tall, so I sink right\n"
 	.string "into tall grass.\p"
 	.string "The grass goes up my nose and…\n"
-	.string "Fwafwafwafwafwa…\p"
+	.string "its almost like I'm drowning…\p"
 	.string "Fwatchoo!$"
 
 Route102_Text_CatchWholeBunchOfPokemon: @ 81EC32E

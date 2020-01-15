@@ -196,7 +196,7 @@ Route114_Text_ExplainRoar: @ 81F2872
 	.string "A ROAR sends POKéMON scurrying.$"
 
 Route114_Text_Poochyena: @ 81F28A6
-	.string "Bow! Bowwow!$"
+	.string "ugh kind of sucks here.$"
 
 Route114_Text_MeteorFallsSign: @ 81F28B3
 	.string "METEOR FALLS\n"
