@@ -1167,7 +1167,7 @@ static bool8 SummaryScreen_LoadGraphics(void)
         break;
     case 9:
         CopyMonToSummaryStruct(&sMonSummaryScreen->currentMon);
-        ball = ITEM_SHADOW_BALL;
+        ball = ITEM_GREAT_BALL;
         SetMonData(&sMonSummaryScreen->currentMon, MON_DATA_POKEBALL, &ball);
         sMonSummaryScreen->switchCounter = 0;
         gMain.state++;
