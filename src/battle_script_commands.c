@@ -10217,6 +10217,8 @@ static void Cmd_handleballthrow(void)
 static void Cmd_givecaughtmon(void)
 {
     struct Pokemon* p = &gEnemyParty[gBattlerPartyIndexes[gBattlerAttacker ^ BIT_SIDE]];
+    gLastUsedItem = ITEM_GREAT_BALL;
+    SetMonData(p, MON_DATA_POKEBALL, &gLastUsedItem);
     if (gBattleTypeFlags & BATTLE_TYPE_TRAINER)
     {
         
