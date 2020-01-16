@@ -1936,7 +1936,6 @@ static void SetPlayerMonData(u8 monId)
     struct BattlePokemon *battlePokemon = (struct BattlePokemon *)&gBattleBufferA[gActiveBattler][3];
     struct MovePpInfo *moveData = (struct MovePpInfo *)&gBattleBufferA[gActiveBattler][3];
     s32 i;
-    u8 ball;
 
     switch (gBattleBufferA[gActiveBattler][1])
     {
@@ -2051,8 +2050,7 @@ static void SetPlayerMonData(u8 monId)
         SetMonData(&gPlayerParty[monId], MON_DATA_MET_GAME, &gBattleBufferA[gActiveBattler][3]);
         break;
     case REQUEST_POKEBALL_BATTLE:
-        ball = ITEM_SHADOW_BALL;
-        SetMonData(&gPlayerParty[monId], MON_DATA_POKEBALL, &ball);
+        SetMonData(&gPlayerParty[monId], MON_DATA_POKEBALL, &gBattleBufferA[gActiveBattler][3]);
         break;
     case REQUEST_ALL_IVS_BATTLE:
         SetMonData(&gPlayerParty[monId], MON_DATA_HP_IV, &gBattleBufferA[gActiveBattler][3]);

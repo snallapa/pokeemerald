@@ -742,6 +742,7 @@ u8 ItemIdToBallId(u16 ballItem)
     case ITEM_SHADOW_BALL:
         return BALL_SHADOW;
     case ITEM_POKE_BALL:
+        return BALL_LUXURY;
     default:
         return BALL_POKE;
     }
