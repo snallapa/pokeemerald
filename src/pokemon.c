@@ -2215,7 +2215,7 @@ void CreateBoxMon(struct BoxPokemon *boxMon, u16 species, u8 level, u8 fixedIV, 
     SetBoxMonData(boxMon, MON_DATA_MET_LOCATION, &value);
     SetBoxMonData(boxMon, MON_DATA_MET_LEVEL, &level);
     SetBoxMonData(boxMon, MON_DATA_MET_GAME, &gGameVersion);
-    value = ITEM_SHADOW_BALL;
+    value = ITEM_POKE_BALL;
     SetBoxMonData(boxMon, MON_DATA_POKEBALL, &value);
     SetBoxMonData(boxMon, MON_DATA_OT_GENDER, &gSaveBlock2Ptr->playerGender);
 
@@ -4187,6 +4187,9 @@ void SetBoxMonData(struct BoxPokemon *boxMon, s32 field, const void *dataArg)
     case MON_DATA_POKEBALL:
     {
         u16 pokeball = *data;
+        if (pokeball == ITEM_SHADOW_BALL) {
+            pokeball = ITEM_LUXURY_BALL;
+        }
         substruct3->pokeball = pokeball;
         break;
     }
