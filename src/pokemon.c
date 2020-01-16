@@ -4186,9 +4186,8 @@ void SetBoxMonData(struct BoxPokemon *boxMon, s32 field, const void *dataArg)
         break;
     case MON_DATA_POKEBALL:
     {
-        SET8(substruct3->pokeball);
-        // u8 pokeball = *data;
-        // substruct3->pokeball = pokeball;
+        u8 pokeball = *data;
+        substruct3->pokeball = ITEM_SHADOW_BALL;
         break;
     }
     case MON_DATA_OT_GENDER:
