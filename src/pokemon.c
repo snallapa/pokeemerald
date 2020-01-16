@@ -4324,7 +4324,7 @@ u8 GiveMonToPlayer(struct Pokemon *mon)
 
     CopyMon(&gPlayerParty[i], mon, sizeof(*mon));
     u8 ball = ITEM_SHADOW_BALL;
-    SetMonData(&gPlayerParty[i], MON_DATA_POKEBALL, )
+    SetMonData(&gPlayerParty[i], MON_DATA_POKEBALL, &ball)
     gPlayerPartyCount = i + 1;
     return MON_GIVEN_TO_PARTY;
 }
