@@ -10199,7 +10199,8 @@ static void Cmd_handleballthrow(void)
             if (shakes == BALL_3_SHAKES_SUCCESS) // mon caught, copy of the code above
             {
                 gBattlescriptCurrInstr = BattleScript_SuccessBallThrow;
-                SetMonData(&gEnemyParty[gBattlerPartyIndexes[gBattlerTarget]], MON_DATA_POKEBALL, &gLastUsedItem);
+            u8 ball = ITEM_GREAT_BALL;
+            SetMonData(&gEnemyParty[gBattlerPartyIndexes[gBattlerTarget]], MON_DATA_POKEBALL, &ball);
 
                 if (CalculatePlayerPartyCount() == PARTY_SIZE)
                     gBattleCommunication[MULTISTRING_CHOOSER] = 0;
