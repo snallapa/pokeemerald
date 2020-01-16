@@ -110,7 +110,7 @@ string generate_map_header_text(Json map_data, Json layouts_data, string version
         text << "\tmap_header_flags "
              << "allow_bike=" << map_data["allow_bike"].bool_value() << ", "
              << "allow_escape_rope=" << map_data["allow_escape_rope"].bool_value() << ", "
-             << "allow_run=" << "true" << ", "
+             << "allow_run=" << "1" << ", "
              << "show_map_name=" << map_data["show_map_name"].bool_value() << "\n";
 
      text << "\t.byte " << map_data["battle_scene"].string_value() << "\n\n";
