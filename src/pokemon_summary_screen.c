@@ -1333,10 +1333,13 @@ static bool8 SummaryScreen_DecompressGraphics(void)
 
 static void CopyMonToSummaryStruct(struct Pokemon *mon)
 {
+    u8 ball;
     if (!sMonSummaryScreen->isBoxMon)
     {
         struct Pokemon *partyMon = sMonSummaryScreen->monList.mons;
         *mon = partyMon[sMonSummaryScreen->curMonIndex];
+        ball = ITEM_SHADOW_BALL;
+        SetMonData(mon, MON_DATA_POKEBALL, &ball);
     }
     else
     {
