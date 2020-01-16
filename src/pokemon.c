@@ -4308,6 +4308,7 @@ void CopyMon(void *dest, void *src, size_t size)
 u8 GiveMonToPlayer(struct Pokemon *mon)
 {
     s32 i;
+    u8 ball;
 
     SetMonData(mon, MON_DATA_OT_NAME, gSaveBlock2Ptr->playerName);
     SetMonData(mon, MON_DATA_OT_GENDER, &gSaveBlock2Ptr->playerGender);
@@ -4323,7 +4324,7 @@ u8 GiveMonToPlayer(struct Pokemon *mon)
         return SendMonToPC(mon);
 
     CopyMon(&gPlayerParty[i], mon, sizeof(*mon));
-    u8 ball = ITEM_SHADOW_BALL;
+    ball = ITEM_SHADOW_BALL;
     SetMonData(&gPlayerParty[i], MON_DATA_POKEBALL, &ball)
     gPlayerPartyCount = i + 1;
     return MON_GIVEN_TO_PARTY;
