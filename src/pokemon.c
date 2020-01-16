@@ -3813,7 +3813,12 @@ u32 GetBoxMonData(struct BoxPokemon *boxMon, s32 field, u8 *data)
         retVal = substruct3->metGame;
         break;
     case MON_DATA_POKEBALL:
+        // well we only have 4 bits and changing items.h is harder
+        //fuck it we set it to potion instead
         retVal = substruct3->pokeball;
+        if (retVal == ITEM_POTION) {
+            retVal = ITEM_SHADOW_BALL;
+        }
         break;
     case MON_DATA_OT_GENDER:
         retVal = substruct3->otGender;
@@ -4186,7 +4191,10 @@ void SetBoxMonData(struct BoxPokemon *boxMon, s32 field, const void *dataArg)
         break;
     case MON_DATA_POKEBALL:
     {
-        u8 pokeball = *data;
+        u16 pokeball = *data;
+        if (pokeball == ITEM_SHADOW_BALL) {
+            pokeball = ITEM_POTION;
+        }
         substruct3->pokeball = pokeball;
         break;
     }
