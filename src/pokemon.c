@@ -4187,9 +4187,6 @@ void SetBoxMonData(struct BoxPokemon *boxMon, s32 field, const void *dataArg)
     case MON_DATA_POKEBALL:
     {
         u16 pokeball = *data;
-        if (pokeball == ITEM_SHADOW_BALL) {
-            pokeball = ITEM_LUXURY_BALL;
-        }
         substruct3->pokeball = pokeball;
         break;
     }
