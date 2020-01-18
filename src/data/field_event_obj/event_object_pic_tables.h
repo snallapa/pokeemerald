@@ -852,6 +852,7 @@ const struct SpriteFrameImage gEventObjectPicTable_MewTwo[] = {
     obj_frame_tiles(gEventObjectPic_MewTwo),
     obj_frame_tiles(gEventObjectPic_MewTwo),
     obj_frame_tiles(gEventObjectPic_MewTwo),
+};
 
 const struct SpriteFrameImage gEventObjectPicTable_UnusedPorygon2Doll[] = {
     obj_frame_tiles(gEventObjectPic_UnusedPorygon2Doll),
