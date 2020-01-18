@@ -22,7 +22,7 @@
             "movement_range_y": 1,
             "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
             "script": "EventScript_RockSmash",
-            "trainer_sight_or_berry_tree_id": "",
+            "trainer_sight_or_berry_tree_id": "0",
             "trainer_type": "",
             "x": 7,
             "y": 21
@@ -35,7 +35,7 @@
             "movement_range_y": 1,
             "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
             "script": "EventScript_RockSmash",
-            "trainer_sight_or_berry_tree_id": "",
+            "trainer_sight_or_berry_tree_id": "0",
             "trainer_type": "",
             "x": 13,
             "y": 21
@@ -48,7 +48,7 @@
             "movement_range_y": 1,
             "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
             "script": "EventScript_RockSmash",
-            "trainer_sight_or_berry_tree_id": "",
+            "trainer_sight_or_berry_tree_id": "0",
             "trainer_type": "",
             "x": 5,
             "y": 20
@@ -61,7 +61,7 @@
             "movement_range_y": 1,
             "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
             "script": "EventScript_RockSmash",
-            "trainer_sight_or_berry_tree_id": "",
+            "trainer_sight_or_berry_tree_id": "0",
             "trainer_type": "",
             "x": 12,
             "y": 19
@@ -74,7 +74,7 @@
             "movement_range_y": 1,
             "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
             "script": "EventScript_RockSmash",
-            "trainer_sight_or_berry_tree_id": "",
+            "trainer_sight_or_berry_tree_id": "0",
             "trainer_type": "",
             "x": 11,
             "y": 21
@@ -87,7 +87,7 @@
             "movement_range_y": 1,
             "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
             "script": "EventScript_RockSmash",
-            "trainer_sight_or_berry_tree_id": "",
+            "trainer_sight_or_berry_tree_id": "0",
             "trainer_type": "",
             "x": 9,
             "y": 18
