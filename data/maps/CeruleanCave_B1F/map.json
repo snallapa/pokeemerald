@@ -17,7 +17,7 @@
         {
             "elevation": 3,
             "flag": "FLAG_MEWTWO",
-            "graphics_id": "EVENT_OBJ_GFX_SNORLAX",
+            "graphics_id": "EVENT_OBJ_GFX_MEWTWO",
             "movement_range_x": 1,
             "movement_range_y": 1,
             "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
