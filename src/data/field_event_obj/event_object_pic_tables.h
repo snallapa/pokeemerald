@@ -848,7 +848,10 @@ const struct SpriteFrameImage gEventObjectPicTable_UnusedWooperDoll[] = {
 };
 
 const struct SpriteFrameImage gEventObjectPicTable_MewTwo[] = {
-    obj_frame_tiles(gEventObjectPic_MewTwo),
+    overworld_frame(gEventObjectPic_Mewtwo, 2, 2, 0),
+    overworld_frame(gEventObjectPic_Mewtwo, 2, 2, 1),
+    overworld_frame(gEventObjectPic_Mewtwo, 2, 2, 2),
+    overworld_frame(gEventObjectPic_Mewtwo, 2, 2, 3),
 };
 
 const struct SpriteFrameImage gEventObjectPicTable_UnusedPorygon2Doll[] = {
