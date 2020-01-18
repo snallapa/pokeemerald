@@ -23,8 +23,6 @@ EventScript_1624F1::
 	return
 
 CeruleanCave_B1F_EventScript_1624F5:: 
-	goto_if_questlog EventScript_ReleaseEnd
-	special sub_8112364
 	lock
 	faceplayer
 	waitse
