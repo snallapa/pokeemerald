@@ -81,7 +81,7 @@
 #define EVENT_OBJ_GFX_UNUSED_MAGNEMITE_DOLL       77
 #define EVENT_OBJ_GFX_UNUSED_SQUIRTLE_DOLL        78
 #define EVENT_OBJ_GFX_UNUSED_WOOPER_DOLL          79
-#define EVENT_OBJ_GFX_UNUSED_PIKACHU_DOLL         80
+#define EVENT_OBJ_GFX_MEWTWO                      80
 #define EVENT_OBJ_GFX_SNORLAX                     81
 #define EVENT_OBJ_GFX_CUTTABLE_TREE               82
 #define EVENT_OBJ_GFX_MART_EMPLOYEE               83
