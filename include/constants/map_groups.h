@@ -422,10 +422,10 @@
 #define MAP_SECRET_BASE_YELLOW_CAVE4        (21 | (25 << 8))
 #define MAP_SECRET_BASE_TREE4               (22 | (25 << 8))
 #define MAP_SECRET_BASE_SHRUB4              (23 | (25 << 8))
-#define MAP_BATTLE_COLOSSEUM_2P             (24 | (25 << 8))
+#define MAP_BATTLE_COLOSSEUM2P              (24 | (25 << 8))
 #define MAP_TRADE_CENTER                    (25 | (25 << 8))
 #define MAP_RECORD_CORNER                   (26 | (25 << 8))
-#define MAP_BATTLE_COLOSSEUM_4P             (27 | (25 << 8))
+#define MAP_BATTLE_COLOSSEUM4P              (27 | (25 << 8))
 #define MAP_CONTEST_HALL                    (28 | (25 << 8))
 #define MAP_UNKNOWN_LINK_CONTEST_ROOM_25_29 (29 | (25 << 8))
 #define MAP_UNKNOWN_LINK_CONTEST_ROOM_25_30 (30 | (25 << 8))
@@ -550,6 +550,9 @@
 #define MAP_NAVEL_ROCK_DOWN11                               (86 | (26 << 8))
 #define MAP_NAVEL_ROCK_BOTTOM                               (87 | (26 << 8))
 #define MAP_TRAINER_HILL_ELEVATOR                           (88 | (26 << 8))
+#define MAP_CERULEAN_CAVE_1F                                (89 | (26 << 8))
+#define MAP_CERULEAN_CAVE_2F                                (90 | (26 << 8))
+#define MAP_CERULEAN_CAVE_B1F                               (91 | (26 << 8))
 
 // Map Group 27
 #define MAP_ROUTE104_PROTOTYPE                          (0 | (27 << 8))
