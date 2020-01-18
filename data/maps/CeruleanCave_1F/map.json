@@ -145,6 +145,13 @@
             "elevation": 3,
             "x": 2,
             "y": 5
+        },
+        {
+            "dest_map": "MAP_LITTLEROOT_TOWN",
+            "dest_warp_id": 0,
+            "elevation": 0,
+            "x": 33,
+            "y": 22
         }
     ],
     "weather": "WEATHER_NONE"
