@@ -456,7 +456,7 @@
         },
         {
             "dest_map": "MAP_CERULEAN_CAVE_1F",
-            "dest_warp_id": 0,
+            "dest_warp_id": 7,
             "elevation": 0,
             "x": 41,
             "y": 55
