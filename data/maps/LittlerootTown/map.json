@@ -257,8 +257,8 @@
             "y": 8
         },
         {
-            "dest_map": "MAP_CERULEAN_CAVE_1F",
-            "dest_warp_id": 7,
+            "dest_map": "MAP_BATTLE_FRONTIER_OUTSIDE_WEST",
+            "dest_warp_id": 10,
             "elevation": 0,
             "x": 7,
             "y": 16
