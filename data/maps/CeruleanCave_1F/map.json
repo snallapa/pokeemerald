@@ -29,6 +29,19 @@
         },
         {
             "elevation": 3,
+            "flag": "FLAG_MEWTWO",
+            "graphics_id": "EVENT_OBJ_GFX_MEWTWO",
+            "movement_range_x": 1,
+            "movement_range_y": 1,
+            "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+            "script": "CeruleanCave_B1F_EventScript_MewTwo",
+            "trainer_sight_or_berry_tree_id": "0",
+            "trainer_type": "0",
+            "x": 11,
+            "y": 4
+        },
+        {
+            "elevation": 3,
             "flag": "FLAG_TEMP_13",
             "graphics_id": "EVENT_OBJ_GFX_BREAKABLE_ROCK",
             "movement_range_x": 1,
