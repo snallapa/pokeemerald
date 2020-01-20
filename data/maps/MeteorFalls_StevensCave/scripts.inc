@@ -31,7 +31,7 @@ MeteorFalls_StevensCave_EventScript_GiveTicket::
 	checkitemspace ITEM_AURORA_TICKET, 1
 	compare VAR_RESULT, FALSE
 	vgoto_if_eq MeteorFalls_StevensCave_AuroraTicket_NoBagSpace
-	giveitem_std ITEM_AURORA_TICKET
+	giveitem ITEM_AURORA_TICKET
 	setflag FLAG_ENABLE_SHIP_BIRTH_ISLAND
 	setflag FLAG_RECEIVED_AURORA_TICKET
 	vmessage MeteorFalls_StevensCave_Text_AuroraTicketUseAtPort
