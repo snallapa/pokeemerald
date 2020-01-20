@@ -847,9 +847,6 @@ const struct SpriteFrameImage gObjectEventPicTable_UnusedWooperDoll[] = {
     obj_frame_tiles(gObjectEventPic_UnusedWooperDoll),
 };
 
-const struct SpriteFrameImage gObjectEventPicTable_UnusedPikachuDoll[] = {
-    obj_frame_tiles(gObjectEventPic_UnusedPikachuDoll),
-};
 
 const struct SpriteFrameImage gObjectEventPicTable_UnusedPorygon2Doll[] = {
     obj_frame_tiles(gObjectEventPic_UnusedPorygon2Doll),
@@ -2171,4 +2168,23 @@ const struct SpriteFrameImage gObjectEventPicTable_RubySapphireMay[] = {
     overworld_frame(gObjectEventPic_RubySapphireMayNormal, 2, 4, 6),
     overworld_frame(gObjectEventPic_RubySapphireMayNormal, 2, 4, 7),
     overworld_frame(gObjectEventPic_RubySapphireMayNormal, 2, 4, 8),
+};
+
+const struct SpriteFrameImage gObjectEventPicTable_SnorlaxStill[] = {
+    obj_frame_tiles(gObjectEventPic_SnorlaxStill),
+    obj_frame_tiles(gObjectEventPic_SnorlaxStill),
+    obj_frame_tiles(gObjectEventPic_SnorlaxStill),
+    obj_frame_tiles(gObjectEventPic_SnorlaxStill),
+    obj_frame_tiles(gObjectEventPic_SnorlaxStill),
+    obj_frame_tiles(gObjectEventPic_SnorlaxStill),
+    obj_frame_tiles(gObjectEventPic_SnorlaxStill),
+    obj_frame_tiles(gObjectEventPic_SnorlaxStill),
+    obj_frame_tiles(gObjectEventPic_SnorlaxStill),
+};
+
+const struct SpriteFrameImage  gObjectEventPicTable_MewTwo[] = {
+    obj_frame_tiles(gObjectEventPic_MewTwo),
+    obj_frame_tiles(gObjectEventPic_MewTwo),
+    obj_frame_tiles(gObjectEventPic_MewTwo),
+    obj_frame_tiles(gObjectEventPic_MewTwo),
 };

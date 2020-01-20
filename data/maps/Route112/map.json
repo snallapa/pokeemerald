@@ -213,7 +213,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "EVENT_OBJ_GFX_SNORLAX",
+      "graphics_id": "OBJ_EVENT_GFX_SNORLAX",
       "x": 12,
       "y": 46,
       "elevation": 3,

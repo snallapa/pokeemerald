@@ -20,7 +20,7 @@ FieryPath_EventScript_JaelenGive::
 	lockall
 	msgbox FieryPath_Text_JaelenGive, MSGBOX_DEFAULT
 	givemon SPECIES_CYNDAQUIL, 5, ITEM_NONE
-	playfanfare MUS_FANFA4
+	playfanfare MUS_OBTAIN_ITEM
 	message FieryPath_Text_ObtainedCyndaquil
 	waitmessage
 	waitfanfare

@@ -4410,6 +4410,36 @@
       "secondary_tileset": "gTileset_MysteryEventsHouse",
       "border_filepath": "data/layouts/SootopolisCity_MysteryEventsHouse_1F_StairsUnblocked/border.bin",
       "blockdata_filepath": "data/layouts/SootopolisCity_MysteryEventsHouse_1F_StairsUnblocked/map.bin"
-    }
+    },
+    {
+      "blockdata_filepath": "data/layouts/CeruleanCave_1F/map.bin",
+      "border_filepath": "data/layouts/CeruleanCave_1F/border.bin",
+      "height": 23,
+      "id": "LAYOUT_CERULEAN_CAVE_1F",
+      "name": "CeruleanCave_1F_Layout",
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "width": 40
+  },
+  {
+      "blockdata_filepath": "data/layouts/CeruleanCave_2F/map.bin",
+      "border_filepath": "data/layouts/CeruleanCave_2F/border.bin",
+      "height": 23,
+      "id": "LAYOUT_CERULEAN_CAVE_2F",
+      "name": "CeruleanCave_2F_Layout",
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "width": 40
+  },
+  {
+      "blockdata_filepath": "data/layouts/CeruleanCave_B1F/map.bin",
+      "border_filepath": "data/layouts/CeruleanCave_B1F/border.bin",
+      "height": 23,
+      "id": "LAYOUT_CERULEAN_CAVE_B1F",
+      "name": "CeruleanCave_B1F_Layout",
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "width": 40
+  }
   ]
 }
