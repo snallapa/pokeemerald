@@ -281,7 +281,7 @@ MauvilleCity_Gym_Text_GymGuidePostVictory: @ 820E283
 	.string "BEEP BOOP BEEP!$"
 
 MauvilleCity_Gym_Text_KirkIntro: @ 820E2BC
-	.string "BEEP BOOP BEEP\n$"
+	.string "BEEP BOOP BEEP.$"
 
 MauvilleCity_Gym_Text_KirkDefeat: @ 820E2FC
 	.string "BEEP BOOP BEEP,\n"

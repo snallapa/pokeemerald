@@ -398,7 +398,7 @@ DewfordTown_Gym_Text_BrawlyIntro: @ 81FCF44
 	.string "AHHHHHHHHHHHHHHHHHH\n"
 	.string "ME DEWFORD's GYM LEADER!\p"
 	.string "AHHHHHHHHHHHHHHHHHHH\n"
-	.string "FUCKKKKKKKKKKK\l"
+	.string "FUCKKKKKKKKKKK.$"
 
 DewfordTown_Gym_Text_BrawlyDefeat: @ 81FD008
 	.string "WHAT THE FUCK\n"
