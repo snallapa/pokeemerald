@@ -75,7 +75,7 @@ SootopolisCity_MysteryEventsHouse_1F_EventScript_OldMan:: @ 8227A24
 	faceplayer
 	frontier_checkvisittrainer
 	compare VAR_RESULT, 1
-	goto_if_eq SootopolisCity_MysteryEventsHouse_1F_EventScript_InvalidVisitingTrainer
+	goto_if_eq SootopolisCity_MysteryEventsHouse_1F_EventScript_TrainerVisiting
 	compare VAR_TEMP_1, 1
 	goto_if_eq SootopolisCity_MysteryEventsHouse_1F_EventScript_TrainerVisiting
 	msgbox SootopolisCity_MysteryEventsHouse_1F_Text_OnlyAmusementWatchingBattles, MSGBOX_DEFAULT
