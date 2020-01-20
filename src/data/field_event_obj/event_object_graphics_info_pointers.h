@@ -79,7 +79,7 @@ const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_UnusedNatuDoll;
 const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_UnusedMagnemiteDoll;
 const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_UnusedSquirtleDoll;
 const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_UnusedWooperDoll;
-const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_UnusedPikachuDoll;
+const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_MewTwo;
 const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_UnusedPorygon2Doll;
 const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_CuttableTree;
 const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_MartEmployee;
@@ -328,7 +328,7 @@ const struct EventObjectGraphicsInfo *const gEventObjectGraphicsInfoPointers[] =
     [EVENT_OBJ_GFX_UNUSED_MAGNEMITE_DOLL] =    &gEventObjectGraphicsInfo_UnusedMagnemiteDoll,
     [EVENT_OBJ_GFX_UNUSED_SQUIRTLE_DOLL] =     &gEventObjectGraphicsInfo_UnusedSquirtleDoll,
     [EVENT_OBJ_GFX_UNUSED_WOOPER_DOLL] =       &gEventObjectGraphicsInfo_UnusedWooperDoll,
-    [EVENT_OBJ_GFX_UNUSED_PIKACHU_DOLL] =      &gEventObjectGraphicsInfo_UnusedPikachuDoll,
+    [EVENT_OBJ_GFX_MEWTWO] =                   &gEventObjectGraphicsInfo_MewTwo,
     [EVENT_OBJ_GFX_SNORLAX] =                  &gEventObjectGraphicsInfo_Snorlax,
     [EVENT_OBJ_GFX_CUTTABLE_TREE] =            &gEventObjectGraphicsInfo_CuttableTree,
     [EVENT_OBJ_GFX_MART_EMPLOYEE] =            &gEventObjectGraphicsInfo_MartEmployee,
