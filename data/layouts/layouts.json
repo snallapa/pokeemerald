@@ -4468,7 +4468,7 @@
             "name": "ShockedTower_3F_Layout",
             "primary_tileset": "gTileset_Building",
             "secondary_tileset": "gTileset_Contest",
-            "width": 18
+            "width": 17
         }
     ],
     "layouts_table_label": "gMapLayouts"
