@@ -4459,6 +4459,16 @@
             "primary_tileset": "gTileset_General",
             "secondary_tileset": "gTileset_Contest",
             "width": 20
+        },
+        {
+            "blockdata_filepath": "data/layouts/ShockedTower_3F/map.bin",
+            "border_filepath": "data/layouts/ShockedTower_3F/border.bin",
+            "height": 18,
+            "id": "LAYOUT_SHOCKED_TOWER_3F",
+            "name": "ShockedTower_3F_Layout",
+            "primary_tileset": "gTileset_Building",
+            "secondary_tileset": "gTileset_Contest",
+            "width": 18
         }
     ],
     "layouts_table_label": "gMapLayouts"

@@ -1066,3 +1066,5 @@ Common_EventScript_LegendaryFlewAway:: @ 8273776
 	.include "data/maps/ShockedTower_1F/scripts.inc"
 
 	.include "data/maps/ShockedTower_2F/scripts.inc"
+
+	.include "data/maps/ShockedTower_3F/scripts.inc"
