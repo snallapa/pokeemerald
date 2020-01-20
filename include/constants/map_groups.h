@@ -554,6 +554,9 @@
 #define MAP_NAVEL_ROCK_DOWN11                               (86 | (26 << 8))
 #define MAP_NAVEL_ROCK_BOTTOM                               (87 | (26 << 8))
 #define MAP_TRAINER_HILL_ELEVATOR                           (88 | (26 << 8))
+#define MAP_CERULEAN_CAVE_1F                                (89 | (26 << 8))
+#define MAP_CERULEAN_CAVE_2F                                (90 | (26 << 8))
+#define MAP_CERULEAN_CAVE_B1F                               (91 | (26 << 8))
 
 // Map Group 27
 #define MAP_ROUTE104_PROTOTYPE                          (0 | (27 << 8))
