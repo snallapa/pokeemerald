@@ -322,7 +322,8 @@
         "TerraCave_End",
         "AlteringCave",
         "MeteorFalls_StevensCave",
-        "ShockedTower_1F"
+        "ShockedTower_1F",
+        "ShockedTower_2F"
     ],
     "gMapGroup25": [
         "SecretBase_RedCave1",

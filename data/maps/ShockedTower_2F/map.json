@@ -8,11 +8,11 @@
     "connections": null,
     "coord_events": [
     ],
-    "id": "MAP_SHOCKED_TOWER_1F",
-    "layout": "LAYOUT_SHOCKED_TOWER_1F",
+    "id": "MAP_SHOCKED_TOWER_2F",
+    "layout": "LAYOUT_SHOCKED_TOWER_2F",
     "map_type": "MAP_TYPE_INDOOR",
     "music": "MUS_DAN02",
-    "name": "ShockedTower_1F",
+    "name": "ShockedTower_2F",
     "object_events": [
         {
             "elevation": 3,
@@ -23,7 +23,7 @@
             "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
             "script": "NULL",
             "trainer_sight_or_berry_tree_id": "4",
-            "trainer_type": "1",
+            "trainer_type": "0",
             "x": 15,
             "y": 8
         },
@@ -33,22 +33,9 @@
             "graphics_id": "EVENT_OBJ_GFX_EXPERT_F",
             "movement_range_x": 0,
             "movement_range_y": 0,
-            "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
-            "script": "NULL",
-            "trainer_sight_or_berry_tree_id": "4",
-            "trainer_type": "0",
-            "x": 9,
-            "y": 15
-        },
-        {
-            "elevation": 3,
-            "flag": "0",
-            "graphics_id": "EVENT_OBJ_GFX_EXPERT_M",
-            "movement_range_x": 0,
-            "movement_range_y": 0,
             "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
             "script": "NULL",
-            "trainer_sight_or_berry_tree_id": "4",
+            "trainer_sight_or_berry_tree_id": "0",
             "trainer_type": "0",
             "x": 4,
             "y": 8
@@ -59,14 +46,14 @@
     "show_map_name": true,
     "warp_events": [
         {
-            "dest_map": "MAP_LITTLEROOT_TOWN",
-            "dest_warp_id": 0,
+            "dest_map": "MAP_SHOCKED_TOWER_1F",
+            "dest_warp_id": 1,
             "elevation": 0,
             "x": 17,
             "y": 1
         },
         {
-            "dest_map": "MAP_LITTLEROOT_TOWN",
+            "dest_map": "",
             "dest_warp_id": 0,
             "elevation": 0,
             "x": 2,

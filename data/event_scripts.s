@@ -1064,3 +1064,5 @@ Common_EventScript_LegendaryFlewAway:: @ 8273776
 	.include "data/text/birch_speech.inc"
 
 	.include "data/maps/ShockedTower_1F/scripts.inc"
+
+	.include "data/maps/ShockedTower_2F/scripts.inc"
