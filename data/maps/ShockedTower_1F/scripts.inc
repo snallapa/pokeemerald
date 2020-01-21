@@ -4,7 +4,7 @@ ShockedTower_1F_MapScripts::
 
 ShockedTower_1F_EventScript_Lee::
 	trainerbattle_single TRAINER_LEE, ShockedTower_1F_Text_LeeIntro, ShockedTower_1F_Text_LeeDefeated, ShockedTower_1F_EventScript_LeeDefeated
-	msgbox ShockedTower_1F_Text_LeeIntro, MSGBOX_AUTOCLOSE
+	msgbox ShockedTower_1F_Text_LeePostBattle, MSGBOX_AUTOCLOSE
 	end
 
 ShockedTower_1F_EventScript_LeeDefeated:: @ 8233AA0
@@ -43,8 +43,8 @@ ShockedTower_1F_Text_LeeIntro:
 	.string "I see a new challenger has approached..\p"
 	.string "WE ARE THE THUNDER SAGES PROTECTORS\n"
 	.string "OF OUR ONE TRUE MASTER!\p"
-	.string "Only those who are worthy will be allowed go\n"
-	.string "through and meet our lord.\p"
+	.string "Only those who are worthy will be allowed\n"
+	.string "go through and meet our lord.\p"
 	.string "Let me look inside your soul!$"
 
 ShockedTower_1F_Text_LeeDefeated:
