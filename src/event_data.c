@@ -248,7 +248,7 @@ static u8 *GetTrainerFlagPointer(u16 id)
 u8 TrainerFlagSet(u16 id)
 {
     u8 *ptr;
-    u16 trainerId = id - FLAG_TRAINER_FLAG_START;
+    u16 trainerId = id - TRAINER_FLAGS_START;
     if (trainerId <= TRAINERS_FLAG_NO)
         return FlagSet(id);
 
@@ -261,7 +261,7 @@ u8 TrainerFlagSet(u16 id)
 u8 TrainerFlagClear(u16 id)
 {
     u8 *ptr;
-    u16 trainerId = id - FLAG_TRAINER_FLAG_START;
+    u16 trainerId = id - TRAINER_FLAGS_START;
     if (trainerId <= TRAINERS_FLAG_NO)
         return FlagClear(id);
 
@@ -274,7 +274,7 @@ u8 TrainerFlagClear(u16 id)
 bool8 TrainerFlagGet(u16 id)
 {
     u8 *ptr;
-    u16 trainerId = id - FLAG_TRAINER_FLAG_START;
+    u16 trainerId = id - TRAINER_FLAGS_START;
     if (trainerId <= TRAINERS_FLAG_NO)
         return FlagGet(id);
 
