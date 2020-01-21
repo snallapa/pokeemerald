@@ -3,19 +3,41 @@ ShockedTower_1F_MapScripts::
 
 
 ShockedTower_1F_EventScript_Lee::
-	trainerbattle_single TRAINER_LEE, ShockedTower_1F_Text_LeeIntro, ShockedTower_1F_Text_LeeDefeated
+	trainerbattle_single TRAINER_LEE, ShockedTower_1F_Text_LeeIntro, ShockedTower_1F_Text_LeeDefeated, ShockedTower_1F_EventScript_LeeDefeated
 	msgbox ShockedTower_1F_Text_LeePostBattle, MSGBOX_AUTOCLOSE
 	end
 
+ShockedTower_1F_EventScript_LeeDefeated:: @ 8233AA0
+	special PlayerFaceTrainerAfterBattle
+	waitmovement 0
+	msgbox ShockedTower_1F_Text_LeePostBattle, MSGBOX_DEFAULT
+	release
+	end
+
 ShockedTower_1F_EventScript_Mariam::
-	trainerbattle_single TRAINER_MARIAM, ShockedTower_1F_Text_MariamIntro, ShockedTower_1F_Text_MariamDefeated
+	trainerbattle_single TRAINER_MARIAM, ShockedTower_1F_Text_MariamIntro, ShockedTower_1F_Text_MariamDefeated, ShockedTower_1F_EventScript_MariamDefeated
 	msgbox ShockedTower_1F_Text_MariamPostBattle, MSGBOX_AUTOCLOSE
 	end
 
+ShockedTower_1F_EventScript_MariamDefeated:: @ 8233AA0
+	special PlayerFaceTrainerAfterBattle
+	waitmovement 0
+	msgbox ShockedTower_1F_Text_MariamPostBattle, MSGBOX_DEFAULT
+	release
+	end
+
 ShockedTower_1F_EventScript_Rio::
-	trainerbattle_single TRAINER_RIO, ShockedTower_1F_Text_RioIntro, ShockedTower_1F_Text_RioDefeated
+	trainerbattle_single TRAINER_RIO, ShockedTower_1F_Text_RioIntro, ShockedTower_1F_Text_RioDefeated, ShockedTower_1F_EventScript_RioDefeated
 	msgbox ShockedTower_1F_Text_RioPostBattle, MSGBOX_AUTOCLOSE
 	end
+
+ShockedTower_1F_EventScript_RioDefeated:: @ 8233AA0
+	special PlayerFaceTrainerAfterBattle
+	waitmovement 0
+	msgbox ShockedTower_1F_Text_RioPostBattle, MSGBOX_DEFAULT
+	release
+	end
+
 
 ShockedTower_1F_Text_LeeIntro:
 	.string "I see a new challenger has\n"
@@ -35,12 +57,11 @@ ShockedTower_1F_Text_LeePostBattle:
 	.string "get more difficult from here.$"
 
 ShockedTower_1F_Text_MariamIntro:
-	.string "I heard a new trainer has entered\n"
-	.string "Try me, bitch$"
+	.string "I heard a new trainer has entered!\n"
+	.string "Try me, bitch!!$"
 
 ShockedTower_1F_Text_MariamDefeated:
-	.string "I have failed you\n"
-	.string "master$"
+	.string "I have failed you master...$"
 
 ShockedTower_1F_Text_MariamPostBattle:
 	.string "Go on then, only three\n"
@@ -48,13 +69,12 @@ ShockedTower_1F_Text_MariamPostBattle:
 
 ShockedTower_1F_Text_RioIntro:
 	.string "We protect our lord from\n"
-	.string "outsiders like you. You \p"
-	.string "can only wish to get a glimpse\n"
+	.string "outsiders like you.\p"
+	.string "You can only wish to get a glimpse\n"
 	.string "of our master's power!$"
 
 ShockedTower_1F_Text_RioDefeated:
-	.string "Can this be! Maybe you\n"
-	.string "are worthy of this...$"
+	.string "Can this be! Maybe you are worthy...$"
 
 ShockedTower_1F_Text_RioPostBattle:
 	.string "I underestimated you...\n"
