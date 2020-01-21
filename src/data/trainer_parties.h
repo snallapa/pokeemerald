@@ -12785,7 +12785,7 @@ static const struct TrainerMonItemCustomMoves sParty_Numaan[] = {
     .lvl = 46,
     .species = SPECIES_RAICHU,
     .heldItem = ITEM_LEFTOVERS,
-    .moves = MOVE_THUNDERBOLT, MOVE_ENCORE MOVE_SUBSTITUTE, MOVE_FOCUS_PUNCH
+    .moves = MOVE_THUNDERBOLT, MOVE_ENCORE, MOVE_SUBSTITUTE, MOVE_FOCUS_PUNCH
     },
     {
     .iv = 255,
