@@ -893,7 +893,7 @@ void ChooseStarter(void)
     gMain.savedCallback = CB2_GiveStarter;
 }
 
-static void     (void)
+static void CB2_GiveStarter(void)
 {
     u16 starterMon;
 
