@@ -30,6 +30,12 @@ Route102_EventScript_Calvin:: @ 81EC105
 	release
 	end
 
+Route102_EventScript_Test1:: @ 81EC105
+	trainerbattle_single TRAINER_TEST, Route102_Text_CalvinIntro, Route102_Text_CalvinDefeated
+	msgbox Route102_Text_RickPostBattle, MSGBOX_AUTOCLOSE
+	release
+	end
+
 Route102_EventScript_CalvinRegisterMatchCallAfterBattle:: @ 81EC146
 	special PlayerFaceTrainerAfterBattle
 	waitmovement 0
