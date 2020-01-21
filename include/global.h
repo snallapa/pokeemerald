@@ -9,6 +9,7 @@
 #include "constants/flags.h"
 #include "constants/vars.h"
 #include "constants/species.h"
+#include "constants/opponents.h"
 
 // Prevent cross-jump optimization.
 #define BLOCK_CROSS_JUMP asm("");
@@ -986,6 +987,7 @@ struct SaveBlock1
     /*0x3D64*/ struct SaveTrainerHill trainerHill;
     /*0x3D70*/ struct WaldaPhrase waldaPhrase;
     // sizeof: 0x3D88
+    u8 trainerFlags[NEW_TRAINER_FLAGS_COUNT];
 };
 
 extern struct SaveBlock1* gSaveBlock1Ptr;
