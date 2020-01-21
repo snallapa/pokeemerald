@@ -12735,7 +12735,7 @@ static const struct TrainerMonItemCustomMoves sParty_Rio[] = {
     {
     .iv = 255,
     .lvl = 42,
-    .species = SPECIES_FLAFFY,
+    .species = SPECIES_FLAAFFY,
     .heldItem = ITEM_NONE,
     .moves = MOVE_ATTRACT, MOVE_BRICK_BREAK, MOVE_SHOCK_WAVE, MOVE_THUNDER_PUNCH
     },
