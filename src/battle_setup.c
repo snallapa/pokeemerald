@@ -1217,7 +1217,7 @@ void SetUpTwoTrainersBattle(void)
 bool32 GetTrainerFlagFromScriptPointer(const u8 *data)
 {
     u32 flag = TrainerBattleLoadArg16(data + 2);
-    return FlagGet(TRAINER_FLAGS_START + flag);
+    return TrainerFlagGet(TRAINER_FLAGS_START + flag);
 }
 
 // Set trainer's movement type so they stop and remain facing that direction
@@ -1241,34 +1241,34 @@ bool8 GetTrainerFlag(void)
     else if (InTrainerHill())
         return GetHillTrainerFlag(gSelectedObjectEvent);
     else
-        return FlagGet(GetTrainerAFlag());
+        return TrainerFlagGet(GetTrainerAFlag());
 }
 
 static void SetBattledTrainersFlags(void)
 {
     if (gTrainerBattleOpponent_B != 0)
-        FlagSet(GetTrainerBFlag());
-    FlagSet(GetTrainerAFlag());
+        TrainerFlagSet(GetTrainerBFlag());
+    TrainerFlagSet(GetTrainerAFlag());
 }
 
 static void SetBattledTrainerFlag(void)
 {
-    FlagSet(GetTrainerAFlag());
+    TrainerFlagSet(GetTrainerAFlag());
 }
 
 bool8 HasTrainerBeenFought(u16 trainerId)
 {
-    return FlagGet(TRAINER_FLAGS_START + trainerId);
+    return TrainerFlagGet(TRAINER_FLAGS_START + trainerId);
 }
 
 void SetTrainerFlag(u16 trainerId)
 {
-    FlagSet(TRAINER_FLAGS_START + trainerId);
+    TrainerFlagSet(TRAINER_FLAGS_START + trainerId);
 }
 
 void ClearTrainerFlag(u16 trainerId)
 {
-    FlagClear(TRAINER_FLAGS_START + trainerId);
+    TrainerFlagClear(TRAINER_FLAGS_START + trainerId);
 }
 
 void BattleSetup_StartTrainerBattle(void)
@@ -1580,7 +1580,7 @@ static bool32 sub_80B1D94(s32 rematchTableId)
     if (rematchTableId >= REMATCH_ELITE_FOUR_ENTRIES)
         return TRUE;
     else if (rematchTableId == REMATCH_WALLY_3)
-        return (FlagGet(FLAG_DEFEATED_WALLY_VICTORY_ROAD) == FALSE);
+        return (TrainerFlagGet(FLAG_DEFEATED_WALLY_VICTORY_ROAD) == FALSE);
     else
         return FALSE;
 }
@@ -1616,7 +1616,7 @@ static bool32 UpdateRandomTrainerRematches(const struct RematchTrainer *table, u
                 // Trainer already wants a rematch. Don't bother updating it.
                 ret = TRUE;
             }
-            else if (FlagGet(FLAG_MATCH_CALL_REGISTERED + i)
+            else if (TrainerFlagGet(FLAG_MATCH_CALL_REGISTERED + i)
              && (Random() % 100) <= 30)  // 31% chance of getting a rematch.
             {
                 SetRematchIdForTrainer(table, i);
@@ -1753,11 +1753,11 @@ static u32 GetTrainerMatchCallFlag(u32 trainerId)
 
 static void RegisterTrainerInMatchCall(void)
 {
-    if (FlagGet(FLAG_HAS_MATCH_CALL))
+    if (TrainerFlagGet(FLAG_HAS_MATCH_CALL))
     {
         u32 matchCallFlagId = GetTrainerMatchCallFlag(gTrainerBattleOpponent_A);
         if (matchCallFlagId != 0xFFFF)
-            FlagSet(matchCallFlagId);
+            TrainerFlagSet(matchCallFlagId);
     }
 }
 
@@ -1779,7 +1779,7 @@ static bool32 HasAtLeastFiveBadges(void)
 
     for (count = 0, i = 0; i < ARRAY_COUNT(sBadgeFlags); i++)
     {
-        if (FlagGet(sBadgeFlags[i]) == TRUE)
+        if (TrainerFlagGet(sBadgeFlags[i]) == TRUE)
         {
             if (++count >= 5)
                 return TRUE;

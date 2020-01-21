@@ -52,6 +52,8 @@
 #define NUM_CONTEST_WINNERS 13
 #define UNION_ROOM_KB_ROW_COUNT 10
 #define GIFT_RIBBONS_COUNT 11
+#define NEW_TRAINER_COUNT (TRAINERS_COUNT - TRAINERS_FLAG_NO)
+#define NEW_TRAINER_FLAGS_COUNT ((NEW_TRAINER_COUNT / 8) + ((NEW_TRAINER_COUNT % 8) ? 1 : 0))
 
 #define PYRAMID_BAG_ITEMS_COUNT 10
 #define HALL_FACILITIES_COUNT 9 // 7 facilities for single mode + tower double mode + tower multi mode.
