@@ -12681,3 +12681,124 @@ static const struct TrainerMonItemCustomMoves sParty_Jayson[] = {
     .moves = MOVE_EARTHQUAKE, MOVE_FOCUS_PUNCH, MOVE_REST, MOVE_NONE
     }
 };
+
+static const struct TrainerMonItemCustomMoves sParty_Lee[] = {
+    {
+    .iv = 255,
+    .lvl = 38,
+    .species = SPECIES_VOLTORB,
+    .heldItem = ITEM_NONE,
+    .moves = MOVE_LIGHT_SCREEN, MOVE_THUNDER, MOVE_EXPLOSION, MOVE_RAIN_DANCE
+    },
+    {
+    .iv = 255,
+    .lvl = 40,
+    .species = SPECIES_PICHU,
+    .heldItem = ITEM_NONE,
+    .moves = MOVE_ATTRACT, MOVE_CHARGE, MOVE_DOUBLE_TEAM, MOVE_FACADE
+    },
+    {
+    .iv = 255,
+    .lvl = 40,
+    .species = SPECIES_MAGNETON,
+    .heldItem = ITEM_NONE,
+    .moves = MOVE_TOXIC, MOVE_THUNDERBOLT, MOVE_SUBSTITUTE, MOVE_THUNDER
+    },
+};
+
+static const struct TrainerMonItemCustomMoves sParty_Mariam[] = {
+    {
+    .iv = 255,
+    .lvl = 40,
+    .species = SPECIES_JOLTEON,
+    .heldItem = ITEM_NONE,
+    .moves = MOVE_ROAR, MOVE_THUNDERBOLT, MOVE_BATON_PASS, MOVE_THUNDER_WAVE
+    },
+    {
+    .iv = 255,
+    .lvl = 42,
+    .species = SPECIES_PLUSLE,
+    .heldItem = ITEM_NONE,
+    .moves = MOVE_THUNDERBOLT, MOVE_LIGHT_SCREEN, MOVE_COUNTER, MOVE_NONE
+    },
+    {
+    .iv = 255,
+    .lvl = 43,
+    .species = SPECIES_MANECTRIC,
+    .heldItem = ITEM_NONE,
+    .moves = MOVE_CRUNCH, MOVE_SUBSTITUTE, MOVE_THUNDER, MOVE_RAIN_DANCE
+    },
+
+};
+
+static const struct TrainerMonItemCustomMoves sParty_Rio[] = {
+    {
+    .iv = 255,
+    .lvl = 42,
+    .species = SPECIES_FLAFFY,
+    .heldItem = ITEM_NONE,
+    .moves = MOVE_ATTRACT, MOVE_BRICK_BREAK, MOVE_SHOCK_WAVE, MOVE_THUNDER_PUNCH
+    },
+    {
+    .iv = 255,
+    .lvl = 44,
+    .species = SPECIES_MINUN,
+    .heldItem = ITEM_NONE,
+    .moves = MOVE_THUNDERBOLT, MOVE_LIGHT_SCREEN, MOVE_COUNTER, MOVE_NONE
+    },
+    {
+    .iv = 255,
+    .lvl = 45,
+    .species = SPECIES_LANTURN,
+    .heldItem = ITEM_NONE,
+    .moves = MOVE_REST, MOVE_SLEEP_TALK, MOVE_THUNDERBOLT, MOVE_SURF
+    },
+};
+
+static const struct TrainerMonItemCustomMoves sParty_Monica[] = {
+    {
+    .iv = 255,
+    .lvl = 45,
+    .species = SPECIES_ELEKID,
+    .heldItem = ITEM_NONE,
+    .moves = MOVE_BRICK_BREAK, MOVE_LIGHT_SCREEN, MOVE_THUNDER_PUNCH, MOVE_FACADE
+    },
+    {
+    .iv = 255,
+    .lvl = 44,
+    .species = SPECIES_PIKACHU,
+    .heldItem = ITEM_NONE,
+    .moves = MOVE_THUNDERBOLT, MOVE_SURF, MOVE_SUBSTITUTE, MOVE_VOLT_TACKLE
+    },
+    {
+    .iv = 255,
+    .lvl = 47,
+    .species = SPECIES_ELECTRODE,
+    .heldItem = ITEM_NONE,
+    .moves = MOVE_DOUBLE_TEAM, MOVE_SUBSTITUTE, MOVE_THUNDERBOLT, MOVE_EXPLOSION
+    },
+};
+
+static const struct TrainerMonItemCustomMoves sParty_Numaan[] = {
+    {
+    .iv = 255,
+    .lvl = 46,
+    .species = SPECIES_RAICHU,
+    .heldItem = ITEM_LEFTOVERS,
+    .moves = MOVE_THUNDERBOLT, MOVE_ENCORE MOVE_SUBSTITUTE, MOVE_FOCUS_PUNCH
+    },
+    {
+    .iv = 255,
+    .lvl = 47,
+    .species = SPECIES_ELECTABUZZ,
+    .heldItem = ITEM_LEFTOVERS,
+    .moves = MOVE_THUNDERBOLT, MOVE_ICE_PUNCH, MOVE_TOXIC, MOVE_NONE
+    },
+    {
+    .iv = 255,
+    .lvl = 49,
+    .species = SPECIES_AMPHAROS,
+    .heldItem = ITEM_LEFTOVERS,
+    .moves = MOVE_REFLECT, MOVE_FOCUS_PUNCH, MOVE_THUNDERBOLT, MOVE_LIGHT_SCREEN
+    },
+};

@@ -9,7 +9,7 @@ CeruleanCave_B1F_EventScript_MewTwo::
 	waitmoncry
 	setwildbattle SPECIES_MEWTWO, 70, ITEM_NONE
 	setflag FLAG_SYS_CTRL_OBJ_DELETE
-	dowildbattle
+	special BattleSetup_StartLegendaryBattle
 	clearflag FLAG_SYS_CTRL_OBJ_DELETE
 	specialvar VAR_RESULT, GetBattleOutcome
 	goto CeruleanCave_B1F_EventScript_DefeatedMewTwo

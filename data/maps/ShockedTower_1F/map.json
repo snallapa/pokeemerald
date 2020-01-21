@@ -21,8 +21,8 @@
             "movement_range_x": 0,
             "movement_range_y": 0,
             "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
-            "script": "NULL",
-            "trainer_sight_or_berry_tree_id": "0",
+            "script": "ShockedTower_1F_EventScript_Lee",
+            "trainer_sight_or_berry_tree_id": "4",
             "trainer_type": "1",
             "x": 15,
             "y": 8
@@ -34,9 +34,9 @@
             "movement_range_x": 0,
             "movement_range_y": 0,
             "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
-            "script": "NULL",
-            "trainer_sight_or_berry_tree_id": "0",
-            "trainer_type": "0",
+            "script": "ShockedTower_1F_EventScript_Mariam",
+            "trainer_sight_or_berry_tree_id": "4",
+            "trainer_type": "1",
             "x": 9,
             "y": 15
         },
@@ -47,9 +47,9 @@
             "movement_range_x": 0,
             "movement_range_y": 0,
             "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
-            "script": "NULL",
-            "trainer_sight_or_berry_tree_id": "0",
-            "trainer_type": "0",
+            "script": "ShockedTower_1F_EventScript_Rio",
+            "trainer_sight_or_berry_tree_id": "4",
+            "trainer_type": "1",
             "x": 4,
             "y": 8
         }

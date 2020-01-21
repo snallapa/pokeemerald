@@ -859,11 +859,15 @@
 #define TRAINER_JAELEN                      855
 #define TRAINER_JAYSON                      856
 #define TRAINER_FLORENCE                    857
-#define TRAINER_TEST                        858
+#define TRAINER_LEE                         858
+#define TRAINER_MARIAM                      859
+#define TRAINER_RIO                         860
+#define TRAINER_MONICA                      861
+#define TRAINER_NUMAAN                      862
 // NOTE: Because each Trainer uses a flag to determine when they are defeated, there is only space for 9 additional trainers before trainer flag space overflows
 //       More space can be made by shifting flags around in constants/flags.h or changing how trainer flags are handled
 
-#define TRAINERS_COUNT                      859
+#define TRAINERS_COUNT                      863
 #define MAX_TRAINERS_COUNT                  864
 #define TRAINERS_FLAG_NO                    0x356 //original ones
 
