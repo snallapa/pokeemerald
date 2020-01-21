@@ -4,7 +4,7 @@ ShockedTower_1F_MapScripts::
 
 ShockedTower_1F_EventScript_Lee::
 	trainerbattle_single TRAINER_LEE, ShockedTower_1F_Text_LeeIntro, ShockedTower_1F_Text_LeeDefeated, ShockedTower_1F_EventScript_LeeDefeated
-	msgbox ShockedTower_1F_Text_LeePostBattle, MSGBOX_AUTOCLOSE
+	msgbox ShockedTower_1F_Text_LeeIntro, MSGBOX_AUTOCLOSE
 	end
 
 ShockedTower_1F_EventScript_LeeDefeated:: @ 8233AA0
@@ -53,8 +53,8 @@ ShockedTower_1F_Text_LeeDefeated:
 	.string "More challenges await...$"
 
 ShockedTower_1F_Text_LeePostBattle:
-	.string "You may proceed. It will only\n"
-	.string "get more difficult from here.$"
+	.string "You may proceed. It will only get more\n"
+	.string "difficult from here.$"
 
 ShockedTower_1F_Text_MariamIntro:
 	.string "I heard a new trainer has entered!\n"
@@ -64,8 +64,7 @@ ShockedTower_1F_Text_MariamDefeated:
 	.string "I have failed you master...$"
 
 ShockedTower_1F_Text_MariamPostBattle:
-	.string "Go on then, only three\n"
-	.string "remain.$"
+	.string "Go on then, only three remain.$"
 
 ShockedTower_1F_Text_RioIntro:
 	.string "We protect our lord from\n"

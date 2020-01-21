@@ -11,6 +11,7 @@ ShockedTower_3F_EventScript_Raikou::
 	setwildbattle SPECIES_RAIKOU, 60, ITEM_NONE
 	setflag FLAG_SYS_CTRL_OBJ_DELETE
 	special BattleSetup_StartLegendaryBattle
+	waitstate
 	clearflag FLAG_SYS_CTRL_OBJ_DELETE
 	specialvar VAR_RESULT, GetBattleOutcome
 	goto ShockedTower_3F_EventScript_DefeatedRaikou
@@ -18,8 +19,10 @@ ShockedTower_3F_EventScript_Raikou::
 	end
 
 ShockedTower_3F_EventScript_DefeatedRaikou::
-	msgbox ShockedTower_3F_Text_RaikouDone, MSGBOX_AUTOCLOSE
+	special PlayerFaceTrainerAfterBattle
+	waitmovement 0
 	setflag FLAG_RAIKOU
+	msgbox ShockedTower_3F_Text_RaikouDone, MSGBOX_AUTOCLOSE
 	goto Common_EventScript_RemoveStaticPokemon
 	end
 

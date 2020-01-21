@@ -27,7 +27,7 @@ ShockedTower_2F_EventScript_MonicaDefeated:: @ 8233AA0
 
 ShockedTower_2F_Text_NumaanIntro:
 	.string "FINALLY! A trainer has reached this far!\n"
-	.string "I have itching for a battle.\p"
+	.string "I have been itching for a battle.\p"
 	.string "Bring your best!$"
 
 ShockedTower_2F_Text_NumaanDefeated:
@@ -35,20 +35,20 @@ ShockedTower_2F_Text_NumaanDefeated:
 	.string "like that? FUCK$"
 
 ShockedTower_2F_Text_NumaanPostBattle:
-	.string "The final sage is the strongest\n"
-	.string "However, I see greatness in you$"
+	.string "The final sage is the strongest.\n"
+	.string "However, I see greatness in you.$"
 
 ShockedTower_2F_Text_MonicaIntro:
 	.string "I am the last of the THUNDER SAGES!\n"
 	.string "Impressive you have made it this far\p"
-	.string "Let me warnyou, I will not hold back!$"
+	.string "Let me warn you, I will not hold back!$"
 
 ShockedTower_2F_Text_MonicaDefeated:
 	.string "Master will not be pleased\n"
 	.string "with our performance today...$"
 
 ShockedTower_2F_Text_MonicaPostBattle:
-	.string "I tried to protect our lord. I\n"
-	.string "have not failed... You may be\p"
-	.string "worthy. Go, see for yourself who\n"
-	.string "lies at the top.$"
+	.string "I tried to protect our lord. I have not\n"
+	.string "failed... You are just worthy\p"
+	.string "Go, see for yourself who lies at\n"
+	.string "the top.$"
