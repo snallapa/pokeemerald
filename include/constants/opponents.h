@@ -864,5 +864,6 @@
 
 #define TRAINERS_COUNT                      858
 #define MAX_TRAINERS_COUNT                  864
+#define TRAINERS_FLAG_NO                    0x356 //original ones
 
 #endif  // GUARD_CONSTANTS_OPPONENTS_H
