@@ -15,7 +15,7 @@ ShockedTower_2F_EventScript_Monica::
 ShockedTower_2F_Text_NumaanIntro:
 	.string "FINALLY! A trainer has\n"
 	.string "reached this far. I have\p"
-	.string "itching for a bttle. Bring\n"
+	.string "itching for a battle. Bring\n"
 	.string "your best!$"
 
 ShockedTower_2F_Text_NumaanDefeated:

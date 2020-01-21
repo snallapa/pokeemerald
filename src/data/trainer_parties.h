@@ -12755,7 +12755,7 @@ static const struct TrainerMonItemCustomMoves sParty_Rio[] = {
     },
 };
 
-static const struct TrainerMonItemCustomMoves sParty_Monica[] = {
+static const struct TrainerMonItemCustomMoves sParty_Numaan[] = {
     {
     .iv = 255,
     .lvl = 45,
@@ -12779,7 +12779,7 @@ static const struct TrainerMonItemCustomMoves sParty_Monica[] = {
     },
 };
 
-static const struct TrainerMonItemCustomMoves sParty_Numaan[] = {
+static const struct TrainerMonItemCustomMoves sParty_Monica[] = {
     {
     .iv = 255,
     .lvl = 46,
