@@ -40,10 +40,10 @@ ShockedTower_1F_EventScript_RioDefeated:: @ 8233AA0
 
 
 ShockedTower_1F_Text_LeeIntro:
-	.string "I see a new challenger has approached\n"
-	.string "WE ARE THE THUNDER SAGES\p"
-	.string "PROTECTORS OF OUR MASTER. Only those\n"
-	.string "who are worthy will be allowed go\p"
+	.string "I see a new challenger has approached..\p"
+	.string "WE ARE THE THUNDER SAGES PROTECTORS\p"
+	.string "OF OUR ONE TRUE MASTER!\n"
+	.string "Only those who are worthy will be allowed go\n"
 	.string "through and meet our lord.\p"
 	.string "Let me look inside your soul!$"
 
