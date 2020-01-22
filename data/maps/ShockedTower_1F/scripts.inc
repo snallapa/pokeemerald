@@ -48,7 +48,8 @@ ShockedTower_1F_Text_LeeIntro:
 	.string "Let me look inside your soul!$"
 
 ShockedTower_1F_Text_LeeDefeated:
-	.string "I am only the first. More challenges await...$"
+	.string "I am only the first. More challenges\n"
+	.string "await...$"
 
 ShockedTower_1F_Text_LeePostBattle:
 	.string "You may proceed. It will only get more\n"
