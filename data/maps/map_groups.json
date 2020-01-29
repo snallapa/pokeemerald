@@ -324,7 +324,11 @@
         "MeteorFalls_StevensCave",
         "ShockedTower_1F",
         "ShockedTower_2F",
-        "ShockedTower_3F"
+        "ShockedTower_3F",
+        "BurnedTower_1F",
+        "BurnedTower_2F",
+        "BurnedTower_3F",
+        "SunkenTower"
     ],
     "gMapGroup25": [
         "SecretBase_RedCave1",

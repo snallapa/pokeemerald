@@ -8,12 +8,18 @@ ShockedTower_3F_EventScript_Raikou::
 	playmoncry SPECIES_RAIKOU, 2
 	delay 40
 	waitmoncry
-	setwildbattle SPECIES_RAIKOU, 60, ITEM_NONE
+	setwildbattle SPECIES_RAIKOU, 65, ITEM_NONE
 	setflag FLAG_SYS_CTRL_OBJ_DELETE
 	special BattleSetup_StartLegendaryBattle
 	waitstate
 	clearflag FLAG_SYS_CTRL_OBJ_DELETE
 	specialvar VAR_RESULT, GetBattleOutcome
+	compare VAR_RESULT, B_OUTCOME_WON
+	goto_if_eq ShockedTower_3F_EventScript_DefeatedRaikou
+	compare VAR_RESULT, B_OUTCOME_RAN
+	goto_if_eq BattleFrontier_OutsideEast_EventScript_DefeatedSudowoodo
+	compare VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED
+	goto_if_eq BattleFrontier_OutsideEast_EventScript_DefeatedSudowoodo
 	goto ShockedTower_3F_EventScript_DefeatedRaikou
 	releaseall
 	end
