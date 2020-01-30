@@ -328,7 +328,9 @@
         "BurnedTower_1F",
         "BurnedTower_2F",
         "BurnedTower_3F",
-        "SunkenTower"
+        "SunkenTower_1F",
+        "SunkenTower_2F",
+        "SunkenTower_3F"
     ],
     "gMapGroup25": [
         "SecretBase_RedCave1",

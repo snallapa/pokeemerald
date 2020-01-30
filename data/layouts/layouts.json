@@ -4501,14 +4501,34 @@
             "width": 17
         },
         {
-            "blockdata_filepath": "data/layouts/SunkenTower/map.bin",
-            "border_filepath": "data/layouts/SunkenTower/border.bin",
+            "blockdata_filepath": "data/layouts/SunkenTower_1F/map.bin",
+            "border_filepath": "data/layouts/SunkenTower_1F/border.bin",
             "height": 20,
-            "id": "LAYOUT_SUNKEN_TOWER",
-            "name": "SunkenTower_Layout",
+            "id": "LAYOUT_SUNKEN_TOWER_1F",
+            "name": "SunkenTower_1F_Layout",
             "primary_tileset": "gTileset_General",
             "secondary_tileset": "gTileset_Contest",
             "width": 20
+        },
+        {
+            "blockdata_filepath": "data/layouts/SunkenTower_2F/map.bin",
+            "border_filepath": "data/layouts/SunkenTower_2F/border.bin",
+            "height": 20,
+            "id": "LAYOUT_SUNKEN_TOWER_2F",
+            "name": "SunkenTower_2F_Layout",
+            "primary_tileset": "gTileset_General",
+            "secondary_tileset": "gTileset_Contest",
+            "width": 20
+        },
+        {
+            "blockdata_filepath": "data/layouts/SunkenTower_3F/map.bin",
+            "border_filepath": "data/layouts/SunkenTower_3F/border.bin",
+            "height": 18,
+            "id": "LAYOUT_SUNKEN_TOWER_3F",
+            "name": "SunkenTower_3F_Layout",
+            "primary_tileset": "gTileset_Building",
+            "secondary_tileset": "gTileset_Contest",
+            "width": 17
         }
     ],
     "layouts_table_label": "gMapLayouts"

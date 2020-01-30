@@ -1069,4 +1069,8 @@ Common_EventScript_LegendaryFlewAway:: @ 8273776
 	.include "data/text/save.inc"
 	.include "data/text/birch_speech.inc"
 
-	.include "data/maps/SunkenTower/scripts.inc"
+	.include "data/maps/SunkenTower_1F/scripts.inc"
+
+	.include "data/maps/SunkenTower_2F/scripts.inc"
+
+	.include "data/maps/SunkenTower_3F/scripts.inc"
