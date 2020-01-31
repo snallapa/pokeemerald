@@ -3818,6 +3818,8 @@ u32 GetBoxMonData(struct BoxPokemon *boxMon, s32 field, u8 *data)
         retVal = substruct3->pokeball;
         if (retVal == ITEM_POTION) {
             retVal = ITEM_SHADOW_BALL;
+        } else if (retVal == ITEM_ANTIDOTE) {
+            retVal = ITEM_SHINY_BALL;
         }
         break;
     case MON_DATA_OT_GENDER:
@@ -4194,6 +4196,8 @@ void SetBoxMonData(struct BoxPokemon *boxMon, s32 field, const void *dataArg)
         u16 pokeball = *data;
         if (pokeball == ITEM_SHADOW_BALL) {
             pokeball = ITEM_POTION;
+        } else if (pokeball == ITEM_SHINY_BALL) {
+            pokeball = ITEM_ANTIDOTE;
         }
         substruct3->pokeball = pokeball;
         break;
