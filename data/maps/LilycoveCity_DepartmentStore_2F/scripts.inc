@@ -29,6 +29,7 @@ LilycoveCity_DepartmentStore_2F_Pokemart1: @ 821FB60
 	.2byte ITEM_GREAT_BALL
 	.2byte ITEM_ULTRA_BALL
 	.2byte ITEM_SHADOW_BALL
+	.2byte ITEM_SHINY_BALL
 	.2byte ITEM_TRADE_STONE
 	.2byte ITEM_ESCAPE_ROPE
 	.2byte ITEM_FULL_HEAL
