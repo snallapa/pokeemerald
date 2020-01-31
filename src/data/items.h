@@ -692,15 +692,17 @@ const struct Item gItems[] =
         .secondaryId = ITEM_POTION - FIRST_BALL,
     },
 
-    [ITEM_035] =
+    [ITEM_SHINY_BALL] =
     {
-        .name = _("????????"),
-        .itemId = ITEM_NONE,
-        .price = 0,
-        .description = sDummyDesc,
-        .pocket = POCKET_ITEMS,
-        .type = ITEM_USE_BAG_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .name = _("SHINY BALL"),
+        .itemId = ITEM_SHINY_BALL,
+        .price = 2000,
+        .description = sShinyBallDesc,
+        .pocket = POCKET_POKE_BALLS,
+        .type = ITEM_ANTIDOTE - FIRST_BALL,
+        .battleUsage = ITEM_B_USE_OTHER,
+        .battleUseFunc = ItemUseInBattle_PokeBall,
+        .secondaryId = ITEM_ANTIDOTE - FIRST_BALL,
     },
 
     [ITEM_036] =

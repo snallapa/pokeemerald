@@ -59,6 +59,7 @@ static u16 GetBattlerPokeballItemId(u8 battlerId);
 #define GFX_TAG_LUXURYBALL  55010
 #define GFX_TAG_PREMIERBALL 55011
 #define GFX_TAG_SHADOWBALL  55012
+#define GFX_TAG_SHINYBALL   55013
 
 const struct CompressedSpriteSheet gBallSpriteSheets[POKEBALL_COUNT] =
 {
@@ -74,7 +75,8 @@ const struct CompressedSpriteSheet gBallSpriteSheets[POKEBALL_COUNT] =
     [BALL_TIMER]   = {gInterfaceGfx_TimerBall,   384, GFX_TAG_TIMERBALL},
     [BALL_LUXURY]  = {gInterfaceGfx_LuxuryBall,  384, GFX_TAG_LUXURYBALL},
     [BALL_PREMIER] = {gInterfaceGfx_PremierBall, 384, GFX_TAG_PREMIERBALL},
-    [BALL_SHADOW]  = {gInterfaceGfx_ShadowBall,  384, GFX_TAG_SHADOWBALL}
+    [BALL_SHADOW]  = {gInterfaceGfx_ShadowBall,  384, GFX_TAG_SHADOWBALL},
+    [BALL_SHINY]   = {gInterfaceGfx_ShinyBall,   384, GFX_TAG_SHINYBALL},
 };
 
 const struct CompressedSpritePalette gBallSpritePalettes[POKEBALL_COUNT] =
@@ -92,6 +94,7 @@ const struct CompressedSpritePalette gBallSpritePalettes[POKEBALL_COUNT] =
     [BALL_LUXURY]  = {gInterfacePal_LuxuryBall,  GFX_TAG_LUXURYBALL},
     [BALL_PREMIER] = {gInterfacePal_PremierBall, GFX_TAG_PREMIERBALL},
     [BALL_SHADOW]  = {gInterfacePal_ShadowBall,  GFX_TAG_SHADOWBALL},
+    [BALL_SHINY]   = {gInterfacePal_ShinyBall,   GFX_TAG_SHINYBALL},
 };
 
 static const struct OamData sBallOamData =
@@ -324,6 +327,15 @@ const struct SpriteTemplate gBallSpriteTemplates[POKEBALL_COUNT] =
         .anims = sBallAnimSequences,
         .images = NULL,
         .affineAnims = sAffineAnim_BallRotate,
+        .callback = SpriteCB_TestBallThrow,
+    },
+    {
+        .tileTag = GFX_TAG_SHINYBALL,
+        .paletteTag = GFX_TAG_SHINYBALL,
+        .oam = &sBallOamData,
+        .anims = sBallAnimSequences,
+        .images = NULL,
+        .affineAnims = sBallAffineAnimSequences,
         .callback = SpriteCB_TestBallThrow,
     },
 };
