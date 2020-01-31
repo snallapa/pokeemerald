@@ -16,6 +16,7 @@ enum
     BALL_LUXURY,
     BALL_PREMIER,
     BALL_SHADOW,
+    BALL_SHINY,
     POKEBALL_COUNT
 };
 

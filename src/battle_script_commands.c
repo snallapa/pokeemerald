@@ -10134,6 +10134,7 @@ static void Cmd_handleballthrow(void)
                 ballMultiplier = 10;
                 break;
             case ITEM_SHADOW_BALL:
+            case ITEM_SHINY_BALL:
                 ballMultiplier = 20;
                 break;
             }
@@ -10216,26 +10217,79 @@ static void Cmd_handleballthrow(void)
 
 static void Cmd_givecaughtmon(void)
 {
-    struct Pokemon* p = &gEnemyParty[gBattlerPartyIndexes[gBattlerAttacker ^ BIT_SIDE]];
-    if (gBattleTypeFlags & BATTLE_TYPE_TRAINER)
+    u32 otId;
+    u32 personality;
+    u16 species;
+    u8 level;
+    u32 hp;
+    u32 maxHP;
+    u32 move1;
+    u32 move2;
+    u32 move3;
+    u32 move4;
+    u32 pp1;
+    u32 pp2;
+    u32 pp3;
+    u32 pp4;
+    u32 ball;
+    struct Pokemon* p;
+    u8 nature;
+    p = &gEnemyParty[gBattlerPartyIndexes[gBattlerAttacker ^ BIT_SIDE]];
+    if (gBattleTypeFlags & BATTLE_TYPE_TRAINER) //shadow ball catch trainer
     {
         
         //trainer pokemon are fuckeddd have to set the move pool, hp, and create the pokemon again
-        u16 species = GetMonData(p, MON_DATA_SPECIES, NULL);
-        u8 level = GetMonData(p, MON_DATA_LEVEL, NULL);
-        u32 hp = GetMonData(p, MON_DATA_HP, NULL);
-        u32 maxHP = GetMonData(p, MON_DATA_MAX_HP, NULL);
-        u32 move1 = GetMonData(p, MON_DATA_MOVE1, NULL);
-        u32 move2 = GetMonData(p, MON_DATA_MOVE2, NULL);
-        u32 move3 = GetMonData(p, MON_DATA_MOVE3, NULL);
-        u32 move4 = GetMonData(p, MON_DATA_MOVE4, NULL);
-        u32 pp1 = GetMonData(p, MON_DATA_PP1, NULL);
-        u32 pp2 = GetMonData(p, MON_DATA_PP2, NULL);
-        u32 pp3 = GetMonData(p, MON_DATA_PP3, NULL);
-        u32 pp4 = GetMonData(p, MON_DATA_PP4, NULL);
-        u32 ball = GetMonData(p, MON_DATA_POKEBALL, NULL);
-        u8 nature = GetNatureFromPersonality(GetMonData(p, MON_DATA_PERSONALITY));
+        species = GetMonData(p, MON_DATA_SPECIES, NULL);
+        level = GetMonData(p, MON_DATA_LEVEL, NULL);
+        hp = GetMonData(p, MON_DATA_HP, NULL);
+        maxHP = GetMonData(p, MON_DATA_MAX_HP, NULL);
+        move1 = GetMonData(p, MON_DATA_MOVE1, NULL);
+        move2 = GetMonData(p, MON_DATA_MOVE2, NULL);
+        move3 = GetMonData(p, MON_DATA_MOVE3, NULL);
+        move4 = GetMonData(p, MON_DATA_MOVE4, NULL);
+        pp1 = GetMonData(p, MON_DATA_PP1, NULL);
+        pp2 = GetMonData(p, MON_DATA_PP2, NULL);
+        pp3 = GetMonData(p, MON_DATA_PP3, NULL);
+        pp4 = GetMonData(p, MON_DATA_PP4, NULL);
+        ball = GetMonData(p, MON_DATA_POKEBALL, NULL);
+        nature = GetNatureFromPersonality(GetMonData(p, MON_DATA_PERSONALITY));
         CreateMonWithNature(p, species, level, 32, nature);
+        SetMonData(p, MON_DATA_HP, &hp);
+        SetMonData(p, MON_DATA_MAX_HP, &maxHP);
+        SetMonData(p, MON_DATA_MOVE1, &move1);
+        SetMonData(p, MON_DATA_MOVE2, &move2);
+        SetMonData(p, MON_DATA_MOVE3, &move3);
+        SetMonData(p, MON_DATA_MOVE4, &move4);
+        SetMonData(p, MON_DATA_PP1, &pp1);
+        SetMonData(p, MON_DATA_PP2, &pp2);
+        SetMonData(p, MON_DATA_PP3, &pp3);
+        SetMonData(p, MON_DATA_PP4, &pp4);
+        SetMonData(p, MON_DATA_POKEBALL, &ball);
+    }
+
+    if (gLastUsedItem == ITEM_SHINY_BALL) { //shiny ball turn into shiny
+        otId = gSaveBlock2Ptr->playerTrainerId[0]
+              | (gSaveBlock2Ptr->playerTrainerId[1] << 8)
+              | (gSaveBlock2Ptr->playerTrainerId[2] << 16)
+              | (gSaveBlock2Ptr->playerTrainerId[3] << 24);
+        personality = GetMonData(p, MON_DATA_PERSONALITY, NULL);
+        while (!IsShinyOtIdPersonality(otId, personality)) {
+            personality = Random32();
+        }
+        species = GetMonData(p, MON_DATA_SPECIES, NULL);
+        level = GetMonData(p, MON_DATA_LEVEL, NULL);
+        hp = GetMonData(p, MON_DATA_HP, NULL);
+        maxHP = GetMonData(p, MON_DATA_MAX_HP, NULL);
+        move1 = GetMonData(p, MON_DATA_MOVE1, NULL);
+        move2 = GetMonData(p, MON_DATA_MOVE2, NULL);
+        move3 = GetMonData(p, MON_DATA_MOVE3, NULL);
+        move4 = GetMonData(p, MON_DATA_MOVE4, NULL);
+        pp1 = GetMonData(p, MON_DATA_PP1, NULL);
+        pp2 = GetMonData(p, MON_DATA_PP2, NULL);
+        pp3 = GetMonData(p, MON_DATA_PP3, NULL);
+        pp4 = GetMonData(p, MON_DATA_PP4, NULL);
+        ball = GetMonData(p, MON_DATA_POKEBALL, NULL);
+        CreateMon(p, species, level, 32, TRUE, personality, OT_ID_PLAYER_ID, FALSE);
         SetMonData(p, MON_DATA_HP, &hp);
         SetMonData(p, MON_DATA_MAX_HP, &maxHP);
         SetMonData(p, MON_DATA_MOVE1, &move1);
