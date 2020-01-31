@@ -42,6 +42,7 @@ RustboroCity_Mart_Pokemart_Expanded: @ 8214F58
 	.2byte ITEM_POKE_BALL
 	.2byte ITEM_TIMER_BALL
 	.2byte ITEM_REPEAT_BALL
+	.2byte ITEM_SHINY_BALL
 	.2byte ITEM_POTION
 	.2byte ITEM_SUPER_POTION
 	.2byte ITEM_ANTIDOTE

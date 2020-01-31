@@ -5547,11 +5547,13 @@ static void HandleAction_UseItem(void)
     ClearFuryCutterDestinyBondGrudge(gBattlerAttacker);
     gLastUsedItem = gBattleBufferB[gBattlerAttacker][1] | (gBattleBufferB[gBattlerAttacker][2] << 8);
 
-    if (gLastUsedItem <= ITEM_PREMIER_BALL || gLastUsedItem == ITEM_SHADOW_BALL) // is ball
+    if (gLastUsedItem <= ITEM_PREMIER_BALL || gLastUsedItem == ITEM_SHADOW_BALL || gLastUsedItem == ITEM_SHINY_BALL) // is ball
     {
         u16 index = gLastUsedItem;
         if (gLastUsedItem == ITEM_SHADOW_BALL) {
             index = ITEM_PREMIER_BALL + 1;
+        } else if(gLastUsedItem == ITEM_SHINY_BALL) {
+            index = ITEM_PREMIER_BALL + 2;
         }
         gBattlescriptCurrInstr = gBattlescriptsForBallThrow[index];
     }

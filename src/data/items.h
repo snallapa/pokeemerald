@@ -732,16 +732,17 @@ const struct Item gItems[] =
         .secondaryId = 1,
     },
 
-    [ITEM_035] =
+    [ITEM_SHINY_BALL] =
     {
-        .name = _("????????"),
-        .itemId = ITEM_NONE,
-        .price = 0,
-        .description = sDummyDesc,
-        .pocket = POCKET_ITEMS,
-        .type = 4,
-        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-        .secondaryId = 0,
+        .name = _("SHINY BALL"),
+        .itemId = ITEM_SHINY_BALL,
+        .price = 2000,
+        .description = sShinyBallDesc,
+        .pocket = POCKET_POKE_BALLS,
+        .type = 1,
+        .battleUsage = 2,
+        .battleUseFunc = ItemUseInBattle_PokeBall,
+        .secondaryId = 1,
     },
 
     [ITEM_036] =
