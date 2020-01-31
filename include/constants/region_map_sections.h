@@ -215,7 +215,9 @@
 #define MAPSEC_NAVEL_ROCK2                  0xD3
 #define MAPSEC_TRAINER_HILL                 0xD4
 #define MAPSEC_SHOCKED_TOWER                0xD5
-#define MAPSEC_NONE                         0xD6
+#define MAPSEC_BURNED_TOWER                 0xD6
+#define MAPSEC_SUNKEN_TOWER                 0xD7
+#define MAPSEC_NONE                         0xD8
 
 #define METLOC_SPECIAL_EGG                  0xFD
 #define METLOC_IN_GAME_TRADE                0xFE

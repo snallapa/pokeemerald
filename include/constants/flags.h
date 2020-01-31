@@ -512,8 +512,8 @@
 
 #define FLAG_MEWTWO                          0x1DE // used MewTwo
 #define FLAG_RAIKOU                          0x1DF // used Raikou
-#define FLAG_UNUSED_0x1E0                    0x1E0 // Unused Flag
-#define FLAG_UNUSED_0x1E1                    0x1E1 // Unused Flag
+#define FLAG_ENTEI                           0x1E0 // Unused Flag
+#define FLAG_SUICUNE                         0x1E1 // Unused Flag
 #define FLAG_UNUSED_0x1E2                    0x1E2 // Unused Flag
 #define FLAG_UNUSED_0x1E3                    0x1E3 // Unused Flag
 

@@ -28,7 +28,7 @@
             "y": 8
         }
     ],
-    "region_map_section": "MAPSEC_SHOCKED_TOWER",
+    "region_map_section": "MAPSEC_SUNKEN_TOWER",
     "requires_flash": false,
     "show_map_name": true,
     "warp_events": [
