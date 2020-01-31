@@ -17,6 +17,12 @@ static const u8 sShadowBallDesc[] = _(
     "can steal trainer\n"
     "pokemon in battle.");
 
+static const u8 sShinyBallDesc[] = _(
+    "A special BALL that\n"
+    "makes wild pokemon\n"
+    "into shiny pokemon.");
+
+
 static const u8 sGreatBallDesc[] = _(
     "A good BALL with a\n"
     "higher catch rate\n"
