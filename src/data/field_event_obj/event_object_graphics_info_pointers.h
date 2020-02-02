@@ -41,6 +41,9 @@ const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_Maniac;
 const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_HexManiac;
 const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_Rayquaza1;
 const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_Snorlax;
+const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_Raikou;
+const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_Entei;
+const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_Suicune;
 const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_SwimmerM;
 const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_SwimmerF;
 const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_BlackBelt;
@@ -330,6 +333,9 @@ const struct EventObjectGraphicsInfo *const gEventObjectGraphicsInfoPointers[] =
     [EVENT_OBJ_GFX_UNUSED_WOOPER_DOLL] =       &gEventObjectGraphicsInfo_UnusedWooperDoll,
     [EVENT_OBJ_GFX_MEWTWO] =                   &gEventObjectGraphicsInfo_MewTwo,
     [EVENT_OBJ_GFX_SNORLAX] =                  &gEventObjectGraphicsInfo_Snorlax,
+    [EVENT_OBJ_GFX_RAIKOU] =                   &gEventObjectGraphicsInfo_Raikou,
+    [EVENT_OBJ_GFX_ENTEI] =                    &gEventObjectGraphicsInfo_Entei,
+    [EVENT_OBJ_GFX_SUICUNE] =                  &gEventObjectGraphicsInfo_Suicune,
     [EVENT_OBJ_GFX_CUTTABLE_TREE] =            &gEventObjectGraphicsInfo_CuttableTree,
     [EVENT_OBJ_GFX_MART_EMPLOYEE] =            &gEventObjectGraphicsInfo_MartEmployee,
     [EVENT_OBJ_GFX_ROOFTOP_SALE_WOMAN] =       &gEventObjectGraphicsInfo_RooftopSaleWoman,

@@ -500,7 +500,6 @@ void BattleSetup_StartLegendaryBattle(void)
 
     switch (GetMonData(&gEnemyParty[0], MON_DATA_SPECIES, NULL))
     {
-    default:
     case SPECIES_GROUDON:
         gBattleTypeFlags |= BATTLE_TYPE_GROUDON;
         CreateBattleStartTask(B_TRANSITION_GROUDON, MUS_BATTLE34);
@@ -523,6 +522,8 @@ void BattleSetup_StartLegendaryBattle(void)
     case SPECIES_MEW:
         CreateBattleStartTask(B_TRANSITION_GRID_SQUARES, MUS_VS_MEW);
         break;
+    default:
+        CreateBattleStartTask(B_TRANSITION_GRID_SQUARES, MUS_VS_REKKU);
     }
 
     IncrementGameStat(GAME_STAT_TOTAL_BATTLES);
