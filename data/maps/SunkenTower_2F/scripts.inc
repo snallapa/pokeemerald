@@ -26,8 +26,8 @@ SunkenTower_2F_EventScript_ChanceDefeated:: @ 8233AA0
 	end
 
 SunkenTower_2F_Text_KennyIntro:
-	.string "Wow, someone who has made it to\n"
-	.string "the second floor! Show me how!$"
+	.string "Wow, someone who has made it to the\n"
+	.string "second floor! Show me how!$"
 
 SunkenTower_2F_Text_KennyDefeated:
 	.string "Now it all makes sense...$"

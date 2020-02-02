@@ -44,19 +44,19 @@ SunkenTower_1F_Text_JakeIntro:
 	.string "sacred palace.\p"
 	.string "We are the WATER SAGES! Protectors of\n"
 	.string "of our queen, SUICUNE!\p"
-	.string "If you want to meet them, you will\n"
-	.string "have to get through all of us!$.
+	.string "If you want to meet them, you will have\n"
+	.string "to get through all of us!$"
 
 SunkenTower_1F_Text_JakeDefeated:
 	.string "Well fought...$"
 
 SunkenTower_1F_Text_JakePostBattle:
-	.string "My brothers are stronger... \n"
-	.string "I still wish you the best.$"
+	.string "My brothers are stronger... I still\n"
+	.string "wish you the best.$"
 
 SunkenTower_1F_Text_CharlesIntro:
-	.string "Interesting... I will not let\n"
-	.string "you down, SUICUNE!$"
+	.string "Interesting... I will not let you down,\n"
+	.string "SUICUNE!$"
 
 SunkenTower_1F_Text_CharlesDefeated:
 	.string "All I have are regrets.$"
@@ -66,12 +66,12 @@ SunkenTower_1F_Text_CharlesPostBattle:
 	.string "Go on to the others...$"
 
 SunkenTower_1F_Text_FrankIntro:
-	.string "Wonderful, a visitor! Let us "
-	.string "see what you got.$"
+	.string "Wonderful, a visitor! Let us see what you\n"
+	.string "got.$"
 
 SunkenTower_1F_Text_FrankDefeated:
 	.string "Don't look at me...$"
 
 SunkenTower_1F_Text_FrankPostBattle:
-	.string "I wish I had trained more\n"
-	.string "Proceed to the next floor.$"
+	.string "I wish I had trained more. Proceed to \n"
+	.string "the next floor.$"
