@@ -12878,7 +12878,7 @@ static const struct TrainerMonItemCustomMoves sParty_Reshma[] = {
 static const struct TrainerMonItemCustomMoves sParty_Angela[] = {
     {
     .iv = 255,
-    .lvl = 41,
+    .lvl = 42,
     .species = SPECIES_CAMERUPT,
     .heldItem = ITEM_NONE,
     .moves = MOVE_EARTHQUAKE, MOVE_REST, MOVE_SLEEP_TALK, MOVE_FLAMETHROWER
@@ -12902,23 +12902,143 @@ static const struct TrainerMonItemCustomMoves sParty_Angela[] = {
 static const struct TrainerMonItemCustomMoves sParty_Rosa[] = {
     {
     .iv = 255,
-    .lvl = 42,
+    .lvl = 44,
     .species = SPECIES_MAGMAR,
     .heldItem = ITEM_LEFTOVERS,
     .moves = MOVE_FLAMETHROWER, MOVE_CROSS_CHOP, MOVE_THUNDER_PUNCH, MOVE_FIRE_PUNCH
     },
     {
     .iv = 255,
-    .lvl = 45,
+    .lvl = 46,
     .species = SPECIES_TYPHLOSION,
     .heldItem = ITEM_LEFTOVERS,
     .moves = MOVE_THUNDER_PUNCH, MOVE_SUBSTITUTE, MOVE_FLAMETHROWER, MOVE_SUNNY_DAY
     },
     {
     .iv = 255,
-    .lvl = 46,
+    .lvl = 48,
     .species = SPECIES_CHARIZARD,
     .heldItem = ITEM_LEFTOVERS,
     .moves = MOVE_DRAGON_DANCE, MOVE_AERIAL_ACE, MOVE_EARTHQUAKE, MOVE_FIRE_BLAST
+    },
+};
+
+static const struct TrainerMonItemCustomMoves sParty_Jake[] = {
+    {
+    .iv = 255,
+    .lvl = 40,
+    .species = SPECIES_DEWGONG,
+    .heldItem = ITEM_NONE,
+    .moves = MOVE_ICE_BEAM, MOVE_SURF, MOVE_PERISH_SONG, MOVE_REST
+    },
+    {
+    .iv = 255,
+    .lvl = 41,
+    .species = SPECIES_STARMIE,
+    .heldItem = ITEM_NONE,
+    .moves = MOVE_HYDRO_PUMP, MOVE_THUNDERBOLT, MOVE_ICE_BEAM, MOVE_PSYCHIC
+    },
+    {
+    .iv = 255,
+    .lvl = 41,
+    .species = SPECIES_VAPOREON,
+    .heldItem = ITEM_NONE,
+    .moves = MOVE_SURF, MOVE_WISH, MOVE_PROTECT, MOVE_TOXIC
+    },
+};
+
+static const struct TrainerMonItemCustomMoves sParty_Charles[] = {
+    {
+    .iv = 255,
+    .lvl = 42,
+    .species = SPECIES_POLITOED,
+    .heldItem = ITEM_NONE,
+    .moves = MOVE_SURF, MOVE_HYPNOSIS, MOVE_ICE_BEAM, MOVE_COUNTER
+    },
+    {
+    .iv = 255,
+    .lvl = 42,
+    .species = SPECIES_QUAGSIRE,
+    .heldItem = ITEM_NONE,
+    .moves = MOVE_EARTHQUAKE, MOVE_ICE_BEAM, MOVE_REST, MOVE_CURSE
+    },
+    {
+    .iv = 255,
+    .lvl = 43,
+    .species = SPECIES_OMASTAR,
+    .heldItem = ITEM_NONE,
+    .moves = MOVE_RAIN_DANCE, MOVE_SURF, MOVE_ICE_BEAM, MOVE_PROTECT
+    },
+};
+
+static const struct TrainerMonItemCustomMoves sParty_Frank[] = {
+    {
+    .iv = 255,
+    .lvl = 43,
+    .species = SPECIES_KABUTOPS,
+    .heldItem = ITEM_NONE,
+    .moves = MOVE_ENDURE, MOVE_FLAIL, MOVE_SWORDS_DANCE, MOVE_ROCK_SLIDE
+    },
+    {
+    .iv = 255,
+    .lvl = 44,
+    .species = SPECIES_LAPRAS,
+    .heldItem = ITEM_NONE,
+    .moves = MOVE_ICE_BEAM, MOVE_ROAR, MOVE_HEAL_BELL, MOVE_THUNDERBOLT
+    },
+    {
+    .iv = 255,
+    .lvl = 45,
+    .species = SPECIES_OCTILLERY,
+    .heldItem = ITEM_NONE,
+    .moves = MOVE_SURF, MOVE_THUNDER_WAVE, MOVE_FIRE_BLAST, MOVE_SUBSTITUTE
+    },
+};
+
+static const struct TrainerMonItemCustomMoves sParty_Kenny[] = {
+    {
+    .iv = 255,
+    .lvl = 44,
+    .species = SPECIES_GYARADOS,
+    .heldItem = ITEM_NONE,
+    .moves = MOVE_DRAGON_DANCE, MOVE_TAUNT, MOVE_EARTHQUAKE, MOVE_HYDRO_PUMP
+    },
+    {
+    .iv = 255,
+    .lvl = 44,
+    .species = SPECIES_LUDICOLO,
+    .heldItem = ITEM_NONE,
+    .moves = MOVE_SURF, MOVE_LEECH_SEED, MOVE_SYNTHESIS, MOVE_PROTECT
+    },
+    {
+    .iv = 255,
+    .lvl = 47,
+    .species = SPECIES_KINGDRA,
+    .heldItem = ITEM_NONE,
+    .moves = MOVE_SUBSTITUTE, MOVE_FLAIL, MOVE_DRAGON_DANCE, MOVE_HYDRO_PUMP
+    },
+};
+
+static const struct TrainerMonItemCustomMoves sParty_Chance[] = {
+    {
+    .iv = 255,
+    .lvl = 45,
+    .species = SPECIES_MILOTIC,
+    .heldItem = ITEM_LEFTOVERS,
+    .moves = MOVE_SURF, MOVE_RECOVER, MOVE_TOXIC, MOVE_ICE_BEAM
+    },
+    {
+    .iv = 255,
+    .lvl = 46,
+    .species = SPECIES_SWAMPERT,
+    .heldItem = ITEM_LEFTOVERS,
+    .moves = MOVE_EARTHQUAKE, MOVE_ICE_BEAM, MOVE_PROTECT, MOVE_HYDRO_PUMP
+    },
+    {
+    .iv = 255,
+    .lvl = 49,
+    .species = SPECIES_BLASTOISE,
+    .heldItem = ITEM_LEFTOVERS,
+    .moves = MOVE_SURF, MOVE_ICE_BEAM, MOVE_RAPID_SPIN, MOVE_REST
     },
 };

@@ -452,6 +452,9 @@ gStdScripts_End:: @ 81DC2CC
 	.include "data/maps/BurnedTower_1F/scripts.inc"
 	.include "data/maps/BurnedTower_2F/scripts.inc"
 	.include "data/maps/BurnedTower_3F/scripts.inc"
+	.include "data/maps/SunkenTower_1F/scripts.inc"
+	.include "data/maps/SunkenTower_2F/scripts.inc"
+	.include "data/maps/SunkenTower_3F/scripts.inc"
 	.include "data/scripts/shared_secret_base.inc"
 	.include "data/maps/BattleColosseum_2P/scripts.inc"
 	.include "data/maps/TradeCenter/scripts.inc"
@@ -1068,9 +1071,3 @@ Common_EventScript_LegendaryFlewAway:: @ 8273776
 	.include "data/text/frontier_brain.inc"
 	.include "data/text/save.inc"
 	.include "data/text/birch_speech.inc"
-
-	.include "data/maps/SunkenTower_1F/scripts.inc"
-
-	.include "data/maps/SunkenTower_2F/scripts.inc"
-
-	.include "data/maps/SunkenTower_3F/scripts.inc"

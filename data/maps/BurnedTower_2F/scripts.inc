@@ -31,7 +31,7 @@ BurnedTower_2F_Text_AngelaIntro:
 
 BurnedTower_2F_Text_AngelaDefeated:
 	.string "..............\n"
-	.string "fUCK$"
+	.string "fUCK.$"
 
 BurnedTower_2F_Text_AngelaPostBattle:
 	.string "The final sage is the strongest.\n"
@@ -40,13 +40,13 @@ BurnedTower_2F_Text_AngelaPostBattle:
 BurnedTower_2F_Text_RosaIntro:
 	.string "I am the last FIRE SAGE!\n"
 	.string "I have not seen anyone in years.\p"
-	.string "Finally, a chance to make ENTEI proud$"
+	.string "Finally, a chance to make ENTEI proud!$"
 
 BurnedTower_2F_Text_RosaDefeated:
 	.string "ENTEI... forgive me.$"
 
 BurnedTower_2F_Text_RosaPostBattle:
-	.string "Even the sages do not disturb\n"
-	.string "ENTEI. I warn you of his might.\p"
-	.string "Proceed at your own caution as\n"
-	.string "you have earned the right.$"
+	.string "Even the sages do not disturb ENTEI\n"
+	.string "I warn you of his might.\p"
+	.string "Proceed at your own caution as you\n"
+	.string "have earned the right.$"
