@@ -361,6 +361,12 @@ const u32 gObjectEventPic_HoOh[] = INCBIN_U32("graphics/object_events/pics/pokem
 const u16 gObjectEventPal_HoOh[] = INCBIN_U16("graphics/object_events/palettes/ho_oh.gbapal");
 
 const u32 gObjectEventPic_SnorlaxStill[] = INCBIN_U32("graphics/object_events/pics/pokemon/snorlax_still.4bpp");
-const u16 gObjectEventPal_Snor[] = INCBIN_U16("graphics/event_objects/palettes/snorlax.gbapal");
-
+const u16 gObjectEventPal_Snor[] = INCBIN_U16("graphics/object_events/palettes/snorlax.gbapal");
 const u32 gObjectEventPic_MewTwo[] = INCBIN_U32("graphics/object_events/pics/pokemon/mewtwo.4bpp");
+
+const u16 gObjectEventPal_Raikou[] = INCBIN_U16("graphics/object_events/palettes/raikou.gbapal");
+const u16 gObjectEventPal_Entei[] = INCBIN_U16("graphics/object_events/palettes/entei.gbapal");
+const u16 gObjectEventPal_Suicune[] = INCBIN_U16("graphics/object_events/palettes/suicune.gbapal");
+const u32 gObjectEventPic_Raikou[] = INCBIN_U32("graphics/object_events/pics/pokemon/raikou.4bpp");
+const u32 gObjectEventPic_Entei[] = INCBIN_U32("graphics/object_events/pics/pokemon/entei.4bpp");
+const u32 gObjectEventPic_Suicune[] = INCBIN_U32("graphics/object_events/pics/pokemon/suicune.4bpp");

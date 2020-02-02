@@ -2188,3 +2188,24 @@ const struct SpriteFrameImage  gObjectEventPicTable_MewTwo[] = {
     obj_frame_tiles(gObjectEventPic_MewTwo),
     obj_frame_tiles(gObjectEventPic_MewTwo),
 };
+
+const struct SpriteFrameImage gObjectEventPicTable_Raikou[] = {
+    obj_frame_tiles(gObjectEventPic_Raikou),
+    obj_frame_tiles(gObjectEventPic_Raikou),
+    obj_frame_tiles(gObjectEventPic_Raikou),
+    obj_frame_tiles(gObjectEventPic_Raikou),
+};
+
+const struct SpriteFrameImage gObjectEventPicTable_Entei[] = {
+    obj_frame_tiles(gObjectEventPic_Entei),
+    obj_frame_tiles(gObjectEventPic_Entei),
+    obj_frame_tiles(gObjectEventPic_Entei),
+    obj_frame_tiles(gObjectEventPic_Entei),
+};
+
+const struct SpriteFrameImage gObjectEventPicTable_Suicune[] = {
+    obj_frame_tiles(gObjectEventPic_Suicune),
+    obj_frame_tiles(gObjectEventPic_Suicune),
+    obj_frame_tiles(gObjectEventPic_Suicune),
+    obj_frame_tiles(gObjectEventPic_Suicune),
+};

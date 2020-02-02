@@ -198,6 +198,9 @@ static const u8 sMapName_MarineCave[] = _("MARINE CAVE");
 static const u8 sMapName_TerraCave[] = _("TERRA CAVE");
 static const u8 sMapName_DesertUnderpass[] = _("DESERT UNDERPASS");
 static const u8 sMapName_TrainerHill[] = _("TRAINER HILL");
+static const u8 sMapName_ShockedTower[] = _("SHOCKED TOWER");
+static const u8 sMapName_BurnedTower[] = _("BURNED TOWER");
+static const u8 sMapName_SunkenTower[] = _("SUNKEN TOWER");
 
 const struct RegionMapLocation gRegionMapEntries[] = {
     [MAPSEC_LITTLEROOT_TOWN]            = { 4, 11, 1, 1, sMapName_LittlerootTown},
@@ -412,7 +415,10 @@ const struct RegionMapLocation gRegionMapEntries[] = {
     [MAPSEC_DESERT_UNDERPASS]           = { 2,  0, 1, 1, sMapName_DesertUnderpass},
     [MAPSEC_ALTERING_CAVE]              = { 6,  8, 1, 1, sMapName_AlteringCave},
     [MAPSEC_NAVEL_ROCK]                 = { 0,  0, 1, 1, sMapName_NavelRock},
-    [MAPSEC_TRAINER_HILL]               = { 8,  4, 1, 1, sMapName_TrainerHill}
+    [MAPSEC_TRAINER_HILL]               = { 8,  4, 1, 1, sMapName_TrainerHill},
+    [MAPSEC_SHOCKED_TOWER]              = { 0,  0, 1, 1, sMapName_ShockedTower},
+    [MAPSEC_BURNED_TOWER]               = { 0,  0, 1, 1, sMapName_BurnedTower},
+    [MAPSEC_SUNKEN_TOWER]               = { 0,  0, 1, 1, sMapName_SunkenTower},
 };
 
 #endif //GUARD_DATA_REGION_MAP_REGION_MAP_ENTRIES_H

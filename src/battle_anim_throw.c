@@ -388,7 +388,7 @@ static const struct SpriteTemplate sBallParticleSpriteTemplates[POKEBALL_COUNT] 
         .tileTag = TAG_PARTICLES_SHINYBALL,
         .paletteTag = TAG_PARTICLES_SHINYBALL,
         .oam = &gOamData_AffineOff_ObjNormal_8x8,
-        .anims = gAnims_BallParticles,
+        .anims = sAnims_BallParticles,
         .images = NULL,
         .affineAnims = gDummySpriteAffineAnimTable,
         .callback = SpriteCallbackDummy,
