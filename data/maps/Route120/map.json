@@ -612,6 +612,13 @@
       "elevation": 1,
       "dest_map": "MAP_SCORCHED_SLAB",
       "dest_warp_id": 0
+    },
+    {
+      "dest_map": "MAP_BURNED_TOWER_1F",
+      "dest_warp_id": 0,
+      "elevation": 0,
+      "x": 27,
+      "y": 75
     }
   ],
   "coord_events": [

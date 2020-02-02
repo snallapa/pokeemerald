@@ -854,6 +854,27 @@ const struct SpriteFrameImage gEventObjectPicTable_MewTwo[] = {
     obj_frame_tiles(gEventObjectPic_MewTwo),
 };
 
+const struct SpriteFrameImage gEventObjectPicTable_Raikou[] = {
+    obj_frame_tiles(gEventObjectPic_Raikou),
+    obj_frame_tiles(gEventObjectPic_Raikou),
+    obj_frame_tiles(gEventObjectPic_Raikou),
+    obj_frame_tiles(gEventObjectPic_Raikou),
+};
+
+const struct SpriteFrameImage gEventObjectPicTable_Entei[] = {
+    obj_frame_tiles(gEventObjectPic_Entei),
+    obj_frame_tiles(gEventObjectPic_Entei),
+    obj_frame_tiles(gEventObjectPic_Entei),
+    obj_frame_tiles(gEventObjectPic_Entei),
+};
+
+const struct SpriteFrameImage gEventObjectPicTable_Suicune[] = {
+    obj_frame_tiles(gEventObjectPic_Suicune),
+    obj_frame_tiles(gEventObjectPic_Suicune),
+    obj_frame_tiles(gEventObjectPic_Suicune),
+    obj_frame_tiles(gEventObjectPic_Suicune),
+};
+
 const struct SpriteFrameImage gEventObjectPicTable_UnusedPorygon2Doll[] = {
     obj_frame_tiles(gEventObjectPic_UnusedPorygon2Doll),
 };

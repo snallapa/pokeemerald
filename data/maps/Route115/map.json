@@ -346,6 +346,13 @@
       "elevation": 0,
       "dest_map": "MAP_TERRA_CAVE_ENTRANCE",
       "dest_warp_id": 0
+    },
+    {
+      "dest_map": "MAP_SHOCKED_TOWER_1F",
+      "dest_warp_id": 0,
+      "elevation": 0,
+      "x": 30,
+      "y": 6
     }
   ],
   "coord_events": [],
