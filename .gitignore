@@ -35,3 +35,6 @@ porymap.project.cfg
 .fuse_hidden*
 *.sna
 *.srm
+*.srm
+tools/mid2agb-modified/
+tools/mid2agb/README.md
