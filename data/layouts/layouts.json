@@ -4529,6 +4529,16 @@
             "primary_tileset": "gTileset_Building",
             "secondary_tileset": "gTileset_Contest",
             "width": 17
+        },
+        {
+            "blockdata_filepath": "data/layouts/ArtisanCave_2F/map.bin",
+            "border_filepath": "data/layouts/ArtisanCave_2F/border.bin",
+            "height": 15,
+            "id": "LAYOUT_ARTISAN_CAVE_2F",
+            "name": "ArtisanCave_2F_Layout",
+            "primary_tileset": "gTileset_General",
+            "secondary_tileset": "gTileset_Cave",
+            "width": 17
         }
     ],
     "layouts_table_label": "gMapLayouts"
