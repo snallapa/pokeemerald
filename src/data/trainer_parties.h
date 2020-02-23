@@ -13042,3 +13042,48 @@ static const struct TrainerMonItemCustomMoves sParty_Chance[] = {
     .moves = MOVE_SURF, MOVE_ICE_BEAM, MOVE_RAPID_SPIN, MOVE_REST
     },
 };
+
+static const struct TrainerMonItemCustomMoves sParty_Hex[] = {
+    {
+    .iv = 255,
+    .lvl = 75,
+    .species = SPECIES_AGGRON,
+    .heldItem = ITEM_LEFTOVERS,
+    .moves = MOVE_SUBSTITUTE, MOVE_FOCUS_PUNCH, MOVE_ROCK_SLIDE, MOVE_THUNDER_WAVE
+    },
+    {
+    .iv = 255,
+    .lvl = 75,
+    .species = SPECIES_HERACROSS,
+    .heldItem = ITEM_CHOICE_BAND,
+    .moves = MOVE_MEGAHORN, MOVE_FOCUS_PUNCH, MOVE_BRICK_BREAK, MOVE_FACADE
+    },
+    {
+    .iv = 255,
+    .lvl = 75,
+    .species = SPECIES_CACTURNE,
+    .heldItem = ITEM_LEFTOVERS,
+    .moves = MOVE_LEECH_SEED, MOVE_NEEDLE_ARM, MOVE_THUNDER_PUNCH, MOVE_SUBSTITUTE
+    },
+    {
+    .iv = 255,
+    .lvl = 75,
+    .species = SPECIES_ZANGOOSE,
+    .heldItem = ITEM_LEFTOVERS,
+    .moves = MOVE_SWORDS_DANCE, MOVE_SHADOW_BALL, MOVE_BRICK_BREAK, MOVE_QUICK_ATTACK
+    },
+    {
+    .iv = 255,
+    .lvl = 75,
+    .species = SPECIES_AERODACTYL,
+    .heldItem = ITEM_CHOICE_BAND,
+    .moves = MOVE_ROCK_SLIDE, MOVE_DOUBLE_EDGE, MOVE_EARTHQUAKE, MOVE_AERIAL_ACE
+    },
+    {
+    .iv = 255,
+    .lvl = 75,
+    .species = SPECIES_DRAGONITE,
+    .heldItem = ITEM_LEFTOVERS,
+    .moves = MOVE_THUNDER, MOVE_ICE_BEAM, MOVE_EARTHQUAKE, MOVE_DRAGON_DANCE
+    }
+};

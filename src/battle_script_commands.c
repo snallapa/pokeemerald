@@ -10135,7 +10135,7 @@ static void Cmd_handleballthrow(void)
                 break;
             case ITEM_SHADOW_BALL:
             case ITEM_SHINY_BALL:
-                ballMultiplier = 20;
+                ballMultiplier = 15;
                 break;
             }
         }

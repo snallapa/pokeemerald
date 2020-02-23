@@ -405,6 +405,7 @@
 #define MAP_SUNKEN_TOWER_1F                          (114 | (24 << 8))
 #define MAP_SUNKEN_TOWER_2F                          (115 | (24 << 8))
 #define MAP_SUNKEN_TOWER_3F                          (116 | (24 << 8))
+#define MAP_ARTISAN_CAVE_2F                          (117 | (24 << 8))
 
 // Map Group 25
 #define MAP_SECRET_BASE_RED_CAVE1           (0 | (25 << 8))

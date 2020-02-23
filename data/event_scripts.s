@@ -439,6 +439,7 @@ gStdScripts_End:: @ 81DC2CC
 	.include "data/maps/DesertUnderpass/scripts.inc"
 	.include "data/maps/ArtisanCave_B1F/scripts.inc"
 	.include "data/maps/ArtisanCave_1F/scripts.inc"
+	.include "data/maps/ArtisanCave_2F/scripts.inc"
 	.include "data/maps/Underwater_MarineCave/scripts.inc"
 	.include "data/maps/MarineCave_Entrance/scripts.inc"
 	.include "data/maps/MarineCave_End/scripts.inc"
