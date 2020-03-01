@@ -248,6 +248,10 @@ const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_Storyteller;
 const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_Giddy;
 const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_UnusedMauvilleOldMan1;
 const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_UnusedMauvilleOldMan2;
+const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_RocketMemberM;
+const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_RocketMemberF;
+const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_Giovanni;
+const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_Meowth;
 
 
 const struct EventObjectGraphicsInfo *const gEventObjectGraphicsInfoPointers[] = {
@@ -492,7 +496,11 @@ const struct EventObjectGraphicsInfo *const gEventObjectGraphicsInfoPointers[] =
     [EVENT_OBJ_GFX_LINK_RS_BRENDAN] =          &gEventObjectGraphicsInfo_RubySapphireBrendan,
     [EVENT_OBJ_GFX_LINK_RS_MAY] =              &gEventObjectGraphicsInfo_RubySapphireMay,
     [EVENT_OBJ_GFX_LUGIA] =                    &gEventObjectGraphicsInfo_Lugia,
-    [EVENT_OBJ_GFX_HOOH] =                     &gEventObjectGraphicsInfo_HoOh
+    [EVENT_OBJ_GFX_HOOH] =                     &gEventObjectGraphicsInfo_HoOh,
+    [EVENT_OBJ_GFX_ROCKET_MEMBER_M] =          &gEventObjectGraphicsInfo_RocketMemberM,
+    [EVENT_OBJ_GFX_ROCKET_MEMBER_F] =          &gEventObjectGraphicsInfo_RocketMemberF,
+    [EVENT_OBJ_GFX_GIOVANNI] =                 &gEventObjectGraphicsInfo_Giovanni,
+    [EVENT_OBJ_GFX_MEOWTH] =                   &gEventObjectGraphicsInfo_Meowth,
 };
 
 const struct EventObjectGraphicsInfo *const gMauvilleOldManGraphicsInfoPointers[] = {
