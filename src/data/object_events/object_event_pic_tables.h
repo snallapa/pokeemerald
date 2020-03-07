@@ -847,6 +847,9 @@ const struct SpriteFrameImage gObjectEventPicTable_UnusedWooperDoll[] = {
     obj_frame_tiles(gObjectEventPic_UnusedWooperDoll),
 };
 
+const struct SpriteFrameImage gObjectEventPicTable_UnusedPikachuDoll[] = {
+    obj_frame_tiles(gObjectEventPic_UnusedPikachuDoll),
+};
 
 const struct SpriteFrameImage gObjectEventPicTable_UnusedPorygon2Doll[] = {
     obj_frame_tiles(gObjectEventPic_UnusedPorygon2Doll),
@@ -2182,9 +2185,30 @@ const struct SpriteFrameImage gObjectEventPicTable_SnorlaxStill[] = {
     obj_frame_tiles(gObjectEventPic_SnorlaxStill),
 };
 
-const struct SpriteFrameImage  gObjectEventPicTable_MewTwo[] = {
+const struct SpriteFrameImage gObjectEventPicTable_MewTwo[] = {
     obj_frame_tiles(gObjectEventPic_MewTwo),
     obj_frame_tiles(gObjectEventPic_MewTwo),
     obj_frame_tiles(gObjectEventPic_MewTwo),
     obj_frame_tiles(gObjectEventPic_MewTwo),
+};
+
+const struct SpriteFrameImage gObjectEventPicTable_Raikou[] = {
+    obj_frame_tiles(gObjectEventPic_Raikou),
+    obj_frame_tiles(gObjectEventPic_Raikou),
+    obj_frame_tiles(gObjectEventPic_Raikou),
+    obj_frame_tiles(gObjectEventPic_Raikou),
+};
+
+const struct SpriteFrameImage gObjectEventPicTable_Entei[] = {
+    obj_frame_tiles(gObjectEventPic_Entei),
+    obj_frame_tiles(gObjectEventPic_Entei),
+    obj_frame_tiles(gObjectEventPic_Entei),
+    obj_frame_tiles(gObjectEventPic_Entei),
+};
+
+const struct SpriteFrameImage gObjectEventPicTable_Suicune[] = {
+    obj_frame_tiles(gObjectEventPic_Suicune),
+    obj_frame_tiles(gObjectEventPic_Suicune),
+    obj_frame_tiles(gObjectEventPic_Suicune),
+    obj_frame_tiles(gObjectEventPic_Suicune),
 };

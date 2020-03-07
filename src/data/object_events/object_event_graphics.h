@@ -360,7 +360,15 @@ const u16 gObjectEventPal_Lugia[] = INCBIN_U16("graphics/object_events/palettes/
 const u32 gObjectEventPic_HoOh[] = INCBIN_U32("graphics/object_events/pics/pokemon/ho_oh.4bpp");
 const u16 gObjectEventPal_HoOh[] = INCBIN_U16("graphics/object_events/palettes/ho_oh.gbapal");
 
+// new pics
 const u32 gObjectEventPic_SnorlaxStill[] = INCBIN_U32("graphics/object_events/pics/pokemon/snorlax_still.4bpp");
-const u16 gObjectEventPal_Snor[] = INCBIN_U16("graphics/event_objects/palettes/snorlax.gbapal");
-
 const u32 gObjectEventPic_MewTwo[] = INCBIN_U32("graphics/object_events/pics/pokemon/mewtwo.4bpp");
+const u32 gObjectEventPic_Raikou[] = INCBIN_U32("graphics/object_events/pics/pokemon/raikou.4bpp");
+const u32 gObjectEventPic_Entei[] = INCBIN_U32("graphics/object_events/pics/pokemon/entei.4bpp");
+const u32 gObjectEventPic_Suicune[] = INCBIN_U32("graphics/object_events/pics/pokemon/suicune.4bpp");
+
+// new palettes
+const u16 gObjectEventPaletteSnor[] = INCBIN_U16("graphics/object_events/pics/pokemon/snorlax_still.gbapal");
+const u16 gObjectEventPaletteRaikou[] = INCBIN_U16("graphics/object_events/pics/pokemon/raikou.gbapal");
+const u16 gObjectEventPaletteEntei[] = INCBIN_U16("graphics/object_events/pics/pokemon/entei.gbapal");
+const u16 gObjectEventPaletteSuicune[] = INCBIN_U16("graphics/object_events/pics/pokemon/suicune.gbapal");
