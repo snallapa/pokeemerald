@@ -875,6 +875,7 @@
 #define TRAINER_KENNY                       871
 #define TRAINER_CHANCE                      872
 #define TRAINER_HEX                         873
+#define TRAINER_ROCKET_GRUNT_SUS_1          874
 // NOTE: Because each Trainer uses a flag to determine when they are defeated, there is only space for 9 additional trainers before trainer flag space overflows
 //       More space can be made by shifting flags around in constants/flags.h or changing how trainer flags are handled
 

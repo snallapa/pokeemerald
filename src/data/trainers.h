@@ -12218,4 +12218,17 @@ const struct Trainer gTrainers[] = {
         .partySize = ARRAY_COUNT(sParty_Hex),
         .party = {.ItemCustomMoves = sParty_Hex},
     },
+    [TRAINER_ROCKET_GRUNT_SUS_1] =
+    {
+        .partyFlags = 0,
+        .trainerClass = TRAINER_CLASS_ROCKET,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_AQUA,
+        .trainerPic = TRAINER_PIC_ROCKET_GRUNT_F,
+        .trainerName = _("GRUNT"),
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE,
+        .partySize = ARRAY_COUNT(sParty_RocketGruntMtPyre),
+        .party = {.NoItemDefaultMoves = sParty_RocketGruntMtPyre},
+    },
 };

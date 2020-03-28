@@ -13087,3 +13087,17 @@ static const struct TrainerMonItemCustomMoves sParty_Hex[] = {
     .moves = MOVE_THUNDER, MOVE_ICE_BEAM, MOVE_EARTHQUAKE, MOVE_DRAGON_DANCE
     }
 };
+
+// Rocket Saga
+static const struct TrainerMonNoItemDefaultMoves sParty_RocketGruntMtPyre[] = {
+    {
+    .iv = 0,
+    .lvl = 34,
+    .species = SPECIES_HYPNO,
+    },
+    {
+    .iv = 0,
+    .lvl = 34,
+    .species = SPECIES_ARBOK,
+    }
+};

@@ -56,7 +56,7 @@ MtPyre_Summit_EventScript_TeamAquaExits:: @ 823203C
 	fadedefaultbgm
 	fadescreen FADE_FROM_BLACK
 	delay 20
-	setvar VAR_MT_PYRE_STATE, 1
+	
 	compare VAR_0x8008, 0
 	call_if_eq MtPyre_Summit_EventScript_OldLadyApproachPlayer0
 	compare VAR_0x8008, 1
@@ -64,11 +64,75 @@ MtPyre_Summit_EventScript_TeamAquaExits:: @ 823203C
 	compare VAR_0x8008, 2
 	call_if_eq MtPyre_Summit_EventScript_OldLadyApproachPlayer2
 	msgbox MtPyre_Summit_Text_BothOrbsTakenMagmaLeftThis, MSGBOX_DEFAULT
+	compare VAR_0x8008, 0
+	call_if_eq MtPyre_Summit_EventScript_Rocket0
+	compare VAR_0x8008, 1
+	call_if_eq MtPyre_Summit_EventScript_Rocket1
+	compare VAR_0x8008, 2
+	call_if_eq MtPyre_Summit_EventScript_Rocket2
+	releaseall
+	end
+
+MtPyre_Summit_EventScript_Rocket0::
+	addobject 9
+	setobjectxy 9, 22, 16
+	goto MtPyre_Summit_EventScript_Rocket
+
+MtPyre_Summit_EventScript_Rocket1::
+	addobject 9
+	setobjectxy 9, 23, 16
+	goto MtPyre_Summit_EventScript_Rocket
+
+MtPyre_Summit_EventScript_Rocket2::
+	addobject 9
+	setobjectxy 9, 24, 16
+	goto MtPyre_Summit_EventScript_Rocket
+
+MtPyre_Summit_EventScript_Rocket::
+	msgbox MtPyre_Summit_Text_RocketWaitInterrupt, MSGBOX_DEFAULT
+	applymovement 9, MtPyre_Summit_EventScript_RocketMeetPlayer
+	waitmovement 0
+	releaseall
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceDown
+	lockall
+	waitmovement 0
+	trainerbattle_single TRAINER_ROCKET_GRUNT_SUS_1, MtPyre_Summit_Text_RocketIntro, MtPyre_Summit_Text_RocketDefeated, MtPyre_Summit_EventScript_RocketDefeated
+	waitstate
+	end
+
+MtPyre_Summit_EventScript_RocketDefeated::
+	msgbox MtPyre_Summit_Text_RocketUgh, MSGBOX_AUTOCLOSE
 	giveitem ITEM_MAGMA_EMBLEM
 	setflag FLAG_RECEIVED_RED_OR_BLUE_ORB
 	setflag FLAG_HIDE_JAGGED_PASS_MAGMA_GUARD
+	setvar VAR_MT_PYRE_STATE, 1
+	applymovement 9, MtPyre_Summit_EventScript_RocketLeave
+	waitmovement 0
+	removeobject 9
 	releaseall
 	end
+
+MtPyre_Summit_EventScript_RocketMeetPlayer::
+	walk_fast_up
+	walk_fast_up
+	walk_fast_up
+	walk_fast_up
+	walk_fast_up
+	walk_fast_up
+	walk_fast_up
+	walk_fast_up
+	step_end
+
+MtPyre_Summit_EventScript_RocketLeave::
+	walk_fast_down
+	walk_fast_down
+	walk_fast_down
+	walk_fast_down
+	walk_fast_down
+	walk_fast_down
+	walk_fast_down
+	walk_fast_down
+	step_end
 
 MtPyre_Summit_EventScript_ArchieFacePlayer0:: @ 82320E0
 	applymovement 2, MtPyre_Summit_Movement_ArchieFacePlayer0
@@ -636,3 +700,17 @@ MtPyre_Summit_Text_HoennTrioTale: @ 823325D
 	.string "Then, its duty done, the green POKéMON\n"
 	.string "flew off into the wild blue yonder…$"
 
+MtPyre_Summit_Text_RocketWaitInterrupt:
+	.string "WAIT!!!!!$"
+
+MtPyre_Summit_Text_RocketIntro:
+	.string "I knew those idiots could not be trusted.\n"
+	.string "Their ineptitude could cost us.\p"
+	.string "You will have to earn that item!$"
+
+MtPyre_Summit_Text_RocketDefeated:
+	.string "Boss will not be happy about this$"
+
+MtPyre_Summit_Text_RocketUgh:
+	.string "Ughhhh I hate them... \p"
+	.string "Take it then.. I got to leave$"
