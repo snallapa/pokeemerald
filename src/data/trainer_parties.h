@@ -13101,3 +13101,27 @@ static const struct TrainerMonNoItemDefaultMoves sParty_RocketGruntMtPyre[] = {
     .species = SPECIES_ARBOK,
     }
 };
+
+static const struct TrainerMonItemCustomMoves sParty_RocketGuard[] = {
+    {
+    .iv = 255,
+    .lvl = 55,
+    .species = SPECIES_HYPNO,
+    .heldItem = ITEM_LEFTOVERS,
+    .moves = MOVE_SEISMIC_TOSS, MOVE_PSYCHIC, MOVE_COUNTER, MOVE_REFLECT
+    },
+    {
+    .iv = 255,
+    .lvl = 55,
+    .species = SPECIES_ARBOK,
+    .heldItem = ITEM_LEFTOVERS,
+    .moves = MOVE_GLARE, MOVE_SLUDGE_BOMB, MOVE_EARTHQUAKE, MOVE_ROCK_SLIDE
+    },
+    {
+    .iv = 255,
+    .lvl = 55,
+    .species = SPECIES_CROBAT,
+    .heldItem = ITEM_CHOICE_BAND,
+    .moves = MOVE_SLUDGE_BOMB, MOVE_AERIAL_ACE, MOVE_SHADOW_BALL, MOVE_NONE
+    }
+};

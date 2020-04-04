@@ -93,6 +93,26 @@ SeafloorCavern_Room9_EventScript_ArchieAwakenKyogre:: @ 8234DC9
 	waitmovement 0
 	msgbox SeafloorCavern_Room9_Text_ArchieWhyDidKyogreDisappear, MSGBOX_DEFAULT
 	closemessage
+
+	addobject 8
+	applymovement 8, SeafloorCavern_Room9_Movement_RocketEnter
+	waitmovement 0
+	applymovement VAR_0x8004, Common_Movement_WalkInPlaceFastestLeft
+	waitmovement 0
+	msgbox SeafloorCavern_Room9_Text_RocketArchie, MSGBOX_DEFAULT
+	msgbox SeafloorCavern_Room9_Text_ArchieRocket, MSGBOX_DEFAULT
+	msgbox SeafloorCavern_Room9_Text_RocketArchieSecond, MSGBOX_DEFAULT
+	closemessage
+	applymovement 8, SeafloorCavern_Room9_Movement_RocketToPlayer
+	waitmovement 0
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFastestDown
+	msgbox SeafloorCavern_Room9_Text_RocketPlayer, MSGBOX_DEFAULT
+	closemessage
+	applymovement 8, SeafloorCavern_Room9_Movement_RocketExit
+	waitmovement 0
+	removeobject 8
+	delay 50
+
 	addobject VAR_0x8005
 	addobject VAR_0x8006
 	addobject VAR_0x8007
@@ -100,7 +120,9 @@ SeafloorCavern_Room9_EventScript_ArchieAwakenKyogre:: @ 8234DC9
 	applymovement VAR_0x8006, SeafloorCavern_Room9_Movement_MagmaGruntArrive
 	applymovement VAR_0x8005, SeafloorCavern_Room9_Movement_MaxieArrive
 	waitmovement 0
-	applymovement VAR_0x8004, Common_Movement_WalkInPlaceFastestLeft
+	applymovement VAR_0x8004, Common_Movement_WalkInPlaceFastestLeft	
+	waitmovement 0
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFastestLeft
 	waitmovement 0
 	msgbox SeafloorCavern_Room9_Text_MaxieWhatHaveYouWrought, MSGBOX_DEFAULT
 	playse SE_PIN
@@ -201,6 +223,34 @@ SeafloorCavern_Room9_Movement_MaxieArrive: @ 823504E
 	walk_fast_right
 	step_end
 
+SeafloorCavern_Room9_Movement_RocketEnter: @ 823504E
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	step_end
+
+SeafloorCavern_Room9_Movement_RocketToPlayer: @ 823504E
+	walk_fast_down
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_in_place_fastest_up
+	step_end
+
+SeafloorCavern_Room9_Movement_RocketExit: @ 823504E
+	walk_fast_left
+	walk_fast_left
+	walk_fast_left
+	walk_fast_left
+	walk_fast_left
+	walk_fast_left
+	walk_fast_left
+	walk_fast_left
+	walk_fast_left
+	step_end
+
 SeafloorCavern_Room9_Movement_MaxieExit: @ 8235054
 	walk_right
 	walk_right
@@ -290,8 +340,9 @@ SeafloorCavern_Room9_Text_ArchieWhyDidKyogreDisappear: @ 823546F
 	.string "Why?!$"
 
 SeafloorCavern_Room9_Text_MaxieWhatHaveYouWrought: @ 82354F0
-	.string "MAXIE: What have you wrought?\p"
-	.string "ARCHIE… You've finally awoken KYOGRE,\n"
+	.string "MAXIE: What have you wrought? And\n"
+	.string "why was TEAM ROCKET speaking with you\p"
+	.string "Wait… You've finally awoken KYOGRE,\n"
 	.string "haven't you?\p"
 	.string "What will happen to the world if this\n"
 	.string "downpour continues for all eternity?\p"
@@ -317,3 +368,29 @@ SeafloorCavern_Room9_Text_MaxieWeDontHaveTimeToArgue: @ 8235692
 SeafloorCavern_Room9_Text_MaxieComeOnPlayer: @ 8235723
 	.string "MAXIE: {PLAYER}, come on, you have\n"
 	.string "to get out of here, too!$"
+
+SeafloorCavern_Room9_Text_RocketArchie:
+	.string "ARCHIE WHAT DID YOU DO??\p"
+	.string "You had one job which was to awaken and\n"
+	.string "control KYOGRE!!\p"
+	.string "How do you lose a LEGENDARY BEAST\p"
+	.string "Just wait until Boss hears about this!\n"
+	.string "The incompetence!\p$"
+
+SeafloorCavern_Room9_Text_ArchieRocket:
+	.string "ARCHIE: Please...\p"
+	.string "Allow me to fix this. Just give me some\n"
+	.string "time. I can do it...$"
+
+SeafloorCavern_Room9_Text_RocketArchieSecond:
+	.string "Ughhh. Fine! FIX IT!!\p"
+	.string "I can't deal with you!!$"
+
+SeafloorCavern_Room9_Text_RocketPlayer:
+	.string "And YOU!\p"
+	.string "Why do I keep seeing you??\n"
+	.string "Are you the one causing this??\p"
+	.string "Just stay out of the way! Is that\n"
+	.string "so hard to understand.\p"
+	.string "I need to get back. Giovanni must\n"
+	.string "know the situation.$"

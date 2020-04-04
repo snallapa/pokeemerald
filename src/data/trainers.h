@@ -12231,4 +12231,17 @@ const struct Trainer gTrainers[] = {
         .partySize = ARRAY_COUNT(sParty_RocketGruntMtPyre),
         .party = {.NoItemDefaultMoves = sParty_RocketGruntMtPyre},
     },
+    [TRAINER_ROCKET_GUARD] =
+    {
+        .partyFlags = F_TRAINER_PARTY_HELD_ITEM | F_TRAINER_PARTY_CUSTOM_MOVESET,
+        .trainerClass = TRAINER_CLASS_ROCKET,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_AQUA,
+        .trainerPic = TRAINER_PIC_ROCKET_GRUNT_F,
+        .trainerName = _("GRUNT GUARD"),
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT | AI_SCRIPT_CHECK_VIABILITY,
+        .partySize = ARRAY_COUNT(sParty_RocketGuard),
+        .party = {.ItemCustomMoves = sParty_RocketGuard},
+    },
 };

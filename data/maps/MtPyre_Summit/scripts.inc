@@ -619,8 +619,9 @@ MtPyre_Summit_Text_GroudonKyogreAwakened: @ 8232B4F
 MtPyre_Summit_Text_ThoseTwoMenReturnedOrbs: @ 8232CA6
 	.string "The two men who took the ORBS came\n"
 	.string "back to return them on their own.\p"
-	.string "Those men…\n"
-	.string "Perhaps they are not so evil after all…$"
+	.string "They were talking about how they were both\n"
+	.string "influenced to take the orbs.\p"
+	.string "Something about TEAM ROCKET I think?$"
 
 MtPyre_Summit_Text_SuperAncientPokemonTaughtUs: @ 8232D1E
 	.string "The embodiments of the land, sea,\n"
