@@ -778,7 +778,7 @@
             "name": "PacifidlogTown_House2_Layout",
             "primary_tileset": "gTileset_Building",
             "secondary_tileset": "gTileset_GenericBuilding",
-            "width": 10
+            "width": 11
         },
         {
             "blockdata_filepath": "data/layouts/PetalburgCity_Gym/map.bin",
