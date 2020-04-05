@@ -331,7 +331,10 @@
         "SunkenTower_1F",
         "SunkenTower_2F",
         "SunkenTower_3F",
-        "ArtisanCave_2F"
+        "ArtisanCave_2F",
+        "RocketHideout_B1F",
+        "RocketHideout_B2F",
+        "RocketHideout_B3F"
     ],
     "gMapGroup25": [
         "SecretBase_RedCave1",
