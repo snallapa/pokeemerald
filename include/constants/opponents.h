@@ -877,10 +877,33 @@
 #define TRAINER_HEX                         873
 #define TRAINER_ROCKET_GRUNT_SUS_1          874
 #define TRAINER_ROCKET_GUARD                875
+// These are on B1 rocket hideout grunts
+#define TRAINER_ROCKET_GRUNT_HIDEOUT_1      876
+#define TRAINER_ROCKET_GRUNT_HIDEOUT_2      877
+#define TRAINER_ROCKET_GRUNT_HIDEOUT_3      878
+#define TRAINER_ROCKET_GRUNT_HIDEOUT_4      879
+#define TRAINER_ROCKET_GRUNT_HIDEOUT_5      880
+#define TRAINER_ROCKET_GRUNT_HIDEOUT_6      881
+// these are on B2 rocket hideout grunts
+#define TRAINER_ROCKET_GRUNT_HIDEOUT_7      882
+#define TRAINER_ROCKET_GRUNT_HIDEOUT_8      883
+#define TRAINER_ROCKET_GRUNT_HIDEOUT_9      884
+#define TRAINER_ROCKET_GRUNT_HIDEOUT_10     885
+#define TRAINER_ROCKET_GRUNT_HIDEOUT_11     886
+#define TRAINER_ROCKET_GRUNT_HIDEOUT_12     887
+#define TRAINER_ROCKET_GRUNT_HIDEOUT_13     888
+#define TRAINER_ROCKET_GRUNT_HIDEOUT_14     889
+#define TRAINER_ROCKET_GRUNT_HIDEOUT_15     890
+//B3 rocket hideout grunts
+#define TRAINER_ROCKET_GRUNT_HIDEOUT_16     891
+#define TRAINER_ROCKET_GRUNT_HIDEOUT_17     892
+#define TRAINER_ROCKET_GRUNT_HIDEOUT_18     893
+#define TRAINER_ROCKET_GRUNT_HIDEOUT_19     894
+#define TRAINER_ROCKET_GRUNT_HIDEOUT_20     895
 // NOTE: Because each Trainer uses a flag to determine when they are defeated, there is only space for 9 additional trainers before trainer flag space overflows
 //       More space can be made by shifting flags around in constants/flags.h or changing how trainer flags are handled
 
-#define TRAINERS_COUNT                      876
+#define TRAINERS_COUNT                      896
 #define MAX_TRAINERS_COUNT                  864
 #define TRAINERS_FLAG_NO                    0x356 //original ones
 
