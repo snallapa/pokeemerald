@@ -1234,7 +1234,7 @@
 #define FLAG_ITEM_ROCKET_HIDEOUT_CHARMANDER                         0x496 // Unused Flag
 #define FLAG_ITEM_ROCKET_HIDEOUT_SQUIRTLE                           0x497 // Unused Flag
 #define FLAG_ITEM_ROCKET_HIDEOUT_BULBASAUR                          0x498 // Unused Flag
-#define FLAG_UNUSED_0x499                                           0x499 // Unused Flag
+#define FLAG_ROCKET_HIDE_EVERYONE                                   0x499 // Unused Flag
 #define FLAG_UNUSED_0x49A                                           0x49A // Unused Flag
 #define FLAG_UNUSED_0x49B                                           0x49B // Unused Flag
 #define FLAG_UNUSED_0x49C                                           0x49C // Unused Flag

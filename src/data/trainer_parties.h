@@ -13486,3 +13486,41 @@ static const struct TrainerMonItemCustomMoves sParty_RocketGruntHideout20[] = {
     .moves = MOVE_ENDURE, MOVE_FLAIL, MOVE_SWORDS_DANCE, MOVE_ROCK_SLIDE
     },
 };
+
+static const struct TrainerMonItemCustomMoves sParty_Giovanni[] = {
+    {
+    .iv = 255,
+    .lvl = 65,
+    .species = SPECIES_KANGASKHAN,
+    .heldItem = ITEM_LEFTOVERS,
+    .moves = MOVE_WISH, MOVE_RETURN, MOVE_PROTECT, MOVE_TOXIC
+    },
+    {
+    .iv = 255,
+    .lvl = 65,
+    .species = SPECIES_PERSIAN,
+    .heldItem = ITEM_LIECHI_BERRY,
+    .moves = MOVE_SUBSTITUTE, MOVE_RETURN, MOVE_SHADOW_BALL, MOVE_HYPNOSIS
+    },
+    {
+    .iv = 255,
+    .lvl = 65,
+    .species = SPECIES_NIDOKING,
+    .heldItem = ITEM_LEFTOVERS,
+    .moves = MOVE_EARTHQUAKE, MOVE_MEGAHORN, MOVE_ICE_BEAM, MOVE_SLUDGE_BOMB
+    },
+    {
+    .iv = 255,
+    .lvl = 65,
+    .species = SPECIES_NIDOQUEEN,
+    .heldItem = ITEM_CHOICE_BAND,
+    .moves = MOVE_SHADOW_BALL, MOVE_SUPERPOWER, MOVE_SHADOW_BALL, MOVE_EARTHQUAKE
+    },
+    {
+    .iv = 255,
+    .lvl = 65,
+    .species = SPECIES_RHYDON,
+    .heldItem = ITEM_LEFTOVERS,
+    .moves = MOVE_EARTHQUAKE, MOVE_SWORDS_DANCE, MOVE_ROCK_SLIDE, MOVE_SUBSTITUTE
+    },
+};

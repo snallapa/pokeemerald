@@ -900,10 +900,11 @@
 #define TRAINER_ROCKET_GRUNT_HIDEOUT_18     893
 #define TRAINER_ROCKET_GRUNT_HIDEOUT_19     894
 #define TRAINER_ROCKET_GRUNT_HIDEOUT_20     895
+#define TRAINER_GIOVANNI                    896
 // NOTE: Because each Trainer uses a flag to determine when they are defeated, there is only space for 9 additional trainers before trainer flag space overflows
 //       More space can be made by shifting flags around in constants/flags.h or changing how trainer flags are handled
 
-#define TRAINERS_COUNT                      896
+#define TRAINERS_COUNT                      897
 #define MAX_TRAINERS_COUNT                  864
 #define TRAINERS_FLAG_NO                    0x356 //original ones
 

@@ -12505,4 +12505,17 @@ const struct Trainer gTrainers[] = {
         .partySize = ARRAY_COUNT(sParty_RocketGruntHideout20),
         .party = {.ItemCustomMoves = sParty_RocketGruntHideout20},
     },
+    [TRAINER_GIOVANNI] =
+    {
+        .partyFlags = F_TRAINER_PARTY_HELD_ITEM | F_TRAINER_PARTY_CUSTOM_MOVESET,
+        .trainerClass = TRAINER_CLASS_ROCKET_LEADER,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_AQUA,
+        .trainerPic = TRAINER_PIC_GIOVANNI,
+        .trainerName = _("GIOVANNI"),
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT | AI_SCRIPT_CHECK_VIABILITY,
+        .partySize = ARRAY_COUNT(sParty_Giovanni),
+        .party = {.ItemCustomMoves = sParty_Giovanni},
+    },
 };
