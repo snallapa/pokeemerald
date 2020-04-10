@@ -87,16 +87,16 @@ RocketHideout_B2F_EventScript_RocketGruntHideout12Pokemon::
 	end
 
 RocketHideout_B2F_Text_RocketGruntHideout7Intro:
-	.string "oh?$"
+	.string "How did you get down here??$"
 
 RocketHideout_B2F_Text_RocketGruntHideout7Defeat:
-	.string "oh?$"
+	.string "The rest of them will have to handle you$"
 
 RocketHideout_B2F_Text_RocketGruntHideout7PostBattle:
-	.string "oh?$"
+	.string "Get away from me$"
 
 RocketHideout_B2F_Text_RocketGruntHideout8Intro:
-	.string "oh?$"
+	.string "$"
 
 RocketHideout_B2F_Text_RocketGruntHideout8Defeat:
 	.string "oh?$"

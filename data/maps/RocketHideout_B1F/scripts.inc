@@ -76,58 +76,60 @@ RocketHideout_B1F_EventScript_RocketGruntHideout6::
 
 
 RocketHideout_B1F_Text_RocketGruntHideout1Intro:
-	.string "oh?$"
+	.string "What! How did you get in?\n"
+	.string "Ugh that guard... I can't let you\l"
+	.string "go by!"
 
 RocketHideout_B1F_Text_RocketGruntHideout1Defeat:
-	.string "oh?$"
+	.string "I have to warn the rest$"
 
 RocketHideout_B1F_Text_RocketGruntHideout1PostBattle:
-	.string "oh?$"
+	.string "You're definitely trouble$"
 
 RocketHideout_B1F_Text_RocketGruntHideout2Intro:
-	.string "oh?$"
+	.string "You have been a pain in our ass!$"
 
 RocketHideout_B1F_Text_RocketGruntHideout2Defeat:
-	.string "oh?$"
+	.string "Ugh you are a pain in my ass$"
 
 RocketHideout_B1F_Text_RocketGruntHideout2PostBattle:
-	.string "oh?$"
+	.string "Please leave me alone$"
 
 RocketHideout_B1F_Text_RocketGruntHideout3Intro:
-	.string "oh?$"
+	.string "I heard we had an intruder!$"
 
 RocketHideout_B1F_Text_RocketGruntHideout3Defeat:
-	.string "oh?$"
+	.string "Fine go on then$"
 
 RocketHideout_B1F_Text_RocketGruntHideout3PostBattle:
-	.string "oh?$"
+	.string "I hope someone else defeats you$"
 
 RocketHideout_B1F_Text_RocketGruntHideout4Intro:
-	.string "oh?$"
+	.string "Prepare for trouble$"
 
 RocketHideout_B1F_Text_RocketGruntHideout4Defeat:
-	.string "oh?$"
+	.string "Not again!!$"
 
 RocketHideout_B1F_Text_RocketGruntHideout4PostBattle:
-	.string "oh?$"
+	.string "I guess we blasting off again$"
 
 RocketHideout_B1F_Text_RocketGruntHideout5Intro:
-	.string "oh?$"
+	.string "Make it double$"
 
 RocketHideout_B1F_Text_RocketGruntHideout5Defeat:
-	.string "oh?$"
+	.string "God damn  it$"
 
 RocketHideout_B1F_Text_RocketGruntHideout5PostBattle:
-	.string "oh?$"
+	.string "we will get you again$"
 
 RocketHideout_B1F_Text_RocketGruntHideout6Intro:
-	.string "oh?$"
+	.string "I am our last chance!$"
 
 RocketHideout_B1F_Text_RocketGruntHideout6Defeat:
-	.string "oh?$"
+	.string "The bossman won't be happy$"
 
 RocketHideout_B1F_Text_RocketGruntHideout6PostBattle:
-	.string "oh?$"
+	.string "I will let our leader do the talking$"
 
 
 RocketHideout_B1F_Text_MeowthIntro:
