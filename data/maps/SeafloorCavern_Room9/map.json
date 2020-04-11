@@ -104,7 +104,20 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "0x0",
       "flag": "FLAG_HIDE_SEAFLOOR_CAVERN_ROOM_9_KYOGRE_2"
-    }
+    },
+    {
+      "elevation": 3,
+      "flag": "FLAG_HIDE_ROCKET",
+      "graphics_id": "OBJ_EVENT_GFX_ROCKET_MEMBER_F",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+      "script": "0x0",
+      "trainer_sight_or_berry_tree_id": "0",
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "x": 9,
+      "y": 42
+  }
   ],
   "warp_events": [
     {

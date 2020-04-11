@@ -366,9 +366,16 @@ const u32 gObjectEventPic_MewTwo[] = INCBIN_U32("graphics/object_events/pics/pok
 const u32 gObjectEventPic_Raikou[] = INCBIN_U32("graphics/object_events/pics/pokemon/raikou.4bpp");
 const u32 gObjectEventPic_Entei[] = INCBIN_U32("graphics/object_events/pics/pokemon/entei.4bpp");
 const u32 gObjectEventPic_Suicune[] = INCBIN_U32("graphics/object_events/pics/pokemon/suicune.4bpp");
+const u32 gObjectEventPic_RocketMemberM[] = INCBIN_U32("graphics/object_events/pics/people/team_rocket/rocket_grunt_m.4bpp");
+const u32 gObjectEventPic_RocketMemberF[] = INCBIN_U32("graphics/object_events/pics/people/team_rocket/rocket_grunt_f.4bpp");
+const u32 gObjectEventPic_Giovanni[] = INCBIN_U32("graphics/object_events/pics/people/team_rocket/giovanni.4bpp");
+const u32 gObjectEventPic_Meowth[] = INCBIN_U32("graphics/object_events/pics/pokemon/meowth.4bpp");
 
 // new palettes
-const u16 gObjectEventPaletteSnor[] = INCBIN_U16("graphics/object_events/pics/pokemon/snorlax_still.gbapal");
-const u16 gObjectEventPaletteRaikou[] = INCBIN_U16("graphics/object_events/pics/pokemon/raikou.gbapal");
-const u16 gObjectEventPaletteEntei[] = INCBIN_U16("graphics/object_events/pics/pokemon/entei.gbapal");
-const u16 gObjectEventPaletteSuicune[] = INCBIN_U16("graphics/object_events/pics/pokemon/suicune.gbapal");
+const u16 gObjectEventPal_Snor[] = INCBIN_U16("graphics/object_events/pics/pokemon/snorlax_still.gbapal");
+const u16 gObjectEventPal_Raikou[] = INCBIN_U16("graphics/object_events/pics/pokemon/raikou.gbapal");
+const u16 gObjectEventPal_Entei[] = INCBIN_U16("graphics/object_events/pics/pokemon/entei.gbapal");
+const u16 gObjectEventPal_Suicune[] = INCBIN_U16("graphics/object_events/pics/pokemon/suicune.gbapal");
+const u16 gObjectEventPal_Rocket[] = INCBIN_U16("graphics/object_events/pics/people/team_rocket/rocket_grunt_m.gbapal");
+const u16 gObjectEventPal_Giovanni[] = INCBIN_U16("graphics/object_events/pics/people/team_rocket/giovanni.gbapal");
+const u16 gObjectEventPal_Meowth[] = INCBIN_U16("graphics/object_events/pics/pokemon/meowth.gbapal");

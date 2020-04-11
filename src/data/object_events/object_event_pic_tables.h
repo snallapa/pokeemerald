@@ -2212,3 +2212,51 @@ const struct SpriteFrameImage gObjectEventPicTable_Suicune[] = {
     obj_frame_tiles(gObjectEventPic_Suicune),
     obj_frame_tiles(gObjectEventPic_Suicune),
 };
+
+const struct SpriteFrameImage gObjectEventPicTable_Meowth[] = {
+    overworld_frame(gObjectEventPic_Meowth, 2, 2, 0),
+    overworld_frame(gObjectEventPic_Meowth, 2, 2, 1),
+    overworld_frame(gObjectEventPic_Meowth, 2, 2, 2),
+    overworld_frame(gObjectEventPic_Meowth, 2, 2, 0),
+    overworld_frame(gObjectEventPic_Meowth, 2, 2, 0),
+    overworld_frame(gObjectEventPic_Meowth, 2, 2, 1),
+    overworld_frame(gObjectEventPic_Meowth, 2, 2, 1),
+    overworld_frame(gObjectEventPic_Meowth, 2, 2, 2),
+    overworld_frame(gObjectEventPic_Meowth, 2, 2, 2),
+};
+
+const struct SpriteFrameImage gObjectEventPicTable_RocketMemberM[] = {
+    overworld_frame(gObjectEventPic_RocketMemberM, 2, 4, 0),
+    overworld_frame(gObjectEventPic_RocketMemberM, 2, 4, 1),
+    overworld_frame(gObjectEventPic_RocketMemberM, 2, 4, 2),
+    overworld_frame(gObjectEventPic_RocketMemberM, 2, 4, 3),
+    overworld_frame(gObjectEventPic_RocketMemberM, 2, 4, 4),
+    overworld_frame(gObjectEventPic_RocketMemberM, 2, 4, 5),
+    overworld_frame(gObjectEventPic_RocketMemberM, 2, 4, 6),
+    overworld_frame(gObjectEventPic_RocketMemberM, 2, 4, 7),
+    overworld_frame(gObjectEventPic_RocketMemberM, 2, 4, 8),
+};
+
+const struct SpriteFrameImage gObjectEventPicTable_RocketMemberF[] = {
+    overworld_frame(gObjectEventPic_RocketMemberF, 2, 4, 0),
+    overworld_frame(gObjectEventPic_RocketMemberF, 2, 4, 1),
+    overworld_frame(gObjectEventPic_RocketMemberF, 2, 4, 2),
+    overworld_frame(gObjectEventPic_RocketMemberF, 2, 4, 3),
+    overworld_frame(gObjectEventPic_RocketMemberF, 2, 4, 4),
+    overworld_frame(gObjectEventPic_RocketMemberF, 2, 4, 5),
+    overworld_frame(gObjectEventPic_RocketMemberF, 2, 4, 6),
+    overworld_frame(gObjectEventPic_RocketMemberF, 2, 4, 7),
+    overworld_frame(gObjectEventPic_RocketMemberF, 2, 4, 8),
+};
+
+const struct SpriteFrameImage gObjectEventPicTable_Giovanni[] = {
+    overworld_frame(gObjectEventPic_Giovanni, 2, 4, 0),
+    overworld_frame(gObjectEventPic_Giovanni, 2, 4, 1),
+    overworld_frame(gObjectEventPic_Giovanni, 2, 4, 2),
+    overworld_frame(gObjectEventPic_Giovanni, 2, 4, 3),
+    overworld_frame(gObjectEventPic_Giovanni, 2, 4, 4),
+    overworld_frame(gObjectEventPic_Giovanni, 2, 4, 5),
+    overworld_frame(gObjectEventPic_Giovanni, 2, 4, 6),
+    overworld_frame(gObjectEventPic_Giovanni, 2, 4, 7),
+    overworld_frame(gObjectEventPic_Giovanni, 2, 4, 8),
+};

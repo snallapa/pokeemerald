@@ -419,6 +419,7 @@ const struct RegionMapLocation gRegionMapEntries[] = {
     [MAPSEC_SHOCKED_TOWER]              = { 0,  0, 1, 1, sMapName_ShockedTower},
     [MAPSEC_BURNED_TOWER]               = { 0,  0, 1, 1, sMapName_BurnedTower},
     [MAPSEC_SUNKEN_TOWER]               = { 0,  0, 1, 1, sMapName_SunkenTower},
+    [MAPSEC_ROCKET_HIDEOUT_HOEN]        = { 0,  0, 1, 1, sMapName_RocketHideout},
 };
 
 #endif //GUARD_DATA_REGION_MAP_REGION_MAP_ENTRIES_H
