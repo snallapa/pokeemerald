@@ -117,7 +117,20 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "MagmaHideout_4F_EventScript_MaxRevive",
       "flag": "FLAG_ITEM_MAGMA_HIDEOUT_4F_MAX_REVIVE"
-    }
+    },
+    {
+      "elevation": 3,
+      "flag": "FLAG_HIDE_ROCKET",
+      "graphics_id": "OBJ_EVENT_GFX_ROCKET_MEMBER_F",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+      "script": "0x0",
+      "trainer_sight_or_berry_tree_id": "0",
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "x": 7,
+      "y": 21
+  }
   ],
   "warp_events": [
     {

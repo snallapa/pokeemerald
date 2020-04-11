@@ -78,8 +78,37 @@ MagmaHideout_4F_EventScript_Maxie:: @ 823A560
 	removeobject LOCALID_TABITHA
 	setflag FLAG_HIDE_MAGMA_HIDEOUT_GRUNTS
 	fadescreen FADE_FROM_BLACK
+	addobject 9
+	applymovement 9, MagmaHideout_4F_Movement_RocketEnter
+	waitmovement 0
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFastestLeft
+	waitmovement 0
+	msgbox MagmaHideout_4F_Text_RocketWhereMaxie, MSGBOX_DEFAULT
+	applymovement 9, MagmaHideout_4F_Movement_RocketExit
+	waitmovement 0
+	removeobject 9
 	releaseall
 	end
+
+MagmaHideout_4F_Movement_RocketEnter:
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	step_end
+
+MagmaHideout_4F_Movement_RocketExit:
+	walk_fast_left
+	walk_fast_left
+	walk_fast_left
+	walk_fast_left
+	walk_fast_left
+	walk_fast_left
+	walk_fast_left
+	step_end
 
 MagmaHideout_4F_Movement_GroudonApproach: @ 823A672
 	delay_16
@@ -230,3 +259,13 @@ MagmaHideout_4F_Text_MaxieImGoingAfterGroudon: @ 823ABE2
 	.string "any need for this blasted volcano.\p"
 	.string "I am going after GROUDON, so this\n"
 	.string "is where we part!$"
+
+MagmaHideout_4F_Text_RocketWhereMaxie:
+	.string "Where did Maxie go???\n"
+	.string "Where did GROUDON go??\p"
+	.string "This is not what was planned.\n"
+	.string "Ugh the incompetence!!!!\p"
+	.string "Why do I keep seeing you too??\n"
+	.string "Leave us alone, you are making my job\p"
+	.string "so much more difficult. I do not have\n"
+	.string "time for this. fuckkkk....$"

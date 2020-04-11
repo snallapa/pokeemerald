@@ -243,8 +243,12 @@
 #define OBJ_EVENT_GFX_RAIKOU                     239
 #define OBJ_EVENT_GFX_ENTEI                      240
 #define OBJ_EVENT_GFX_SUICUNE                    241
+#define OBJ_EVENT_GFX_ROCKET_MEMBER_M            242
+#define OBJ_EVENT_GFX_ROCKET_MEMBER_F            243
+#define OBJ_EVENT_GFX_GIOVANNI                   244
+#define OBJ_EVENT_GFX_MEOWTH                     245
 
-#define NUM_OBJ_EVENT_GFX                        242
+#define NUM_OBJ_EVENT_GFX                        246
 
 
 // These are dynamic object gfx ids.
