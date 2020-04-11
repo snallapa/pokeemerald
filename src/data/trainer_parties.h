@@ -13087,3 +13087,440 @@ static const struct TrainerMonItemCustomMoves sParty_Hex[] = {
     .moves = MOVE_THUNDER, MOVE_ICE_BEAM, MOVE_EARTHQUAKE, MOVE_DRAGON_DANCE
     }
 };
+
+// Rocket Saga
+static const struct TrainerMonNoItemDefaultMoves sParty_RocketGruntMtPyre[] = {
+    {
+    .iv = 0,
+    .lvl = 34,
+    .species = SPECIES_HYPNO,
+    },
+    {
+    .iv = 0,
+    .lvl = 34,
+    .species = SPECIES_ARBOK,
+    }
+};
+
+static const struct TrainerMonItemCustomMoves sParty_RocketGuard[] = {
+    {
+    .iv = 255,
+    .lvl = 55,
+    .species = SPECIES_HYPNO,
+    .heldItem = ITEM_LEFTOVERS,
+    .moves = MOVE_SEISMIC_TOSS, MOVE_PSYCHIC, MOVE_COUNTER, MOVE_REFLECT
+    },
+    {
+    .iv = 255,
+    .lvl = 55,
+    .species = SPECIES_ARBOK,
+    .heldItem = ITEM_LEFTOVERS,
+    .moves = MOVE_GLARE, MOVE_SLUDGE_BOMB, MOVE_EARTHQUAKE, MOVE_ROCK_SLIDE
+    },
+    {
+    .iv = 255,
+    .lvl = 55,
+    .species = SPECIES_CROBAT,
+    .heldItem = ITEM_CHOICE_BAND,
+    .moves = MOVE_SLUDGE_BOMB, MOVE_AERIAL_ACE, MOVE_SHADOW_BALL, MOVE_NONE
+    }
+};
+
+static const struct TrainerMonItemCustomMoves sParty_RocketGruntHideout1[] = {
+    {
+    .iv = 255,
+    .lvl = 56,
+    .species = SPECIES_RATICATE,
+    .heldItem = ITEM_SALAC_BERRY,
+    .moves = MOVE_RETURN, MOVE_SHADOW_BALL, MOVE_QUICK_ATTACK, MOVE_FACADE
+    },
+    {
+    .iv = 255,
+    .lvl = 56,
+    .species = SPECIES_SANDSLASH,
+    .heldItem = ITEM_LEFTOVERS,
+    .moves = MOVE_EARTHQUAKE, MOVE_ROCK_SLIDE, MOVE_SWORDS_DANCE, MOVE_NONE
+    },
+};
+
+static const struct TrainerMonItemCustomMoves sParty_RocketGruntHideout2[] = {
+    {
+    .iv = 255,
+    .lvl = 57,
+    .species = SPECIES_MACHAMP,
+    .heldItem = ITEM_CHOICE_BAND,
+    .moves = MOVE_CROSS_CHOP, MOVE_FACADE, MOVE_ROCK_SLIDE, MOVE_FOCUS_PUNCH
+    },
+    {
+    .iv = 255,
+    .lvl = 57,
+    .species = SPECIES_WEEZING,
+    .heldItem = ITEM_LEFTOVERS,
+    .moves = MOVE_SLUDGE_BOMB, MOVE_HAZE, MOVE_FLAMETHROWER, MOVE_EXPLOSION
+    }
+};
+
+static const struct TrainerMonItemCustomMoves sParty_RocketGruntHideout3[] = {
+    {
+    .iv = 255,
+    .lvl = 58,
+    .species = SPECIES_RATICATE,
+    .heldItem = ITEM_LEFTOVERS,
+    .moves = MOVE_RETURN, MOVE_SHADOW_BALL, MOVE_ENDURE, MOVE_SUBSTITUTE
+    },
+    {
+    .iv = 255,
+    .lvl = 58,
+    .species = SPECIES_HYPNO,
+    .heldItem = ITEM_LEFTOVERS,
+    .moves = MOVE_SEISMIC_TOSS, MOVE_PSYCHIC, MOVE_COUNTER, MOVE_SUBSTITUTE
+    },
+};
+// double battle
+static const struct TrainerMonItemCustomMoves sParty_RocketGruntHideout4[] = {
+    {
+    .iv = 255,
+    .lvl = 59,
+    .species = SPECIES_HOUNDOOM,
+    .heldItem = ITEM_SITRUS_BERRY,
+    .moves = MOVE_PURSUIT, MOVE_FLAMETHROWER, MOVE_CRUNCH, MOVE_TOXIC
+    },
+    {
+    .iv = 255,
+    .lvl = 59,
+    .species = SPECIES_ARBOK,
+    .heldItem = ITEM_SITRUS_BERRY,
+    .moves = MOVE_GLARE, MOVE_SLUDGE_BOMB, MOVE_EARTHQUAKE, MOVE_ROCK_SLIDE
+    },
+};
+
+static const struct TrainerMonItemCustomMoves sParty_RocketGruntHideout5[] = {
+    {
+    .iv = 255,
+    .lvl = 59,
+    .species = SPECIES_VICTREEBEL,
+    .heldItem = ITEM_MIRACLE_SEED,
+    .moves = MOVE_SWORDS_DANCE, MOVE_SLUDGE_BOMB, MOVE_GIGA_DRAIN, MOVE_SLEEP_POWDER
+    },
+    {
+    .iv = 255,
+    .lvl = 59,
+    .species = SPECIES_ALAKAZAM,
+    .heldItem = ITEM_LEFTOVERS,
+    .moves = MOVE_CALM_MIND, MOVE_PSYCHIC, MOVE_FIRE_PUNCH, MOVE_RECOVER
+    },
+};
+
+static const struct TrainerMonItemCustomMoves sParty_RocketGruntHideout6[] = {
+    {
+    .iv = 255,
+    .lvl = 65,
+    .species = SPECIES_CROBAT,
+    .heldItem = ITEM_LEFTOVERS,
+    .moves = MOVE_SLUDGE_BOMB, MOVE_AERIAL_ACE, MOVE_SHADOW_BALL, MOVE_CONFUSE_RAY
+    },
+    {
+    .iv = 255,
+    .lvl = 65,
+    .species = SPECIES_VILEPLUME,
+    .heldItem = ITEM_LUM_BERRY,
+    .moves = MOVE_SUNNY_DAY, MOVE_SOLAR_BEAM, MOVE_SLEEP_POWDER, MOVE_GIGA_DRAIN
+    },
+    {
+    .iv = 255,
+    .lvl = 65,
+    .species = SPECIES_MAROWAK,
+    .heldItem = ITEM_THICK_CLUB,
+    .moves = MOVE_SWORDS_DANCE, MOVE_EARTHQUAKE, MOVE_DOUBLE_EDGE, MOVE_BONEMERANG
+    },
+};
+
+//floor B2
+
+static const struct TrainerMonItemCustomMoves sParty_RocketGruntHideout7[] = {
+    {
+    .iv = 255,
+    .lvl = 60,
+    .species = SPECIES_ARBOK,
+    .heldItem = ITEM_NONE,
+    .moves = MOVE_GLARE, MOVE_SLUDGE_BOMB, MOVE_EARTHQUAKE, MOVE_ROCK_SLIDE
+    },
+    {
+    .iv = 255,
+    .lvl = 60,
+    .species = SPECIES_DUGTRIO,
+    .heldItem = ITEM_CHOICE_BAND,
+    .moves = MOVE_EARTHQUAKE, MOVE_AERIAL_ACE, MOVE_ROCK_SLIDE, MOVE_ENDURE
+    },
+    {
+    .iv = 255,
+    .lvl = 60,
+    .species = SPECIES_MUK,
+    .heldItem = ITEM_NONE,
+    .moves = MOVE_CURSE, MOVE_SLUDGE_BOMB, MOVE_REST, MOVE_NONE
+    },
+};
+
+static const struct TrainerMonItemCustomMoves sParty_RocketGruntHideout8[] = {
+    {
+    .iv = 255,
+    .lvl = 60,
+    .species = SPECIES_RAPIDASH,
+    .heldItem = ITEM_PETAYA_BERRY,
+    .moves = MOVE_BATON_PASS, MOVE_SUBSTITUTE, MOVE_AGILITY, MOVE_FIRE_BLAST
+    },
+    {
+    .iv = 255,
+    .lvl = 60,
+    .species = SPECIES_TENTACRUEL,
+    .heldItem = ITEM_LEFTOVERS,
+    .moves = MOVE_SURF, MOVE_SLUDGE_BOMB, MOVE_SWORDS_DANCE, MOVE_SUBSTITUTE
+    },
+};
+
+static const struct TrainerMonItemCustomMoves sParty_RocketGruntHideout9[] = {
+    {
+    .iv = 255,
+    .lvl = 60,
+    .species = SPECIES_HYPNO,
+    .heldItem = ITEM_NONE,
+    .moves = MOVE_SEISMIC_TOSS, MOVE_TOXIC, MOVE_THUNDER_WAVE, MOVE_WISH
+    },
+    {
+    .iv = 255,
+    .lvl = 60,
+    .species = SPECIES_STEELIX,
+    .heldItem = ITEM_LEFTOVERS,
+    .moves = MOVE_EARTHQUAKE, MOVE_ROAR, MOVE_REST, MOVE_EXPLOSION
+    },
+};
+
+// three kanto protectors
+static const struct TrainerMonItemCustomMoves sParty_RocketGruntHideout10[] = {
+    {
+    .iv = 255,
+    .lvl = 61,
+    .species = SPECIES_WOBBUFFET,
+    .heldItem = ITEM_LUM_BERRY,
+    .moves = MOVE_ENCORE, MOVE_COUNTER, MOVE_MIRROR_COAT, MOVE_SAFEGUARD
+    },
+    {
+    .iv = 255,
+    .lvl = 61,
+    .species = SPECIES_CHARIZARD,
+    .heldItem = ITEM_SALAC_BERRY,
+    .moves = MOVE_BELLY_DRUM, MOVE_DOUBLE_EDGE, MOVE_FLAMETHROWER, MOVE_EARTHQUAKE
+    },
+};
+
+static const struct TrainerMonItemCustomMoves sParty_RocketGruntHideout11[] = {
+    {
+    .iv = 255,
+    .lvl = 61,
+    .species = SPECIES_BLISSEY,
+    .heldItem = ITEM_LEFTOVERS,
+    .moves = MOVE_TOXIC, MOVE_SOFT_BOILED, MOVE_ICY_WIND, MOVE_LIGHT_SCREEN
+    },
+    {
+    .iv = 255,
+    .lvl = 61,
+    .species = SPECIES_BLASTOISE,
+    .heldItem = ITEM_NONE,
+    .moves = MOVE_SURF, MOVE_ICE_BEAM, MOVE_TOXIC, MOVE_REST
+    },
+};
+
+static const struct TrainerMonItemCustomMoves sParty_RocketGruntHideout12[] = {
+    {
+    .iv = 255,
+    .lvl = 61,
+    .species = SPECIES_LANTURN,
+    .heldItem = ITEM_LEFTOVERS,
+    .moves = MOVE_THUNDER, MOVE_TOXIC, MOVE_ICE_BEAM, MOVE_AMNESIA
+    },
+    {
+    .iv = 255,
+    .lvl = 61,
+    .species = SPECIES_VENUSAUR,
+    .heldItem = ITEM_LEFTOVERS,
+    .moves = MOVE_SLEEP_POWDER, MOVE_LEECH_SEED, MOVE_SLUDGE_BOMB, MOVE_SYNTHESIS
+    },
+};
+
+// end kanto 
+
+// double battle
+static const struct TrainerMonItemCustomMoves sParty_RocketGruntHideout13[] = {
+    {
+    .iv = 255,
+    .lvl = 62,
+    .species = SPECIES_PIDGEOT,
+    .heldItem = ITEM_SITRUS_BERRY,
+    .moves = MOVE_AERIAL_ACE, MOVE_AGILITY, MOVE_ATTRACT, MOVE_RETURN
+    },
+    {
+    .iv = 255,
+    .lvl = 62,
+    .species = SPECIES_GENGAR,
+    .heldItem = ITEM_LEFTOVERS,
+    .moves = MOVE_THUNDERBOLT, MOVE_ICE_PUNCH, MOVE_GIGA_DRAIN, MOVE_EXPLOSION
+    },
+};
+
+static const struct TrainerMonItemCustomMoves sParty_RocketGruntHideout14[] = {
+    {
+    .iv = 255,
+    .lvl = 62,
+    .species = SPECIES_GYARADOS,
+    .heldItem = ITEM_NONE,
+    .moves = MOVE_DRAGON_DANCE, MOVE_TAUNT, MOVE_EARTHQUAKE, MOVE_HYDRO_PUMP
+    },
+    {
+    .iv = 255,
+    .lvl = 62,
+    .species = SPECIES_SNORLAX,
+    .heldItem = ITEM_NONE,
+    .moves = MOVE_CURSE, MOVE_REST, MOVE_RETURN, MOVE_BODY_SLAM
+    },
+};
+
+static const struct TrainerMonItemCustomMoves sParty_RocketGruntHideout15 [] = {
+    {
+    .iv = 255,
+    .lvl = 61,
+    .species = SPECIES_GOLEM,
+    .heldItem = ITEM_NONE,
+    .moves = MOVE_EARTHQUAKE, MOVE_ROCK_SLIDE, MOVE_REST, MOVE_SLEEP_TALK
+    },
+    {
+    .iv = 255,
+    .lvl = 61,
+    .species = SPECIES_MACHAMP,
+    .heldItem = ITEM_NONE,
+    .moves = MOVE_CROSS_CHOP, MOVE_FACADE, MOVE_ROCK_SLIDE, MOVE_BULK_UP
+    },
+};
+// B3F
+static const struct TrainerMonItemCustomMoves sParty_RocketGruntHideout16[] = {
+    {
+    .iv = 255,
+    .lvl = 63,
+    .species = SPECIES_FORRETRESS,
+    .heldItem = ITEM_NONE,
+    .moves = MOVE_SPIKES, MOVE_RAPID_SPIN, MOVE_REST, MOVE_COUNTER
+    },    
+    {
+    .iv = 255,
+    .lvl = 63,
+    .species = SPECIES_AZUMARILL,
+    .heldItem = ITEM_NONE,
+    .moves = MOVE_SUBSTITUTE, MOVE_FOCUS_PUNCH, MOVE_SING, MOVE_ENCORE
+    },
+};
+
+static const struct TrainerMonItemCustomMoves sParty_RocketGruntHideout17[] = {
+    {
+    .iv = 255,
+    .lvl = 63,
+    .species = SPECIES_BANETTE,
+    .heldItem = ITEM_NONE,
+    .moves = MOVE_SHADOW_BALL, MOVE_KNOCK_OFF, MOVE_TOXIC, MOVE_SNATCH
+    },
+    {
+    .iv = 255,
+    .lvl = 63,
+    .species = SPECIES_JYNX,
+    .heldItem = ITEM_NONE,
+    .moves = MOVE_CALM_MIND, MOVE_LOVELY_KISS, MOVE_ICE_BEAM, MOVE_SUBSTITUTE
+    },
+};
+
+// Rocket grunt ambush
+static const struct TrainerMonItemCustomMoves sParty_RocketGruntHideout18[] = {
+    {
+    .iv = 255,
+    .lvl = 63,
+    .species = SPECIES_BUTTERFREE,
+    .heldItem = ITEM_QUICK_CLAW,
+    .moves = MOVE_SLEEP_POWDER, MOVE_STUN_SPORE, MOVE_PSYCHIC, MOVE_TOXIC
+    },
+    {
+    .iv = 255,
+    .lvl = 63,
+    .species = SPECIES_BEEDRILL,
+    .heldItem = ITEM_SALAC_BERRY,
+    .moves = MOVE_ENDURE, MOVE_SWORDS_DANCE, MOVE_SLUDGE_BOMB, MOVE_BRICK_BREAK
+    }
+};
+
+static const struct TrainerMonItemCustomMoves sParty_RocketGruntHideout19[] = {
+    {
+    .iv = 255,
+    .lvl = 63,
+    .species = SPECIES_HITMONCHAN,
+    .heldItem = ITEM_CHOICE_BAND,
+    .moves = MOVE_SKY_UPPERCUT, MOVE_BRICK_BREAK, MOVE_EARTHQUAKE, MOVE_ROCK_SLIDE
+    },
+    {
+    .iv = 255,
+    .lvl = 63,
+    .species = SPECIES_HITMONLEE,
+    .heldItem = ITEM_CHOICE_BAND,
+    .moves = MOVE_SKY_UPPERCUT, MOVE_BRICK_BREAK, MOVE_EARTHQUAKE, MOVE_ROCK_SLIDE
+    }
+};
+
+static const struct TrainerMonItemCustomMoves sParty_RocketGruntHideout20[] = {
+    {
+    .iv = 255,
+    .lvl = 63,
+    .species = SPECIES_OMASTAR,
+    .heldItem = ITEM_LUM_BERRY,
+    .moves = MOVE_RAIN_DANCE, MOVE_SURF, MOVE_ICE_BEAM, MOVE_HYDRO_PUMP
+    },
+    {
+    .iv = 255,
+    .lvl = 63,
+    .species = SPECIES_KABUTOPS,
+    .heldItem = ITEM_SALAC_BERRY,
+    .moves = MOVE_ENDURE, MOVE_FLAIL, MOVE_SWORDS_DANCE, MOVE_ROCK_SLIDE
+    },
+};
+
+static const struct TrainerMonItemCustomMoves sParty_Giovanni[] = {
+    {
+    .iv = 255,
+    .lvl = 65,
+    .species = SPECIES_KANGASKHAN,
+    .heldItem = ITEM_LEFTOVERS,
+    .moves = MOVE_WISH, MOVE_RETURN, MOVE_PROTECT, MOVE_TOXIC
+    },
+    {
+    .iv = 255,
+    .lvl = 65,
+    .species = SPECIES_PERSIAN,
+    .heldItem = ITEM_LIECHI_BERRY,
+    .moves = MOVE_SUBSTITUTE, MOVE_RETURN, MOVE_SHADOW_BALL, MOVE_HYPNOSIS
+    },
+    {
+    .iv = 255,
+    .lvl = 65,
+    .species = SPECIES_NIDOKING,
+    .heldItem = ITEM_LEFTOVERS,
+    .moves = MOVE_EARTHQUAKE, MOVE_MEGAHORN, MOVE_ICE_BEAM, MOVE_SLUDGE_BOMB
+    },
+    {
+    .iv = 255,
+    .lvl = 65,
+    .species = SPECIES_NIDOQUEEN,
+    .heldItem = ITEM_CHOICE_BAND,
+    .moves = MOVE_SHADOW_BALL, MOVE_SUPERPOWER, MOVE_SHADOW_BALL, MOVE_EARTHQUAKE
+    },
+    {
+    .iv = 255,
+    .lvl = 65,
+    .species = SPECIES_RHYDON,
+    .heldItem = ITEM_LEFTOVERS,
+    .moves = MOVE_EARTHQUAKE, MOVE_SWORDS_DANCE, MOVE_ROCK_SLIDE, MOVE_SUBSTITUTE
+    },
+};

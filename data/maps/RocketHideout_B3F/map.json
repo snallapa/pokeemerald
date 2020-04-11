@@ -1,0 +1,136 @@
+{
+    "allow_bike": true,
+    "allow_escape_rope": false,
+    "allow_running": true,
+    "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+    "bg_events": [
+    ],
+    "connections": null,
+    "coord_events": [
+    ],
+    "id": "MAP_ROCKET_HIDEOUT_B3F",
+    "layout": "LAYOUT_ROCKET_HIDEOUT_B3F",
+    "map_type": "MAP_TYPE_INDOOR",
+    "music": "MUS_DAN02",
+    "name": "RocketHideout_B3F",
+    "object_events": [
+        {
+            "elevation": 3,
+            "flag": "FLAG_ROCKET_HIDE_EVERYONE",
+            "graphics_id": "OBJ_EVENT_GFX_ROCKET_MEMBER_M",
+            "movement_range_x": 0,
+            "movement_range_y": 0,
+            "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+            "script": "RocketHideout_B3F_EventScript_RocketGruntHideout16",
+            "trainer_sight_or_berry_tree_id": "4",
+            "trainer_type": "1",
+            "x": 5,
+            "y": 6
+        },
+        {
+            "elevation": 3,
+            "flag": "FLAG_ROCKET_HIDE_EVERYONE",
+            "graphics_id": "OBJ_EVENT_GFX_ROCKET_MEMBER_F",
+            "movement_range_x": 0,
+            "movement_range_y": 0,
+            "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+            "script": "RocketHideout_B3F_EventScript_RocketGruntHideout17",
+            "trainer_sight_or_berry_tree_id": "4",
+            "trainer_type": "1",
+            "x": 26,
+            "y": 3
+        },
+        {
+            "elevation": 3,
+            "flag": "FLAG_ROCKET_HIDE_EVERYONE",
+            "graphics_id": "OBJ_EVENT_GFX_ROCKET_MEMBER_M",
+            "movement_range_x": 0,
+            "movement_range_y": 0,
+            "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+            "script": "RocketHideout_B3F_EventScript_RocketGruntHideout18",
+            "trainer_sight_or_berry_tree_id": "0",
+            "trainer_type": "0",
+            "x": 6,
+            "y": 17
+        },
+        {
+            "elevation": 3,
+            "flag": "FLAG_ROCKET_HIDE_EVERYONE",
+            "graphics_id": "OBJ_EVENT_GFX_ROCKET_MEMBER_F",
+            "movement_range_x": 0,
+            "movement_range_y": 0,
+            "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+            "script": "RocketHideout_B3F_EventScript_RocketGruntHideout19",
+            "trainer_sight_or_berry_tree_id": "0",
+            "trainer_type": "0",
+            "x": 8,
+            "y": 17
+        },
+        {
+            "elevation": 3,
+            "flag": "FLAG_ROCKET_HIDE_EVERYONE",
+            "graphics_id": "OBJ_EVENT_GFX_ROCKET_MEMBER_M",
+            "movement_range_x": 0,
+            "movement_range_y": 0,
+            "movement_type": "MOVEMENT_TYPE_FACE_UP",
+            "script": "RocketHideout_B3F_EventScript_RocketGruntHideout20",
+            "trainer_sight_or_berry_tree_id": "0",
+            "trainer_type": "0",
+            "x": 7,
+            "y": 18
+        },
+        {
+            "elevation": 3,
+            "flag": "FLAG_ITEM_ROCKET_HIDEOUT_EON_TICKET",
+            "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+            "movement_range_x": 0,
+            "movement_range_y": 0,
+            "movement_type": "MOVEMENT_TYPE_NONE",
+            "script": "RocketHideout_B3F_EventScript_ItemEonTicket",
+            "trainer_sight_or_berry_tree_id": "0",
+            "trainer_type": "0",
+            "x": 7,
+            "y": 8
+        },
+        {
+            "elevation": 3,
+            "flag": "FLAG_ITEM_ROCKET_HIDEOUT_OLD_SEA_MAP",
+            "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+            "movement_range_x": 0,
+            "movement_range_y": 0,
+            "movement_type": "MOVEMENT_TYPE_NONE",
+            "script": "RocketHideout_B3F_EventScript_ItemOldSeaMap",
+            "trainer_sight_or_berry_tree_id": "0",
+            "trainer_type": "0",
+            "x": 26,
+            "y": 8
+        }
+    ],
+    "region_map_section": "MAPSEC_ROCKET_HIDEOUT_HOEN",
+    "requires_flash": false,
+    "show_map_name": true,
+    "warp_events": [
+        {
+            "dest_map": "MAP_ROCKET_HIDEOUT_B2F",
+            "dest_warp_id": 4,
+            "elevation": 0,
+            "x": 4,
+            "y": 2
+        },
+        {
+            "dest_map": "MAP_ROCKET_HIDEOUT_B2F",
+            "dest_warp_id": 6,
+            "elevation": 0,
+            "x": 28,
+            "y": 2
+        },
+        {
+            "dest_map": "MAP_ROCKET_HIDEOUT_B2F",
+            "dest_warp_id": 5,
+            "elevation": 0,
+            "x": 7,
+            "y": 16
+        }
+    ],
+    "weather": "WEATHER_SUNNY"
+}

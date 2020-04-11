@@ -413,12 +413,13 @@ const struct RegionMapLocation gRegionMapEntries[] = {
     [MAPSEC_UNDERWATER_UNK1]           = {24,  3, 2, 2, sMapName_Underwater},
     [MAPSEC_UNDERWATER_129]            = {24, 10, 2, 1, sMapName_Underwater},
     [MAPSEC_DESERT_UNDERPASS]          = { 2,  0, 1, 1, sMapName_DesertUnderpass},
-    [MAPSEC_ALTERING_CAVE]           = { 6,  8, 1, 1, sMapName_AlteringCave},
-    [MAPSEC_NAVEL_ROCK]               = { 0,  0, 1, 1, sMapName_NavelRock},
+    [MAPSEC_ALTERING_CAVE]             = { 6,  8, 1, 1, sMapName_AlteringCave},
+    [MAPSEC_NAVEL_ROCK]                = { 0,  0, 1, 1, sMapName_NavelRock},
     [MAPSEC_TRAINER_HILL]              = { 8,  4, 1, 1, sMapName_TrainerHill},
     [MAPSEC_SHOCKED_TOWER]             = { 0,  0, 1, 1, sMapName_ShockedTower},
-    [MAPSEC_BURNED_TOWER]             = { 0,  0, 1, 1, sMapName_BurnedTower},
-    [MAPSEC_SUNKEN_TOWER]             = { 0,  0, 1, 1, sMapName_SunkenTower},
+    [MAPSEC_BURNED_TOWER]              = { 0,  0, 1, 1, sMapName_BurnedTower},
+    [MAPSEC_SUNKEN_TOWER]              = { 0,  0, 1, 1, sMapName_SunkenTower},
+    [MAPSEC_ROCKET_HIDEOUT_HOEN]       = { 0,  0, 1, 1, sMapName_RocketHideout},
 };
 
 #endif //GUARD_DATA_REGION_MAP_REGION_MAP_ENTRIES_H

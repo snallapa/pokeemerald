@@ -657,3 +657,18 @@ MagmaHideout_4F_EventScript_MaxRevive:: @ 829151F
 MagmaHideout_3F_3R_EventScript_ItemEscapeRope:: @ 829152C
 	finditem ITEM_ESCAPE_ROPE
 	end
+
+RocketHideout_B2F_EventScript_ItemMasterBall:: @ 8290F14
+	finditem ITEM_MASTER_BALL
+	end
+
+RocketHideout_B3F_EventScript_ItemEonTicket::
+	finditem ITEM_EON_TICKET
+	setflag FLAG_ENABLE_SHIP_SOUTHERN_ISLAND
+	end
+
+RocketHideout_B3F_EventScript_ItemOldSeaMap::
+	finditem ITEM_OLD_SEA_MAP
+	setflag FLAG_ENABLE_SHIP_FARAWAY_ISLAND
+	setflag FLAG_RECEIVED_OLD_SEA_MAP
+	end

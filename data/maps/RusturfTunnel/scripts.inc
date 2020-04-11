@@ -343,6 +343,14 @@ RusturfTunnel_EventScript_Grunt:: @ 822D0C2
 	waitmovement 0
 	removeobject 5
 	removeobject 7
+	delay 50
+	addobject 11
+	applymovement 11, RusturfTunnel_Movement_RocketHastyApproach
+	waitmovement 0
+	msgbox RusturfTunnel_Text_RocketWorried, MSGBOX_AUTOCLOSE
+	applymovement 11, RusturfTunnel_Movement_RocketHastyExit
+	waitmovement 0
+	removeobject 11
 	clearflag FLAG_DEVON_GOODS_STOLEN
 	setflag FLAG_RECOVERED_DEVON_GOODS
 	setvar VAR_RUSTBORO_CITY_STATE, 4
@@ -350,6 +358,27 @@ RusturfTunnel_EventScript_Grunt:: @ 822D0C2
 	setflag FLAG_HIDE_ROUTE_116_MR_BRINEY
 	release
 	end
+
+
+RusturfTunnel_Movement_RocketHastyApproach: @ 822D18B
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	step_end
+
+RusturfTunnel_Movement_RocketHastyExit: @ 822D18B
+	walk_fast_left
+	walk_fast_left
+	walk_fast_left
+	walk_fast_left
+	walk_fast_left
+	walk_fast_left
+	walk_fast_left
+	step_end
 
 RusturfTunnel_Movement_PushPlayerAsideForGrunt: @ 822D178
 	face_down
@@ -442,16 +471,15 @@ RusturfTunnel_Text_GruntIntro: @ 822D20A
 	.string "be a piece of shit!\p"
 	.string "And to think I made a getaway…\n"
 	.string "In this tunnel to nowhere!\p"
-	.string "Hey! You!\n"
-	.string "Let me beat your ass so\n"
-	.string "I don't hate myself.$"
+	.string "Hey! You! Let me beat yur\n"
+	.string "ass so I don't hate myself.$"
 
 RusturfTunnel_Text_GruntDefeat: @ 822D2B0
 	.string "Urrrggh! My career in crime comes to\n"
 	.string "a dead end!$"
 
 RusturfTunnel_Text_GruntTakePackage: @ 822D2E1
-	.string "This is plain not right…\p"
+	.string "This is plan not right…\p"
 	.string "The BOSS told me this would be a\n"
 	.string "slick-and-easy job to pull.\p"
 	.string "All I had to do was steal some package\n"
@@ -477,7 +505,7 @@ RusturfTunnel_Text_ThankYouLetsGoHomePeeko: @ 822D3BA
 	.string "by the sea near PETALBURG WOODS.\p"
 	.string "I'm definitley not luring a child\n"
 	.string "into my home. Ahaha haha ha.\p"
-	.string "PEEKO: Fuck dis shit bruh.$"
+	.string "PEEKO: ......$"
 
 RusturfTunnel_Text_WhyCantTheyKeepDigging: @ 822D510
 	.string "… …\p"
@@ -538,3 +566,8 @@ RusturfTunnel_Text_MikePostBattle: @ 822D8F9
 	.string "protect POKéMON, right?\l"
 	.string "There's a feel-good story!$"
 
+RusturfTunnel_Text_RocketWorried:
+	.string "Where did that AQUA member go???\n"
+	.string "Why can't they do ANYTHING right?\p"
+	.string "I have to go report this fuck...\n"
+	.string "I was never here okay?$"
