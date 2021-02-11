@@ -41,7 +41,7 @@ RocketHideout_B2F_EventScript_RocketGruntHideout10Pokemon::
 	lockall
 	msgbox RocketHideout_B2F_Text_RocketGruntHideout10PostBattle, MSGBOX_DEFAULT
 	givemon SPECIES_CHARMANDER, 5, ITEM_NONE
-	playfanfare MUS_FANFA4
+	playfanfare MUS_OBTAIN_ITEM
 	message RocketHideout_B2F_Text_RocketGruntHideout10Pokemon 
 	waitmessage
 	waitfanfare
@@ -59,7 +59,7 @@ RocketHideout_B2F_EventScript_RocketGruntHideout11Pokemon::
 	lockall
 	msgbox RocketHideout_B2F_Text_RocketGruntHideout11PostBattle, MSGBOX_DEFAULT
 	givemon SPECIES_SQUIRTLE, 5, ITEM_NONE
-	playfanfare MUS_FANFA4
+	playfanfare MUS_OBTAIN_ITEM
 	message RocketHideout_B2F_Text_RocketGruntHideout11Pokemon 
 	waitmessage
 	waitfanfare
@@ -77,7 +77,7 @@ RocketHideout_B2F_EventScript_RocketGruntHideout12Pokemon::
 	lockall
 	msgbox RocketHideout_B2F_Text_RocketGruntHideout12PostBattle, MSGBOX_DEFAULT
 	givemon SPECIES_BULBASAUR, 5, ITEM_NONE
-	playfanfare MUS_FANFA4
+	playfanfare MUS_OBTAIN_ITEM
 	message RocketHideout_B2F_Text_RocketGruntHideout12Pokemon 
 	waitmessage
 	waitfanfare

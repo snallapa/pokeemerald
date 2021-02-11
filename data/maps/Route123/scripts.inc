@@ -183,7 +183,7 @@ Route123_EventScript_FlorenceGive::
 	lockall
 	msgbox Route123_Text_FlorenceGive, MSGBOX_DEFAULT
 	givemon SPECIES_CHIKORITA, 5, ITEM_NONE
-	playfanfare MUS_FANFA4
+	playfanfare MUS_OBTAIN_ITEM
 	message Route123_Text_ObtainedChikorita
 	waitmessage
 	waitfanfare

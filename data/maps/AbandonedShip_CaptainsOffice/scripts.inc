@@ -31,7 +31,7 @@ AbandonedShip_CaptainsOffice_EventScript_JaysonGive::
 	lockall
 	msgbox AbandonedShip_CaptainsOffice_Text_JaysonGive, MSGBOX_DEFAULT
 	givemon SPECIES_TOTODILE, 5, ITEM_NONE
-	playfanfare MUS_FANFA4
+	playfanfare MUS_OBTAIN_ITEM
 	message AbandonedShip_CaptainsOffice_Text_ObtainedTotodile
 	waitmessage
 	waitfanfare

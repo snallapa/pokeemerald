@@ -3,7 +3,7 @@ RocketHideout_B1F_MapScripts::
 
 Rocket_B1F_EventScript_GiovanniFight::
 	lockall
-	playbgm MUS_AQA_0, 0
+	playbgm MUS_ENCOUNTER_AQUA, 0
 	delay 60
 	applymovement OBJ_EVENT_ID_PLAYER, RocketHideout_B1F_MoveUp
 	waitmovement 0
@@ -18,7 +18,7 @@ Rocket_B1F_EventScript_GiovanniFight::
 	trainerbattle_no_intro TRAINER_GIOVANNI, RocketHideout_B1F_Text_GiovanniDefeated
 	msgbox RocketHideout_B1F_Text_MeowthItsOver, MSGBOX_DEFAULT
 	givemon SPECIES_CELEBI, 5, ITEM_NONE
-	playfanfare MUS_FANFA4
+	playfanfare MUS_OBTAIN_ITEM
 	message RocketHideout_B1F_Text_ObtainedCelebi
 	waitmessage
 	waitfanfare

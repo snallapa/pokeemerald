@@ -537,7 +537,7 @@ void BattleSetup_StartLegendaryBattle(void)
         CreateBattleStartTask(B_TRANSITION_GRID_SQUARES, MUS_VS_MEW);
         break;
     default:
-        CreateBattleStartTask(B_TRANSITION_GRID_SQUARES, MUS_VS_REKKU);
+        CreateBattleStartTask(B_TRANSITION_GRID_SQUARES, MUS_VS_RAYQUAZA);
     }
 
     IncrementGameStat(GAME_STAT_TOTAL_BATTLES);

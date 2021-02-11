@@ -11,7 +11,7 @@
     "id": "MAP_SHOCKED_TOWER_1F",
     "layout": "LAYOUT_SHOCKED_TOWER_1F",
     "map_type": "MAP_TYPE_INDOOR",
-    "music": "MUS_DAN02",
+    "music": "MUS_ABANDONED_SHIP",
     "name": "ShockedTower_1F",
     "object_events": [
         {

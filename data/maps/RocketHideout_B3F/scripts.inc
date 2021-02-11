@@ -15,7 +15,7 @@ RocketHideout_B3F_EventScript_RocketGruntHideoutAmbush::
 	goto_if_eq RocketHideout_B3F_EventScript_RocketGruntHideoutNoAmbush
 	lockall
 	playse SE_PIN
-	playbgm MUS_AQA_0, 0
+	playbgm MUS_ENCOUNTER_AQUA, 0
 	msgbox RocketHideout_B3F_Text_RocketAmbushBegin, MSGBOX_AUTOCLOSE
 	trainerbattle_no_intro TRAINER_ROCKET_GRUNT_HIDEOUT_18, RocketHideout_B3F_Text_RocketGruntHideout18Defeat
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceLeft

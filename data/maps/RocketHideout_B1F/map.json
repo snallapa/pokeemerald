@@ -20,7 +20,7 @@
     "id": "MAP_ROCKET_HIDEOUT_B1F",
     "layout": "LAYOUT_ROCKET_HIDEOUT_B1F",
     "map_type": "MAP_TYPE_INDOOR",
-    "music": "MUS_DAN02",
+    "music": "MUS_ABANDONED_SHIP",
     "name": "RocketHideout_B1F",
     "object_events": [
         {

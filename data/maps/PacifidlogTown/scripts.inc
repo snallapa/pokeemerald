@@ -11,6 +11,9 @@ PacifidlogTown_OnResume: @ 81EBAC0
 	setstepcallback STEP_CB_PACIFIDLOG_BRIDGE
 	end
 
+PacifidlogTown_EventScript_NinjaBoy:: @ 81EBAC3
+	msgbox PacifidlogTown_Text_NeatHousesOnWater, MSGBOX_NPC
+
 PacifidlogTown_EventScript_RocketMember:: @ 81EBAC3
 	goto_if_unset FLAG_IS_CHAMPION, PacifidlogTown_EventScript_RocketRefused
 	trainerbattle_single TRAINER_ROCKET_GUARD, PacifidlogTown_Text_RocketGuardIntro, PacifidlogTown_Text_RocketGuardDefeat, PacifidlogTown_EventScript_RocketMember_Defeated
