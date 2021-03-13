@@ -1,6 +1,8 @@
 #include "global.h"
 #include "main.h"
 #include "palette.h"
+#include "event_data.h"
+#include "pokedex.h"
 #include "scanline_effect.h"
 #include "task.h"
 #include "title_screen.h"
@@ -1061,14 +1063,48 @@ static u8 SetUpCopyrightScreen(void)
 
 void CB2_InitCopyrightScreenAfterBootup(void)
 {
+    u8 offset, saves, i, dexCount, badgeCount;
+    u32 j;
     if (!SetUpCopyrightScreen())
     {
-        SetSaveBlocksPointers(sub_815355C());
+        offset = getSave(1);
+        if (offset != SAVE_STATUS_EMPTY) {
+            saves = 2;
+            SetSaveBlocksPointers(offset);
+            Save_LoadGameData(SAVE_TWO);
+            for (i = 0; i < PLAYER_NAME_LENGTH + 1; ++i) {
+                gSecondarySavePtr.playerName[i] = gSaveBlock2Ptr->playerName[i];
+            }
+            gSecondarySavePtr.playTimeHours = gSaveBlock2Ptr->playTimeHours;
+            gSecondarySavePtr.playTimeMinutes = gSaveBlock2Ptr->playTimeMinutes;
+            if (FlagGet(FLAG_SYS_POKEDEX_GET) == TRUE)
+            {
+                gSecondarySavePtr.showPokedex = TRUE;
+                if (IsNationalPokedexEnabled())
+                    dexCount = GetNationalPokedexCount(FLAG_GET_CAUGHT);
+                else
+                    dexCount = GetHoennPokedexCount(FLAG_GET_CAUGHT);
+            } else {
+                gSecondarySavePtr.showPokedex = FALSE;
+            }
+            for (j = FLAG_BADGE01_GET; j < FLAG_BADGE01_GET + NUM_BADGES; j++)
+            {
+                if (FlagGet(j))
+                    badgeCount++;
+            }
+            gSecondarySavePtr.badgeCount = badgeCount;
+            gSecondarySavePtr.pokedexCount = dexCount;
+            gSaveBlock2Ptr->saveSlot = 0;
+        } else {
+            saves = 1;
+        }
+        SetSaveBlocksPointers(getSave(0));
         ResetMenuAndMonGlobals();
         Save_ResetSaveCounters();
         Save_LoadGameData(SAVE_NORMAL);
         if (gSaveFileStatus == SAVE_STATUS_EMPTY || gSaveFileStatus == SAVE_STATUS_CORRUPT)
             Sav2_ClearSetDefault();
+        gSaveBlock2Ptr->saves = saves;
         SetPokemonCryStereo(gSaveBlock2Ptr->optionsSound);
         InitHeap(gHeap, HEAP_SIZE);
     }
