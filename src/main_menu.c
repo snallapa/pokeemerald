@@ -1347,7 +1347,7 @@ static void Task_DisplayMainMenuInvalidActionError(u8 taskId)
 
 #undef tArrowTaskIsScrolled
 
-static void HighlightSelectedMainMenuItem(u8 menuType, u8 selectedMenuItem, s16 isScrolled) // MARK
+static void HighlightSelectedMainMenuItem(u8 menuType, u8 selectedMenuItem, s16 isScrolled)
 {
     SetGpuReg(REG_OFFSET_WIN0H, MENU_WIN_HCOORDS);
 
@@ -2359,7 +2359,6 @@ static void MainMenu_FormatSavegamePlayer(u8 slotNumber)
     AddTextPrinterParameterized3(slotNumber, 1, 0, 17, sTextColor_MenuInfo, -1, gStringVar4);
     if (slotNumber == 9) {
         AddTextPrinterParameterized3(slotNumber, 1, GetStringRightAlignXOffset(1, gSecondarySavePtr.playerName, 100), 17, sTextColor_MenuInfo, -1, gSecondarySavePtr.playerName);
-        // AddTextPrinterParameterized3(slotNumber, 1, GetStringRightAlignXOffset(1, gSaveBlock2Ptr->playerName, 100), 17, sTextColor_MenuInfo, -1, gSaveBlock2Ptr->playerName);
     } else {
         AddTextPrinterParameterized3(slotNumber, 1, GetStringRightAlignXOffset(1, gSaveBlock2Ptr->playerName, 100), 17, sTextColor_MenuInfo, -1, gSaveBlock2Ptr->playerName);
     }

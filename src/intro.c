@@ -1067,8 +1067,6 @@ void CB2_InitCopyrightScreenAfterBootup(void)
     u32 j;
     if (!SetUpCopyrightScreen())
     {
-        //TODO: Update pointers here
-        //have to set two pointers here
         offset = getSave(1);
         if (offset != SAVE_STATUS_EMPTY) {
             saves = 2;

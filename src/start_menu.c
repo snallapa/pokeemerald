@@ -1013,7 +1013,7 @@ static u8 SaveConfirmOverwriteDefaultNoCallback(void)
 
 static u8 SaveConfirmOverwriteCallback(void)
 {
-    DisplaySaveOverrideMenu(gSaveBlock2Ptr->saveSlot); // Show save slots default to cancel
+    DisplaySaveOverrideMenu(gSaveBlock2Ptr->saveSlot); // Show save slots default to current slot
     sSaveDialogCallback = SaveOverwriteInputCallback;
     return SAVE_IN_PROGRESS;
 }
