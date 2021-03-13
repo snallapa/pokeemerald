@@ -1006,14 +1006,14 @@ static u8 SaveFileExistsCallback(void)
 
 static u8 SaveConfirmOverwriteDefaultNoCallback(void)
 {
-    DisplayYesNoMenuWithDefault(1); // Show Yes/No menu (No selected as default)
+    DisplaySaveOverrideMenu(2); // Show Save slots default to cancel
     sSaveDialogCallback = SaveOverwriteInputCallback;
     return SAVE_IN_PROGRESS;
 }
 
 static u8 SaveConfirmOverwriteCallback(void)
 {
-    DisplayYesNoMenuDefaultYes(); // Show Yes/No menu
+    DisplaySaveOverrideMenu(gSaveBlock2Ptr->saveSlot); // Show save slots default to cancel
     sSaveDialogCallback = SaveOverwriteInputCallback;
     return SAVE_IN_PROGRESS;
 }
@@ -1022,11 +1022,16 @@ static u8 SaveOverwriteInputCallback(void)
 {
     switch (Menu_ProcessInputNoWrapClearOnChoose())
     {
-    case 0: // Yes
+    case 0: // slot 1
+        gSaveBlock2Ptr->saveSlot = 0;
+        sSaveDialogCallback = SaveSavingMessageCallback;
+        return SAVE_IN_PROGRESS;
+    case 1: // slot 2
+        gSaveBlock2Ptr->saveSlot = 1;
         sSaveDialogCallback = SaveSavingMessageCallback;
         return SAVE_IN_PROGRESS;
     case -1: // B Button
-    case 1: // No
+    case 2: // No
         HideSaveInfoWindow();
         sub_80A0014();
         return SAVE_CANCELED;
@@ -1050,6 +1055,7 @@ static u8 SaveDoSaveCallback(void)
 
     if (gDifferentSaveFile == TRUE)
     {
+        gSaveBlock2Ptr->saveSlot = 1;
         saveStatus = TrySavingData(SAVE_OVERWRITE_DIFFERENT_FILE);
         gDifferentSaveFile = FALSE;
     }

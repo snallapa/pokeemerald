@@ -52,7 +52,7 @@ enum
     SAVE_LINK2, // unknown 2nd link save
     SAVE_HALL_OF_FAME,
     SAVE_OVERWRITE_DIFFERENT_FILE,
-    SAVE_HALL_OF_FAME_ERASE_BEFORE // unused
+    SAVE_TWO // save slot two
 };
 
 #define SECTOR_ID_SAVEBLOCK2  0
@@ -100,6 +100,7 @@ bool8 FullSaveGame(void);
 bool8 CheckSaveFile(void);
 u8 Save_LoadGameData(u8 saveType);
 u16 sub_815355C(void);
+u16 getSave(u8 saveSlot);
 u32 TryReadSpecialSaveSection(u8 sector, u8* dst);
 u32 TryWriteSpecialSaveSection(u8 sector, u8* src);
 void Task_LinkSave(u8 taskId);

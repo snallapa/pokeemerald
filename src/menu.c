@@ -94,6 +94,17 @@ static const struct WindowTemplate sYesNo_WindowTemplates =
     .baseBlock = 0x125
 };
 
+static const struct WindowTemplate sSaveSlots_WindowTemplates =
+{
+    .bg = 0,
+    .tilemapLeft = 21,
+    .tilemapTop = 7,
+    .width = 6,
+    .height = 6,
+    .paletteNum = 15,
+    .baseBlock = 0x139
+};
+
 const u16 gUnknown_0860F0B0[] = INCBIN_U16("graphics/interface/860F0B0.gbapal");
 const u8 sTextColors[] = { TEXT_DYNAMIC_COLOR_6, TEXT_COLOR_WHITE, TEXT_COLOR_DARK_GREY };
 
@@ -1657,6 +1668,37 @@ void CreateYesNoMenu(const struct WindowTemplate *window, u16 baseTileNum, u8 pa
     AddTextPrinter(&printer, 0xFF, NULL);
     InitMenuInUpperLeftCornerPlaySoundWhenAPressed(sYesNoWindowId, 2, initialCursorPos);
 }
+
+void CreateSaveOverrideMenu(const struct WindowTemplate *window, u16 baseTileNum, u8 paletteNum, u8 initialCursorPos)
+{
+    struct TextPrinterTemplate printer;
+
+    sWindowId = AddWindow(window);
+    DrawStdFrameWithCustomTileAndPalette(sWindowId, TRUE, baseTileNum, paletteNum);
+
+    printer.currentChar = gText_SaveSlots;
+    printer.windowId = sWindowId;
+    printer.fontId = 1;
+    printer.x = 8;
+    printer.y = 1;
+    printer.currentX = printer.x;
+    printer.currentY = printer.y;
+    printer.fgColor = GetFontAttribute(1, FONTATTR_COLOR_FOREGROUND);
+    printer.bgColor = GetFontAttribute(1, FONTATTR_COLOR_BACKGROUND);
+    printer.shadowColor = GetFontAttribute(1, FONTATTR_COLOR_SHADOW);
+    printer.unk = GetFontAttribute(1, FONTATTR_UNKNOWN);
+    printer.letterSpacing = 0;
+    printer.lineSpacing = 0;
+
+    AddTextPrinter(&printer, 0xFF, NULL);
+    InitMenuInUpperLeftCornerPlaySoundWhenAPressed(sWindowId, 3, initialCursorPos);
+}
+
+void DisplaySaveOverrideMenu(u8 initialCursorPos)
+{
+    CreateSaveOverrideMenu(&sSaveSlots_WindowTemplates, STD_WINDOW_BASE_TILE_NUM, STD_WINDOW_PALETTE_NUM, initialCursorPos);
+}
+
 
 void PrintMenuGridTable(u8 windowId, u8 optionWidth, u8 columns, u8 rows, const struct MenuAction *strs)
 {
